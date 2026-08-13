@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Skriva | MikalLearn</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+    <script src="/static/app.js"
+            defer></script>
+
+    <script src="/static/learning.js"
+            defer></script>
+
+    <script src="/static/writing-extra.js"
+            defer></script>
+</head>
+
+
+<body class="study-page">
+
+<div class="container">
+
+    <a href="/" class="back">
+        &larr; Tillbaka
+    </a>
+
+    <p class="small">
+        SVENSKA &bull; SKRIVA
+    </p>
+
+    <h1>
+        Tr&auml;na skriva &#9997;&#65039;
+    </h1>
+
+    <p class="subtitle">
+        L&auml;s texten och skriv sedan exakt samma text sj&auml;lv.
+    </p>
+
+
+    <div class="write-layout">
+
+        <main class="write-main">
+
+            <div class="practice-panel"
+                 id="copy">
+
+                <p class="practice-label">
+                    KOPIERA TEXT
+                </p>
+
+                <h2>
+                    L&auml;s och skriv samma text
+                </h2>
+
+                <p class="help-text">
+                    L&auml;s samtidigt som du skriver.
+                    Tr&auml;na stavning, meningar och svenska ord.
+                </p>
+
+
+                <div class="original-text"
+                     id="copyText">
+                    {{ text }}
+                </div>
+
+
+                <textarea
+                    id="copyAnswer"
+                    placeholder="Skriv texten h&auml;r..."
+                    spellcheck="false"></textarea>
+
+
+                <button
+                    class="check-button"
+                    onclick="checkCopy()">
+                    Kontrollera
+                </button>
+
+
+                <div
+                    id="copyResult"
+                    class="result">
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <aside class="write-sidebar">
+
+            <p class="sidebar-title">
+                SKRIVTR&Auml;NING
+            </p>
+
+
+            <div class="side-mode active">
+
+                <span class="side-icon">
+                    &#9997;&#65039;
+                </span>
+
+                <span>
+                    <strong>
+                        Kopiera text
+                    </strong>
+
+                    <small>
+                        L&auml;s och skriv av
+                    </small>
+                </span>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function normalize(text) {
+
+    return text
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+
+}
+
+
+function similarity(a, b) {
+
+    a = normalize(a);
+    b = normalize(b);
+
+    if (!a.length || !b.length) {
+        return 0;
+    }
+
+    const matrix = [];
+
+    for (let i = 0; i <= b.length; i++) {
+        matrix[i] = [i];
+    }
+
+    for (let j = 0; j <= a.length; j++) {
+        matrix[0][j] = j;
+    }
+
+    for (let i = 1; i <= b.length; i++) {
+
+        for (let j = 1; j <= a.length; j++) {
+
+            if (
+                b.charAt(i - 1) ===
+                a.charAt(j - 1)
+            ) {
+
+                matrix[i][j] =
+                    matrix[i - 1][j - 1];
+
+            } else {
+
+                matrix[i][j] =
+                    Math.min(
+                        matrix[i - 1][j - 1] + 1,
+                        matrix[i][j - 1] + 1,
+                        matrix[i - 1][j] + 1
+                    );
+
+            }
+
+        }
+
+    }
+
+    const distance =
+        matrix[b.length][a.length];
+
+    const longest =
+        Math.max(
+            a.length,
+            b.length
+        );
+
+    return Math.max(
+        0,
+        Math.round(
+            (1 - distance / longest) * 100
+        )
+    );
+
+}
+
+
+function checkCopy() {
+
+    const correct =
+        document
+            .getElementById("copyText")
+            .innerText;
+
+    const answer =
+        document
+            .getElementById("copyAnswer")
+            .value;
+
+    const result =
+        document
+            .getElementById("copyResult");
+
+
+    if (!answer.trim()) {
+
+        result.className =
+            "result warning";
+
+        result.innerHTML =
+            "Skriv texten f&ouml;rst.";
+
+        return;
+    }
+
+
+    const score =
+        similarity(
+            answer,
+            correct
+        );
+
+
+    if (score === 100) {
+
+        result.className =
+            "result success";
+
+        result.innerHTML =
+            "<strong>100% r&auml;tt &#9989;</strong><br>" +
+            "Perfekt! Hela texten &auml;r r&auml;tt.";
+
+    }
+
+    else if (score >= 90) {
+
+        result.className =
+            "result tryagain";
+
+        result.innerHTML =
+            "<strong>" +
+            score +
+            "% r&auml;tt</strong><br>" +
+            "J&auml;tten&auml;ra. Leta efter det lilla felet.";
+
+    }
+
+    else {
+
+        result.className =
+            "result tryagain";
+
+        result.innerHTML =
+            "<strong>" +
+            score +
+            "% r&auml;tt</strong><br>" +
+            "L&auml;s texten igen och f&ouml;rs&ouml;k r&auml;tta skillnaderna.";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

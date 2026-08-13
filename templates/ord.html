@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ord | MikalLearn</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+    <script src="/static/word-training.js"
+            defer></script>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <a href="/" class="back">
+        &larr; Tillbaka
+    </a>
+
+    <p class="small">
+        SVENSKA &bull; ORD
+    </p>
+
+    <h1>
+        Tr&auml;na ord &#129504;
+    </h1>
+
+    <p class="subtitle">
+        Lyssna, skriv, f&ouml;rst&aring; och anv&auml;nd viktiga svenska ord.
+    </p>
+
+
+    <div class="word-v2-layout">
+
+        <main class="word-v2-main">
+
+
+            <!-- =========================
+                 LYSSNA & SKRIV
+            ========================== -->
+
+            <section class="word-mode-panel"
+                     id="wordListenMode">
+
+                <div class="word-v2-top">
+
+                    <div>
+                        <p class="practice-label">
+                            LYSSNA &bull; SKRIV
+                        </p>
+
+                        <h2>
+                            Vilket ord h&ouml;r du?
+                        </h2>
+
+                        <p class="help-text">
+                            Lyssna p&aring; ordet och skriv exakt vad du h&ouml;r.
+                        </p>
+                    </div>
+
+                    <span class="word-v2-progress"
+                          data-word-progress>
+                        0 ord
+                    </span>
+
+                </div>
+
+
+                <div class="word-audio-box">
+
+                    <div class="word-audio-icon">
+                        &#127911;
+                    </div>
+
+                    <strong>
+                        Lyssna p&aring; ordet
+                    </strong>
+
+                    <span>
+                        Ordet visas f&ouml;rst efter att du kontrollerat.
+                    </span>
+
+                    <div class="word-audio-buttons">
+
+                        <button type="button"
+                                id="wordPlay">
+                            &#9654; Spela upp
+                        </button>
+
+                        <button type="button"
+                                id="wordPlaySlow">
+                            &#128034; L&aring;ngsammare
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <label class="word-input-label">
+                    SKRIV ORDET
+                </label>
+
+                <input type="text"
+                       class="word-v2-input"
+                       id="wordListenAnswer"
+                       placeholder="Skriv ordet h&auml;r..."
+                       autocomplete="off"
+                       spellcheck="false">
+
+
+                <div class="word-v2-actions">
+
+                    <button type="button"
+                            class="check-button"
+                            id="wordListenCheck">
+                        Kontrollera
+                    </button>
+
+                    <div class="word-v2-right-actions">
+
+                        <button type="button"
+                                class="word-secondary"
+                                id="wordListenRetry"
+                                disabled>
+                            &#8635; G&ouml;r om
+                        </button>
+
+                        <button type="button"
+                                class="word-next"
+                                id="wordListenNext"
+                                disabled>
+                            N&auml;sta ord &rarr;
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div id="wordListenResult"
+                     class="word-v2-result">
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 LÄR ORDET
+            ========================== -->
+
+            <section class="word-mode-panel hidden"
+                     id="wordLearnMode">
+
+                <div class="word-v2-top">
+
+                    <div>
+                        <p class="practice-label">
+                            L&Auml;R ORDET
+                        </p>
+
+                        <h2>
+                            F&ouml;rst&aring; ordet
+                        </h2>
+                    </div>
+
+                    <span class="word-v2-progress"
+                          data-word-progress>
+                        0 ord
+                    </span>
+
+                </div>
+
+
+                <div class="learn-word-card">
+
+                    <div class="learn-word-heading">
+
+                        <div>
+                            <span>
+                                DAGENS ORD
+                            </span>
+
+                            <h3 id="learnWord">
+                                ...
+                            </h3>
+                        </div>
+
+                        <button type="button"
+                                class="word-speak-small"
+                                id="learnSpeak">
+                            &#128266; Lyssna
+                        </button>
+
+                    </div>
+
+
+                    <div class="learn-section">
+
+                        <span>
+                            BETYDELSE
+                        </span>
+
+                        <p id="learnMeaning">
+                        </p>
+
+                    </div>
+
+
+                    <div class="learn-section example">
+
+                        <span>
+                            EXEMPEL
+                        </span>
+
+                        <p id="learnExample">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="word-v2-actions word-end">
+
+                    <span></span>
+
+                    <button type="button"
+                            class="word-next"
+                            id="learnNext">
+                        N&auml;sta ord &rarr;
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 FYLL I ORDET
+            ========================== -->
+
+            <section class="word-mode-panel hidden"
+                     id="wordFillMode">
+
+                <div class="word-v2-top">
+
+                    <div>
+                        <p class="practice-label">
+                            FYLL I ORDET
+                        </p>
+
+                        <h2>
+                            Vilket ord saknas?
+                        </h2>
+
+                        <p class="help-text">
+                            L&auml;s meningen och skriv ordet som passar.
+                        </p>
+                    </div>
+
+                    <span class="word-v2-progress"
+                          data-word-progress>
+                        0 ord
+                    </span>
+
+                </div>
+
+
+                <div class="word-fill-sentence"
+                     id="fillSentence">
+                </div>
+
+
+                <div class="word-hint-box">
+
+                    <span>
+                        BETYDELSE
+                    </span>
+
+                    <p id="fillMeaning">
+                    </p>
+
+                </div>
+
+
+                <input type="text"
+                       class="word-v2-input"
+                       id="fillAnswer"
+                       placeholder="Skriv ordet..."
+                       autocomplete="off"
+                       spellcheck="false">
+
+
+                <div class="word-v2-actions">
+
+                    <button type="button"
+                            class="check-button"
+                            id="fillCheck">
+                        Kontrollera
+                    </button>
+
+                    <button type="button"
+                            class="word-next"
+                            id="fillNext"
+                            disabled>
+                        N&auml;sta ord &rarr;
+                    </button>
+
+                </div>
+
+
+                <div id="fillResult"
+                     class="word-v2-result">
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 EGEN MENING
+            ========================== -->
+
+            <section class="word-mode-panel hidden"
+                     id="wordOwnMode">
+
+                <div class="word-v2-top">
+
+                    <div>
+                        <p class="practice-label">
+                            ANV&Auml;ND ORDET
+                        </p>
+
+                        <h2>
+                            Skriv en egen mening
+                        </h2>
+
+                        <p class="help-text">
+                            Anv&auml;nd ordet sj&auml;lv i en tydlig svensk mening.
+                        </p>
+                    </div>
+
+                    <span class="word-v2-progress"
+                          data-word-progress>
+                        0 ord
+                    </span>
+
+                </div>
+
+
+                <div class="own-word-box">
+
+                    <span>
+                        ORDET
+                    </span>
+
+                    <strong id="ownWord">
+                        ...
+                    </strong>
+
+                    <p id="ownMeaning">
+                    </p>
+
+                </div>
+
+
+                <textarea id="ownSentence"
+                          class="word-own-textarea"
+                          placeholder="Skriv en egen mening med ordet..."
+                          spellcheck="true"></textarea>
+
+
+                <div class="word-v2-actions">
+
+                    <button type="button"
+                            class="check-button"
+                            id="ownCheck">
+                        Kontrollera
+                    </button>
+
+                    <button type="button"
+                            class="word-next"
+                            id="ownNext"
+                            disabled>
+                        N&auml;sta ord &rarr;
+                    </button>
+
+                </div>
+
+
+                <div id="ownResult"
+                     class="word-v2-result">
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- =========================
+             HÖGERMENY
+        ========================== -->
+
+        <aside class="word-v2-sidebar">
+
+            <p class="sidebar-title">
+                V&Auml;LJ &Ouml;VNING
+            </p>
+
+
+            <button class="word-mode-button active"
+                    data-word-mode="listen">
+
+                <span class="side-icon">
+                    &#127911;
+                </span>
+
+                <span>
+                    <strong>
+                        Lyssna &amp; skriv
+                    </strong>
+
+                    <small>
+                        H&ouml;r ordet och skriv
+                    </small>
+                </span>
+
+            </button>
+
+
+            <button class="word-mode-button"
+                    data-word-mode="learn">
+
+                <span class="side-icon">
+                    &#128214;
+                </span>
+
+                <span>
+                    <strong>
+                        L&auml;r ordet
+                    </strong>
+
+                    <small>
+                        Betydelse och exempel
+                    </small>
+                </span>
+
+            </button>
+
+
+            <button class="word-mode-button"
+                    data-word-mode="fill">
+
+                <span class="side-icon">
+                    &#129513;
+                </span>
+
+                <span>
+                    <strong>
+                        Fyll i ordet
+                    </strong>
+
+                    <small>
+                        F&ouml;rst&aring; sammanhanget
+                    </small>
+                </span>
+
+            </button>
+
+
+            <button class="word-mode-button"
+                    data-word-mode="own">
+
+                <span class="side-icon">
+                    &#9997;&#65039;
+                </span>
+
+                <span>
+                    <strong>
+                        Egen mening
+                    </strong>
+
+                    <small>
+                        Anv&auml;nd ordet sj&auml;lv
+                    </small>
+                </span>
+
+            </button>
+
+
+            <div class="word-bank-info">
+
+                <span>
+                    ORDBANK
+                </span>
+
+                <strong id="wordBankCount">
+                    Laddar...
+                </strong>
+
+                <small>
+                    Orden visas utan on&ouml;dig repetition.
+                </small>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+</body>
+</html>

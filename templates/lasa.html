@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>L&auml;sa | MikalLearn</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css">
+
+    <script
+        src="/static/app.js"
+        defer>
+    </script>
+
+    <script
+        src="/static/reading-v3.js"
+        defer>
+    </script>
+
+</head>
+
+
+<body class="study-page">
+
+<div class="container">
+
+
+    <a
+        href="/"
+        class="back">
+        &larr; Tillbaka
+    </a>
+
+
+    <p class="small">
+        SVENSKA &bull; L&Auml;SA
+    </p>
+
+
+    <h1>
+        L&auml;s &amp; f&ouml;rst&aring; &#128214;
+    </h1>
+
+
+    <p class="subtitle">
+        V&auml;lj niv&aring;, l&auml;s texten och svara med dina egna ord.
+    </p>
+
+
+
+    <!-- ==================================================
+         NIVÅ
+    =================================================== -->
+
+    <section class="reading-level-card-v3">
+
+
+        <div class="reading-level-heading-v3">
+
+            <div>
+
+                <p class="practice-label">
+                    V&Auml;LJ NIV&Aring;
+                </p>
+
+                <h2>
+                    Hur sv&aring;r ska texten vara?
+                </h2>
+
+                <p>
+                    B&ouml;rja enkelt och h&ouml;j niv&aring;n n&auml;r det k&auml;nns l&auml;ttare.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="reading-level-options-v3">
+
+
+            <button
+                type="button"
+                class="reading-level-option-v3 active"
+                data-reading-level="easy">
+
+                <span class="reading-level-number-v3">
+                    1
+                </span>
+
+                <span class="reading-level-info-v3">
+
+                    <strong>
+                        L&auml;tt
+                    </strong>
+
+                    <small>
+                        Enkla ord och korta meningar
+                    </small>
+
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="reading-level-option-v3"
+                data-reading-level="medium">
+
+                <span class="reading-level-number-v3">
+                    2
+                </span>
+
+                <span class="reading-level-info-v3">
+
+                    <strong>
+                        Mellan
+                    </strong>
+
+                    <small>
+                        Lite l&auml;ngre och mer att t&auml;nka p&aring;
+                    </small>
+
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="reading-level-option-v3"
+                data-reading-level="hard">
+
+                <span class="reading-level-number-v3">
+                    3
+                </span>
+
+                <span class="reading-level-info-v3">
+
+                    <strong>
+                        Sv&aring;r
+                    </strong>
+
+                    <small>
+                        Mer utvecklande texter och fr&aring;gor
+                    </small>
+
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <div class="reading-create-row-v3">
+
+
+            <div>
+
+                <span>
+                    VALD NIV&Aring;
+                </span>
+
+                <strong id="selectedReadingLevel">
+                    L&auml;tt
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="reading-create-button-v3"
+                id="createReadingV3">
+
+                Skapa text + fr&aring;gor &rarr;
+
+            </button>
+
+
+        </div>
+
+
+        <div
+            class="reading-loading-v3"
+            id="readingLoadingV3">
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TEXT + FRÅGOR
+    =================================================== -->
+
+    <section
+        class="reading-practice reading-v3-area hidden"
+        id="readingAreaV3">
+
+
+        <div class="reading-header">
+
+
+            <div>
+
+                <p class="practice-label">
+                    TEXT
+                </p>
+
+                <h2 id="readingTitleV3">
+                    ...
+                </h2>
+
+            </div>
+
+
+            <span
+                class="reading-level-badge-v3"
+                id="readingLevelBadgeV3">
+
+                L&Auml;TT
+
+            </span>
+
+
+        </div>
+
+
+
+        <div
+            class="reading-text reading-text-compact reading-text-v3"
+            id="readingTextV3">
+        </div>
+
+
+
+        <div class="reading-divider">
+        </div>
+
+
+
+        <div class="reading-question-header">
+
+
+            <div class="reading-question-title-row-v3">
+
+                <div>
+
+                    <p class="practice-label">
+                        FR&Aring;GOR
+                    </p>
+
+                    <h2>
+                        Vad f&ouml;rstod du?
+                    </h2>
+
+                </div>
+
+
+                <span
+                    class="reading-question-count-v3"
+                    id="readingQuestionCountV3">
+
+                    0 fr&aring;gor
+
+                </span>
+
+
+            </div>
+
+
+            <p>
+                Svara med dina egna ord. Du beh&ouml;ver inte skriva exakt som i texten.
+            </p>
+
+
+        </div>
+
+
+
+        <div
+            class="open-questions"
+            id="readingQuestionsV3">
+        </div>
+
+
+
+        <div class="reading-actions-v3">
+
+
+            <button
+                type="button"
+                class="check-button"
+                id="checkReadingV3">
+
+                &#10003; R&auml;tta svaren
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="new-reading-button"
+                id="newReadingV3">
+
+                &#8635; Ny text + nya fr&aring;gor
+
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            class="reading-overall-result-v3"
+            id="readingOverallV3">
+        </div>
+
+
+    </section>
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,4783 @@
+[
+  {
+    "word": "hus",
+    "meaning": "En byggnad där man kan bo eller vara",
+    "example": "Vi bor i ett stort hus.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "mat",
+    "meaning": "Det man äter",
+    "example": "Vi lagar mat tillsammans varje kväll.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "vän",
+    "meaning": "En person man tycker om och umgås med",
+    "example": "Min vän kommer på besök idag.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "skola",
+    "meaning": "En plats där man lär sig saker",
+    "example": "Jag går till skolan varje dag.",
+    "level": 1,
+    "category": "skola"
+  },
+  {
+    "word": "bok",
+    "meaning": "Något man läser med text i",
+    "example": "Hon läser en bok varje kväll.",
+    "level": 1,
+    "category": "skola"
+  },
+  {
+    "word": "vatten",
+    "meaning": "En vätska man dricker och simmar i",
+    "example": "Jag dricker vatten när jag är törstig.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "glad",
+    "meaning": "Att känna sig lycklig",
+    "example": "Barnet blev glad över presenten.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "springa",
+    "meaning": "Att röra sig snabbt med benen",
+    "example": "Han springer varje morgon i parken.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "dag",
+    "meaning": "Tiden från morgon till kväll",
+    "example": "Idag är en fin dag.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "stor",
+    "meaning": "Något som har mycket storlek",
+    "example": "Elefanten är ett stort djur.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "prata",
+    "meaning": "Att tala med någon",
+    "example": "Vi pratar om vädret.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "arbeta",
+    "meaning": "Att göra ett jobb",
+    "example": "Min mamma arbetar på ett sjukhus.",
+    "level": 1,
+    "category": "arbete"
+  },
+  {
+    "word": "lärare",
+    "meaning": "En person som undervisar i skolan",
+    "example": "Läraren förklarar uppgiften för klassen.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "uppgift",
+    "meaning": "Något man ska göra eller lösa",
+    "example": "Vi fick en svår uppgift i matte.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "familj",
+    "meaning": "Föräldrar, barn och släktingar man hör ihop med",
+    "example": "Hela familjen samlades på julafton.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "regel",
+    "meaning": "Något man måste följa",
+    "example": "Det finns regler man måste följa i skolan.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "miljö",
+    "meaning": "Naturen och platsen omkring oss",
+    "example": "Vi måste ta hand om miljön.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "besviken",
+    "meaning": "Att känna sig ledsen när något inte blev bra",
+    "example": "Han blev besviken när matchen blev inställd.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "undersöka",
+    "meaning": "Att titta noga på något för att lära sig mer",
+    "example": "Forskare undersöker hur djur lever.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "framtid",
+    "meaning": "Tiden som kommer efter nu",
+    "example": "Jag tänker mycket på framtiden.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "tydlig",
+    "meaning": "Lätt att förstå",
+    "example": "Läraren gav tydliga instruktioner.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "samarbeta",
+    "meaning": "Att jobba tillsammans med andra",
+    "example": "Eleverna samarbetade om projektet.",
+    "level": 2,
+    "category": "arbete"
+  },
+  {
+    "word": "invånare",
+    "meaning": "En person som bor på en plats",
+    "example": "Staden har många invånare.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "klimat",
+    "meaning": "Vädret på en plats under lång tid",
+    "example": "Klimatet förändras på jorden.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "jämföra",
+    "meaning": "Att se skillnader och likheter mellan saker",
+    "example": "Vi ska jämföra två olika texter.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "påverka",
+    "meaning": "Att ha effekt på något",
+    "example": "Vädret kan påverka vårt humör.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "anledning",
+    "meaning": "Orsaken till att något händer",
+    "example": "Vad är anledningen till att du kom sent?",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "beskriva",
+    "meaning": "Att berätta hur något ser ut eller är",
+    "example": "Kan du beskriva din bästa vän?",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "resurs",
+    "meaning": "Något som är nyttigt och kan användas",
+    "example": "Vatten är en viktig resurs för alla länder.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "befolkning",
+    "meaning": "Alla människor som bor i ett land eller område",
+    "example": "Sveriges befolkning ökar varje år.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "upplevelse",
+    "meaning": "Något man varit med om",
+    "example": "Resan blev en fin upplevelse för hela familjen.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "orsak",
+    "meaning": "Det som gör att något händer",
+    "example": "Vad var orsaken till bråket?",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "metod",
+    "meaning": "Ett sätt att göra något",
+    "example": "Läraren visade en ny metod att räkna.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "omgivning",
+    "meaning": "Platsen och sakerna runt omkring en",
+    "example": "Han känner sin omgivning väl.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "situation",
+    "meaning": "Ett läge eller en händelse just nu",
+    "example": "Det var en svår situation för alla.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "tolka",
+    "meaning": "Att förstå betydelsen av något",
+    "example": "Vi ska tolka dikten tillsammans.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "utveckla",
+    "meaning": "Att göra något bättre eller större över tid",
+    "example": "Företaget vill utveckla en ny produkt.",
+    "level": 3,
+    "category": "arbete"
+  },
+  {
+    "word": "princip",
+    "meaning": "En grundläggande regel eller idé",
+    "example": "Han lever efter en enkel princip.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "resultat",
+    "meaning": "Det som blir efter att man gjort något",
+    "example": "Resultatet av provet blev bra.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "granska",
+    "meaning": "Att titta noggrant på något för att kontrollera det",
+    "example": "Läraren granskade elevernas texter.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "konsekvens",
+    "meaning": "Det som händer som följd av något",
+    "example": "Att skolka kan få konsekvenser.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "slutsats",
+    "meaning": "Det man kommer fram till efter att ha tänkt",
+    "example": "Efter undersökningen drog forskarna en slutsats.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "förutsättning",
+    "meaning": "Något som måste finnas för att något ska kunna hända",
+    "example": "Bra sömn är en förutsättning för att lära sig bra.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "utveckling",
+    "meaning": "En process där något förändras och blir mer avancerat",
+    "example": "Teknikens utveckling går snabbt.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "perspektiv",
+    "meaning": "Ett sätt att se på en sak",
+    "example": "Vi måste se på problemet ur olika perspektiv.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "argument",
+    "meaning": "Ett skäl man ger för att stödja en åsikt",
+    "example": "Hon hade ett starkt argument i debatten.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "struktur",
+    "meaning": "Hur något är uppbyggt eller ordnat",
+    "example": "Texten hade en tydlig struktur.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "process",
+    "meaning": "En serie händelser som leder till ett resultat",
+    "example": "Att lära sig ett nytt språk är en lång process.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "faktor",
+    "meaning": "Något som påverkar ett resultat",
+    "example": "Vädret är en viktig faktor för skörden.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "analysera",
+    "meaning": "Att undersöka något noga i olika delar",
+    "example": "Vi ska analysera texten i grupp.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "identitet",
+    "meaning": "Den man är som person",
+    "example": "Hennes identitet formades av hennes uppväxt.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "jämlikhet",
+    "meaning": "Att alla har samma rättigheter och värde",
+    "example": "Jämlikhet är viktigt i ett bra samhälle.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "debatt",
+    "meaning": "En diskussion där man argumenterar för olika åsikter",
+    "example": "Det blev en het debatt i klassen.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "kritisk",
+    "meaning": "Att granska något noga och ifrågasätta",
+    "example": "Man ska vara kritisk till källor på internet.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "påstående",
+    "meaning": "Något man säger som en sanning eller åsikt",
+    "example": "Hon gjorde ett påstående utan bevis.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "omfattande",
+    "meaning": "Något som är stort och täcker mycket",
+    "example": "Boken innehöll en omfattande beskrivning av ämnet.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "påfrestning",
+    "meaning": "Något som är jobbigt och tar mycket kraft",
+    "example": "Provperioden var en stor påfrestning för eleverna.",
+    "level": 4,
+    "category": "känslor"
+  },
+  {
+    "word": "källa",
+    "meaning": "Platsen eller texten där information kommer ifrån",
+    "example": "Man måste ange sin källa i en rapport.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "samband",
+    "meaning": "En koppling mellan två eller flera saker",
+    "example": "Det finns ett samband mellan träning och hälsa.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "fenomen",
+    "meaning": "Något som händer och som man kan iaktta",
+    "example": "Norrsken är ett vackert naturfenomen.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "komplex",
+    "meaning": "Något som är svårt och har många delar",
+    "example": "Problemet var mer komplext än vi trodde.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "objektiv",
+    "meaning": "Att inte vara påverkad av egna åsikter",
+    "example": "En journalist ska försöka vara objektiv.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "subjektiv",
+    "meaning": "Något som är påverkat av personliga åsikter",
+    "example": "Recensionen var mycket subjektiv.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "hypotes",
+    "meaning": "En idé man tror kan vara sann men inte bevisat",
+    "example": "Forskarna testade sin hypotes i experimentet.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "kriterium",
+    "meaning": "Ett villkor som måste uppfyllas",
+    "example": "Ett kriterium för godkänt betyg är närvaro.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "relevant",
+    "meaning": "Något som är viktigt för sammanhanget",
+    "example": "Informationen var inte relevant för uppgiften.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "generalisera",
+    "meaning": "Att dra en allmän slutsats från få exempel",
+    "example": "Man ska inte generalisera utifrån en enda händelse.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "ideologi",
+    "meaning": "Ett system av idéer och åsikter om samhället",
+    "example": "Partiet byggde sin politik på en tydlig ideologi.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "globalisering",
+    "meaning": "När länder blir mer beroende av varandra i världen",
+    "example": "Globaliseringen har förändrat handeln mellan länder.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "ekosystem",
+    "meaning": "Ett system där djur, växter och natur samverkar",
+    "example": "Skogen är ett viktigt ekosystem.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "integration",
+    "meaning": "När människor från olika grupper lever tillsammans i samhället",
+    "example": "Integration är viktig för ett fungerande samhälle.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "diskrimination",
+    "meaning": "När någon behandlas orättvist på grund av vem de är",
+    "example": "Diskriminering är förbjudet enligt lagen.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "empati",
+    "meaning": "Att förstå och känna med andra människor",
+    "example": "Hon visade stor empati för sina vänner.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "motivation",
+    "meaning": "Viljan och lusten att göra något",
+    "example": "Han hade hög motivation inför tävlingen.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "koncentration",
+    "meaning": "Att fokusera helt på en sak",
+    "example": "Provet krävde full koncentration.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "kompromiss",
+    "meaning": "En lösning där båda parter ger med sig lite",
+    "example": "De hittade en kompromiss efter diskussionen.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "variation",
+    "meaning": "Skillnader eller växlingar mellan saker",
+    "example": "Det finns stor variation i vädret under året.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "dominera",
+    "meaning": "Att vara starkast eller ha mest makt",
+    "example": "Laget dominerade matchen från start.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "effektiv",
+    "meaning": "Att göra något bra och snabbt utan att slösa",
+    "example": "Hon jobbar på ett effektivt sätt.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "ansvar",
+    "meaning": "Skyldigheten att sköta något ordentligt",
+    "example": "Alla har ansvar för att hålla klassrummet rent.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "rättighet",
+    "meaning": "Något man har rätt till enligt lagen",
+    "example": "Alla barn har rätt till utbildning.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "skyldighet",
+    "meaning": "Något man måste göra enligt lag eller regel",
+    "example": "Att betala skatt är en skyldighet.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "demokrati",
+    "meaning": "Ett styre där folket får rösta och bestämma",
+    "example": "Sverige är en demokrati.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "ekonomi",
+    "meaning": "Hur pengar och resurser hanteras i samhället",
+    "example": "Landets ekonomi växte förra året.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "kultur",
+    "meaning": "Traditioner, konst och sätt att leva i en grupp",
+    "example": "Sverige har en rik kultur med många traditioner.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "tradition",
+    "meaning": "Något som gjorts på samma sätt länge",
+    "example": "Att fira midsommar är en svensk tradition.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "energi",
+    "meaning": "Kraft som gör att saker kan fungera eller röra sig",
+    "example": "Solen ger jorden energi.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "näring",
+    "meaning": "Ämnen i mat som kroppen behöver",
+    "example": "Frukt innehåller mycket näring.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "organism",
+    "meaning": "En levande varelse",
+    "example": "En bakterie är en mycket liten organism.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "cell",
+    "meaning": "Den minsta delen i en levande kropp",
+    "example": "Alla levande varelser är uppbyggda av celler.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "experiment",
+    "meaning": "En vetenskaplig undersökning för att testa en idé",
+    "example": "Vi gjorde ett experiment i naturkunskap.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "observation",
+    "meaning": "Att titta noga och lägga märke till något",
+    "example": "Forskaren gjorde en observation av djurens beteende.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "teori",
+    "meaning": "En förklaring som bygger på tankar och kunskap",
+    "example": "Han presenterade en ny teori om universum.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "berätta",
+    "meaning": "Att säga något till någon i form av en historia eller information",
+    "example": "Kan du berätta vad som hände igår?",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "lyssna",
+    "meaning": "Att lägga märke till ljud eller vad någon säger",
+    "example": "Barnen lyssnade noga på läraren.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "besluta",
+    "meaning": "Att bestämma sig för något",
+    "example": "Klassen beslutade att åka på utflykt.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "delta",
+    "meaning": "Att vara med i något tillsammans med andra",
+    "example": "Alla elever fick delta i tävlingen.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "förklara",
+    "meaning": "Att göra något tydligt och lätt att förstå",
+    "example": "Läraren förklarade regeln igen.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "värdera",
+    "meaning": "Att bedöma hur bra eller viktig något är",
+    "example": "Vi ska värdera olika lösningar på problemet.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "trygg",
+    "meaning": "Man känner sig säker och lugn, inget farligt kan hända",
+    "example": "Hon känner sig trygg när mamma är hemma.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "vänta",
+    "meaning": "Att stå still eller sitta kvar tills något händer",
+    "example": "Vi måste vänta på bussen.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "hjälpa",
+    "meaning": "Att göra något bra för en annan person",
+    "example": "Kan du hjälpa mig med läxan?",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "tillfälle",
+    "meaning": "En bra stund eller möjlighet att göra något",
+    "example": "Det var ett bra tillfälle att öva svenska.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "ordning",
+    "meaning": "När allt är på rätt plats och fungerar bra",
+    "example": "Läraren bad eleverna hålla ordning på bänken.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "beteende",
+    "meaning": "Hur en person agerar eller uppför sig",
+    "example": "Hans beteende i klassen var mycket lugnt.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "gemenskap",
+    "meaning": "När människor känner samhörighet och gör saker tillsammans",
+    "example": "Klassen kände en stark gemenskap efter resan.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "betydelse",
+    "meaning": "Hur viktigt något är eller vad det innebär",
+    "example": "Ordets betydelse var svår att förstå.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "sammanhang",
+    "meaning": "Hur olika saker hör ihop med varandra",
+    "example": "Man måste förstå sammanhanget för att förstå texten.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "villkor",
+    "meaning": "Regler eller saker som måste vara sanna för att något ska fungera",
+    "example": "Ett villkor för att få gå ut var att göra läxan.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "medveten",
+    "meaning": "Att man vet och förstår vad som händer",
+    "example": "Hon var medveten om att provet var svårt.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omständighet",
+    "meaning": "En sak eller situation som påverkar vad som händer",
+    "example": "På grund av vädrets omständigheter blev utflykten inställd.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "innebörd",
+    "meaning": "Vad något egentligen betyder eller menar",
+    "example": "Läraren förklarade textens innebörd för klassen.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "framställa",
+    "meaning": "Att visa eller berätta något på ett visst sätt",
+    "example": "Boken framställer historien ur flera perspektiv.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "utgångspunkt",
+    "meaning": "Det man börjar från när man tänker eller skriver om något",
+    "example": "Hennes utgångspunkt var att alla har rätt till utbildning.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "förhållande",
+    "meaning": "Hur något är kopplat till eller relaterat till något annat",
+    "example": "Det finns ett tydligt förhållande mellan träning och hälsa.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "tillstånd",
+    "meaning": "Hur något eller någon mår eller ser ut just nu",
+    "example": "Naturens tillstånd blir sämre om vi inte tar hand om den.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "omfatta",
+    "meaning": "Att inkludera eller innehålla flera saker",
+    "example": "Kursen omfattar både historia och samhällskunskap.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "principiell",
+    "meaning": "Något som handlar om grundläggande regler eller idéer",
+    "example": "Det var en principiell fråga om rättvisa.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "nyansera",
+    "meaning": "Att göra något mer detaljerat och inte bara svart eller vitt",
+    "example": "Läraren bad eleverna nyansera sina argument.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "konkret",
+    "meaning": "Något tydligt och verkligt, inte bara en idé",
+    "example": "Ge ett konkret exempel på din åsikt.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "abstrakt",
+    "meaning": "Något som är svårt att ta på, en idé snarare än en sak",
+    "example": "Kärlek är ett abstrakt begrepp.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "varierande",
+    "meaning": "Något som ändras eller är olika vid olika tillfällen",
+    "example": "Vädret var varierande under hela veckan.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "gynna",
+    "meaning": "Att göra det lättare eller bättre för något eller någon",
+    "example": "Regnet gynnar växterna på sommaren.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "underlätta",
+    "meaning": "Att göra något lättare att göra",
+    "example": "Datorn underlättar arbetet i skolan.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "sträva",
+    "meaning": "att försöka nå ett mål med stor ansträngning",
+    "example": "Hon strävar efter att bli bättre i matte.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "hinder",
+    "meaning": "något som gör det svårt att göra något",
+    "example": "Regnet var ett hinder för utflykten.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "uppfatta",
+    "meaning": "att förstå eller lägga märke till något",
+    "example": "Jag uppfattade inte vad läraren sa.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "tillägga",
+    "meaning": "att lägga till något mer",
+    "example": "Han tillade en kommentar till sin uppsats.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "framgång",
+    "meaning": "när något lyckas bra",
+    "example": "Tävlingen slutade med stor framgång för laget.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "misslyckas",
+    "meaning": "att inte lyckas med något",
+    "example": "Han misslyckades med sitt första försök.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "avsikt",
+    "meaning": "det man planerar eller vill göra",
+    "example": "Hennes avsikt var att hjälpa klassen.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "innehåll",
+    "meaning": "det som finns inuti eller ingår i något",
+    "example": "Boken hade ett spännande innehåll.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "sammanfatta",
+    "meaning": "att kort berätta det viktigaste av något",
+    "example": "Kan du sammanfatta texten i tre meningar?",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "bidra",
+    "meaning": "att hjälpa till att göra något möjligt",
+    "example": "Alla elever bidrog till projektet.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "medlem",
+    "meaning": "en person som är del av en grupp",
+    "example": "Hon är medlem i skolans idrottsklubb.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "organisation",
+    "meaning": "en grupp som är ordnad för att arbeta mot ett mål",
+    "example": "Röda Korset är en känd organisation.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "lagstiftning",
+    "meaning": "de lagar som ett land eller samhälle har",
+    "example": "Ny lagstiftning infördes för att skydda miljön.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "utrota",
+    "meaning": "att göra så att något helt försvinner",
+    "example": "Man försöker utrota vissa sjukdomar.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "art",
+    "meaning": "en grupp av djur eller växter som liknar varandra",
+    "example": "Denna art av fjäril finns bara i Sverige.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "livsmiljö",
+    "meaning": "platsen där djur och växter lever",
+    "example": "Skogen är livsmiljön för många djur.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "förbruka",
+    "meaning": "att använda upp något",
+    "example": "Familjen förbrukar mycket el på vintern.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "hushålla",
+    "meaning": "att använda saker sparsamt och smart",
+    "example": "Vi måste hushålla med vattnet under torkan.",
+    "level": 4,
+    "category": "vardag"
+  },
+  {
+    "word": "besvär",
+    "meaning": "problem eller svårighet med något",
+    "example": "Han hade besvär med att förstå uppgiften.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "irritation",
+    "meaning": "en känsla av att bli lätt arg",
+    "example": "Bullret väckte irritation hos grannarna.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "uppskatta",
+    "meaning": "att tycka mycket om något eller värdera det högt",
+    "example": "Jag uppskattar din hjälp verkligen.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "successivt",
+    "meaning": "steg för steg, lite i taget",
+    "example": "Kunskaperna ökade successivt under terminen.",
+    "level": 5,
+    "category": "tid"
+  },
+  {
+    "word": "avgörande",
+    "meaning": "väldigt viktigt för hur något slutar",
+    "example": "Det sista provet var avgörande för betyget.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "kompetens",
+    "meaning": "kunskap och förmåga att göra något bra",
+    "example": "Läraren har stor kompetens inom naturvetenskap.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "bevis",
+    "meaning": "Något som visar att en sak är sant eller riktigt",
+    "example": "Hon lade fram bevis för att stödja sin teori.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "tillväxt",
+    "meaning": "När något blir större eller ökar",
+    "example": "Landets ekonomiska tillväxt var stark förra året.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "undvika",
+    "meaning": "Att inte göra eller inte träffa på något",
+    "example": "Han försökte undvika konflikter med sina klasskamrater.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "påpeka",
+    "meaning": "Att säga något viktigt för att uppmärksamma det",
+    "example": "Läraren påpekade att uppgiften måste lämnas in i tid.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "tillfällig",
+    "meaning": "Något som bara varar en kort tid",
+    "example": "Det var en tillfällig lösning på problemet.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "vardaglig",
+    "meaning": "Något som händer varje dag, vanligt",
+    "example": "Att laga mat är en vardaglig syssla för många.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "tillgång",
+    "meaning": "Att ha möjlighet att använda eller nå något",
+    "example": "Alla elever har tillgång till skolans bibliotek.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "omedelbart",
+    "meaning": "Genast, direkt utan att vänta",
+    "example": "Hon svarade omedelbart på frågan.",
+    "level": 3,
+    "category": "tid"
+  },
+  {
+    "word": "utmaning",
+    "meaning": "Något svårt som man måste kämpa för att klara",
+    "example": "Att lära sig ett nytt språk är en stor utmaning.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "engagemang",
+    "meaning": "Att bry sig mycket om något och vara aktiv",
+    "example": "Hans engagemang i klassrådet var tydligt för alla.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "jämvikt",
+    "meaning": "Ett tillstånd där olika saker balanserar varandra",
+    "example": "Naturen strävar efter en jämvikt mellan olika arter.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "härkomst",
+    "meaning": "Var någon eller något kommer ifrån ursprungligen",
+    "example": "Hennes familjs härkomst går tillbaka flera generationer.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "motverka",
+    "meaning": "Att göra något för att stoppa eller minska en sak",
+    "example": "Skolan arbetar för att motverka mobbning.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "anpassa",
+    "meaning": "Att ändra något så att det passar bättre",
+    "example": "Läraren anpassade uppgiften efter elevernas nivå.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "uppfattning",
+    "meaning": "Ens egen åsikt eller sätt att se på något",
+    "example": "Alla i klassen hade olika uppfattningar om filmen.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "framträda",
+    "meaning": "Att synas eller visa sig tydligt",
+    "example": "Problemet framträdde tydligt när de granskade resultaten.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "omständlig",
+    "meaning": "Något som tar lång tid och är krångligt",
+    "example": "Processen för att ansöka var lång och omständlig.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "tillräcklig",
+    "meaning": "Precis så mycket som behövs, inte mer eller mindre",
+    "example": "Hon hade inte tillräcklig tid för att slutföra provet.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "betrakta",
+    "meaning": "Att titta på eller tänka på något noga",
+    "example": "Forskarna betraktade resultaten från flera olika vinklar.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "åtgärd",
+    "meaning": "Något man gör för att lösa ett problem",
+    "example": "Regeringen vidtog åtgärder för att minska föroreningarna.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "rimlig",
+    "meaning": "Något som verkar riktigt och logiskt",
+    "example": "Hans förklaring lät rimlig för alla i gruppen.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "framhäva",
+    "meaning": "Att tydligt visa eller betona något viktigt",
+    "example": "Talaren framhävde vikten av samarbete i sitt tal.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "stabil",
+    "meaning": "Något som håller sig stadigt och inte förändras lätt",
+    "example": "Ekonomin i landet var stabil under flera år.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "kärna",
+    "meaning": "Den viktigaste delen av något",
+    "example": "Kärnan i problemet var brist på kommunikation.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "besläktad",
+    "meaning": "Nära kopplad till eller liknande något annat",
+    "example": "De två ämnena är besläktade och hänger ihop.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "händelse",
+    "meaning": "något som sker eller inträffar",
+    "example": "Läraren berättade om en viktig händelse i historien.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "föremål",
+    "meaning": "en sak eller ett objekt",
+    "example": "Vi hittade ett gammalt föremål på museet.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "verksamhet",
+    "meaning": "det man gör på en plats, som ett företag eller en aktivitet",
+    "example": "Skolan har många olika verksamheter efter lektionerna.",
+    "level": 3,
+    "category": "arbete"
+  },
+  {
+    "word": "kontakt",
+    "meaning": "att ha förbindelse eller prata med någon",
+    "example": "Hon tog kontakt med sin gamla vän.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "möjlighet",
+    "meaning": "en chans att göra något",
+    "example": "Det finns en möjlighet att åka på utbytesresa.",
+    "level": 2,
+    "category": "resonemang"
+  },
+  {
+    "word": "riktning",
+    "meaning": "vart något eller någon rör sig",
+    "example": "Vinden ändrade riktning under natten.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "utrymme",
+    "meaning": "plats eller rum för något",
+    "example": "Det finns inte mycket utrymme i klassrummet.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "kapacitet",
+    "meaning": "hur mycket något klarar av eller rymmer",
+    "example": "Fabriken ökade sin kapacitet för att producera mer.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "prioritera",
+    "meaning": "att bestämma vad som är viktigast",
+    "example": "Vi måste prioritera läxorna innan vi går ut.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "reaktion",
+    "meaning": "hur man svarar på något som händer",
+    "example": "Hans reaktion på nyheten var förvåning.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "kvalitet",
+    "meaning": "hur bra något är",
+    "example": "Kläderna hade hög kvalitet och höll länge.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "instruktion",
+    "meaning": "en förklaring om hur man ska göra något",
+    "example": "Läraren gav tydliga instruktioner till uppgiften.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "framsteg",
+    "meaning": "att komma vidare eller bli bättre",
+    "example": "Klassen gjorde stora framsteg i svenska.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "system",
+    "meaning": "flera delar som fungerar tillsammans",
+    "example": "Skolans system för betyg är komplicerat.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "roll",
+    "meaning": "den uppgift eller funktion man har i en grupp",
+    "example": "Alla har en viktig roll i teamet.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "beroende",
+    "meaning": "att behöva något eller påverkas av något",
+    "example": "Resultatet är beroende av hur mycket man övar.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "uppfylla",
+    "meaning": "att göra klart det som krävs",
+    "example": "Hon uppfyllde alla krav för att gå vidare.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "tillgänglig",
+    "meaning": "att man kan använda eller nå något",
+    "example": "Boken finns tillgänglig på biblioteket.",
+    "level": 4,
+    "category": "vardag"
+  },
+  {
+    "word": "delaktighet",
+    "meaning": "att vara med och påverka något",
+    "example": "Elevernas delaktighet i beslut är viktig.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "rättvisa",
+    "meaning": "att alla behandlas lika och schysst",
+    "example": "Läraren pratade om rättvisa mellan elever.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "sammanhållning",
+    "meaning": "när en grupp håller ihop och stödjer varandra",
+    "example": "Klassen visade stark sammanhållning under projektet.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "tolerans",
+    "meaning": "att acceptera att andra tycker eller lever olika",
+    "example": "Skolan lär ut tolerans mot olika åsikter.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "påverkan",
+    "meaning": "hur något förändrar eller styr något annat",
+    "example": "Sociala medier har stor påverkan på ungdomar.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "framställning",
+    "meaning": "sättet man visar eller berättar något",
+    "example": "Hans framställning av händelsen var mycket detaljerad.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "vardag",
+    "meaning": "de vanliga dagarna, inte helg eller semester",
+    "example": "Hon cyklar till jobbet varje vardag.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "kompis",
+    "meaning": "en person man tycker om och umgås med",
+    "example": "Jag ska träffa en kompis efter skolan.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "lugn",
+    "meaning": "inte stressad eller orolig",
+    "example": "Han kände sig lugn innan provet.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "snabb",
+    "meaning": "som går fort",
+    "example": "Hunden är väldigt snabb när den springer.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "ämne",
+    "meaning": "det man pratar eller skriver om, till exempel ett skolämne",
+    "example": "Matematik är hennes favoritämne.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "planera",
+    "meaning": "tänka ut hur något ska göras innan man gör det",
+    "example": "Vi behöver planera helgen tillsammans.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "nöjd",
+    "meaning": "glad över hur något blev",
+    "example": "Läraren var nöjd med elevernas arbete.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "samhälle",
+    "meaning": "alla människor som lever tillsammans i ett land eller område",
+    "example": "Skolan lär oss hur samhället fungerar.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "påstå",
+    "meaning": "säga att något är sant utan att bevisa det",
+    "example": "Han påstår att han har rätt svar.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "exempel",
+    "meaning": "något som visar hur en sak fungerar eller ser ut",
+    "example": "Läraren gav ett exempel på hur man löser uppgiften.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "möjlig",
+    "meaning": "något som kan hända eller gå att göra",
+    "example": "Det är möjligt att vi vinner matchen.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "betydelsefull",
+    "meaning": "viktig, har stor mening",
+    "example": "Det var ett betydelsefullt möte för hela klassen.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tillämpa",
+    "meaning": "använda något i praktiken, till exempel en regel eller metod",
+    "example": "Eleverna fick tillämpa formeln i uppgiften.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "nyans",
+    "meaning": "en liten skillnad eller variant av något",
+    "example": "Det finns många nyanser av grönt i skogen.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "belysa",
+    "meaning": "visa eller förklara något tydligt",
+    "example": "",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "integrera",
+    "meaning": "göra så att olika delar blir en helhet",
+    "example": "Skolan försöker integrera nya elever i klassen.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "kontext",
+    "meaning": "det sammanhang som något händer i",
+    "example": "Man måste läsa hela texten för att förstå kontexten.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "paradox",
+    "meaning": "något som verkar motsägelsefullt men ändå är sant",
+    "example": "Det är en paradox att man kan känna sig ensam bland många människor.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "höst",
+    "meaning": "En årstid efter sommaren, när löven faller",
+    "example": "På hösten blir det kallare och mörkare ute.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "kall",
+    "meaning": "Har låg temperatur",
+    "example": "Det var kallt ute i morse.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "öppna",
+    "meaning": "Att göra något som var stängt tillgängligt",
+    "example": "Kan du öppna fönstret?",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "rädd",
+    "meaning": "Att känna oro eller fara",
+    "example": "Hon blev rädd när hon hörde ljudet.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "plats",
+    "meaning": "Ett ställe där något finns eller händer",
+    "example": "Vi hittade en bra plats att sitta på.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "stad",
+    "meaning": "En större bebyggelse där många människor bor",
+    "example": "Stockholm är en stor stad i Sverige.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "djur",
+    "meaning": "En levande varelse som inte är människa eller växt",
+    "example": "Vi såg många olika djur på zoo.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "pengar",
+    "meaning": "Det man använder för att köpa saker",
+    "example": "Han sparade pengar för att köpa en cykel.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "varning",
+    "meaning": "Ett meddelande om att fara kan komma",
+    "example": "Det kom en varning om dåligt väder.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "skada",
+    "meaning": "Att göra något dåligt mot något eller någon",
+    "example": "Stormen orsakade stor skada på husen.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "bevara",
+    "meaning": "Att se till att något inte försvinner eller förändras",
+    "example": "Vi måste bevara naturen för framtiden.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "medborgare",
+    "meaning": "En person som tillhör ett land och har rättigheter där",
+    "example": "Alla medborgare får rösta i valet.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "reflektera",
+    "meaning": "Att tänka noga på något",
+    "example": "Läraren bad oss reflektera över texten.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "fördel",
+    "meaning": "Något som gör en situation bättre för någon",
+    "example": "Det är en fördel att kunna flera språk.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "funktion",
+    "meaning": "Vad något gör eller används till",
+    "example": "Hjärtat har en viktig funktion i kroppen.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "omfattning",
+    "meaning": "Hur stor eller liten en sak är",
+    "example": "Skadans omfattning var större än vi trodde.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "institution",
+    "meaning": "En organisation som sköter viktiga samhällsuppgifter",
+    "example": "Skolan är en viktig institution i samhället.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "kretslopp",
+    "meaning": "En process som upprepas i en cirkel i naturen",
+    "example": "Vattnets kretslopp handlar om regn och avdunstning.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "nödvändig",
+    "meaning": "Något som man verkligen måste ha eller göra",
+    "example": "Vatten är nödvändigt för allt liv.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "gestaltning",
+    "meaning": "Hur något visas eller framställs, till exempel i en text",
+    "example": "Författarens gestaltning av karaktären var mycket levande.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "marginalisering",
+    "meaning": "Att en grupp hamnar utanför samhället och får mindre makt",
+    "example": "Många forskare studerar marginalisering av utsatta grupper.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "trivsel",
+    "meaning": "Att man mår bra och känner sig glad på en plats",
+    "example": "Trivseln i klassen blev bättre när alla var vänliga mot varandra.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "kompisrelation",
+    "meaning": "Hur bra man kommer överens med sina vänner",
+    "example": "Hon jobbade på sin kompisrelation genom att lyssna mer.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "schema",
+    "meaning": "En plan som visar vad man ska göra och när",
+    "example": "Vi tittade på schemat för att se när matten börjar.",
+    "level": 1,
+    "category": "skola"
+  },
+  {
+    "word": "begrepp",
+    "meaning": "Ett ord eller en idé som beskriver något",
+    "example": "Läraren förklarade ett nytt begrepp i biologin.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "riksdag",
+    "meaning": "Den plats där Sveriges politiker bestämmer lagar",
+    "example": "Riksdagen röstade om en ny lag förra veckan.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "naturtillgång",
+    "meaning": "Något naturen ger som människor kan använda, som vatten eller skog",
+    "example": "Skogen är en viktig naturtillgång i Sverige.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "regering",
+    "meaning": "Gruppen som styr ett land",
+    "example": "Regeringen fattade ett viktigt beslut om skolan.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "myndighet",
+    "meaning": "En organisation som staten har för att sköta olika saker",
+    "example": "Skatteverket är en myndighet i Sverige.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "näringskedja",
+    "meaning": "Hur djur och växter äter varandra i naturen",
+    "example": "I näringskedjan äter räven kaninen.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "fotosyntes",
+    "meaning": "Hur växter gör energi av solljus",
+    "example": "Fotosyntesen sker i växternas gröna blad.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "molekyl",
+    "meaning": "En liten del som ämnen är gjorda av",
+    "example": "Vatten består av små molekyler.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "kraft",
+    "meaning": "En styrka som gör att saker rör sig eller ändras",
+    "example": "Gravitationen är en kraft som drar saker mot jorden.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "revolution",
+    "meaning": "En stor och snabb förändring, ofta i samhället",
+    "example": "Franska revolutionen ändrade hur Frankrike styrdes.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "epok",
+    "meaning": "En lång period i historien med särskilda kännetecken",
+    "example": "Medeltiden var en epok med riddare och slott.",
+    "level": 5,
+    "category": "tid"
+  },
+  {
+    "word": "civilisation",
+    "meaning": "Ett samhälle med kultur, lagar och utveckling",
+    "example": "Egyptierna byggde en avancerad civilisation.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "koloni",
+    "meaning": "Ett område som styrs av ett annat land långt bort",
+    "example": "Många länder i Afrika var koloni under lång tid.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "handel",
+    "meaning": "Att köpa och sälja varor mellan människor eller länder",
+    "example": "Sverige har handel med många andra länder.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "budget",
+    "meaning": "En plan för hur man ska använda sina pengar",
+    "example": "Familjen gjorde en budget för sommarens resa.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "inflation",
+    "meaning": "Att priser stiger och pengar blir mindre värda",
+    "example": "Inflationen gjorde att maten blev dyrare.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "atom",
+    "meaning": "Den minsta delen av ett ämne",
+    "example": "Allt runt oss är byggt av atomer.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "organ",
+    "meaning": "En del i kroppen som gör ett speciellt jobb",
+    "example": "Hjärtat är ett organ som pumpar blod.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "reflex",
+    "meaning": "En snabb rörelse kroppen gör utan att man tänker",
+    "example": "Han drog undan handen som en reflex när han brände sig.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "dilemma",
+    "meaning": "En svår situation där man måste välja mellan svåra alternativ",
+    "example": "Hon stod inför ett dilemma om vilken kurs hon skulle välja.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "konflikt",
+    "meaning": "En allvarlig oenighet mellan personer eller grupper",
+    "example": "Konflikten mellan de två länderna varade länge.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "strategi",
+    "meaning": "En plan för hur man ska nå ett mål",
+    "example": "Laget hade en bra strategi för att vinna matchen.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "stimulans",
+    "meaning": "Något som väcker intresse eller känsla",
+    "example": "Musik kan ge en stark stimulans för hjärnan.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "begripa",
+    "meaning": "Att förstå något helt",
+    "example": "Jag begriper inte den här texten.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "skynda",
+    "meaning": "Att göra något snabbt",
+    "example": "Vi måste skynda oss till bussen.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "lugna",
+    "meaning": "Att göra någon mindre orolig",
+    "example": "Hon försökte lugna sin lillebror.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "visa",
+    "meaning": "Att låta någon se något",
+    "example": "Kan du visa mig hur man gör?",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "lektion",
+    "meaning": "En del av skoldagen där man lär sig något",
+    "example": "Nästa lektion är matematik.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "minne",
+    "meaning": "Något man kommer ihåg",
+    "example": "Jag har ett fint minne från sommaren.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "vecka",
+    "meaning": "Sju dagar i rad",
+    "example": "Vi har prov nästa vecka.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "grupp",
+    "meaning": "Flera personer som gör något tillsammans",
+    "example": "Vi arbetar i en grupp på fyra elever.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "förändra",
+    "meaning": "Att göra något annorlunda än förut",
+    "example": "Klimatet kan förändra livet för många djur.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "upptäcka",
+    "meaning": "Att hitta något nytt eller okänt",
+    "example": "Forskare upptäckte en ny art i skogen.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "kritik",
+    "meaning": "Att säga vad som är dåligt eller kan bli bättre",
+    "example": "Läraren gav bra kritik på uppsatsen.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "medverka",
+    "meaning": "Att vara med och hjälpa till i något",
+    "example": "Alla elever fick medverka i projektet.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "innebära",
+    "meaning": "Att betyda något speciellt",
+    "example": "Regeln innebär att man måste lämna in läxan i tid.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "begränsning",
+    "meaning": "Något som gör att man inte kan göra allt man vill",
+    "example": "Det finns en begränsning på hur många böcker man får låna.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "tillämpning",
+    "meaning": "Att använda något i praktiken",
+    "example": "Läraren visade en tillämpning av teorin i verkligheten.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "förbättra",
+    "meaning": "Att göra något bättre",
+    "example": "Vi vill förbättra vårt resultat på nästa prov.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "kompromissa",
+    "meaning": "Att komma överens genom att båda ger med sig lite",
+    "example": "De var oense men lyckades kompromissa till slut.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "perspektivbyte",
+    "meaning": "Att se på något från ett annat håll",
+    "example": "Ett perspektivbyte kan hjälpa oss förstå andras åsikter.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "normkritik",
+    "meaning": "Att ifrågasätta det som anses vara normalt i samhället",
+    "example": "I klassen diskuterade vi normkritik och jämställdhet.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "mångfald",
+    "meaning": "Att det finns många olika typer eller sorter",
+    "example": "Skolan värdesätter mångfald bland eleverna.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "konsekvent",
+    "meaning": "Att alltid göra på samma sätt eller följa samma regler",
+    "example": "Hon är konsekvent med sina åsikter.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "resonera",
+    "meaning": "Att tänka och prata igenom ett problem noggrant",
+    "example": "Vi fick resonera kring orsaker och konsekvenser i historien.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "samverkan",
+    "meaning": "Att flera saker eller personer arbetar tillsammans mot samma mål",
+    "example": "Skolan och föräldrarna hade en bra samverkan.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "faktum",
+    "meaning": "Något som är sant och verkligt, inte en åsikt",
+    "example": "Det är ett faktum att jorden snurrar runt solen.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "märklig",
+    "meaning": "Konstig eller ovanlig",
+    "example": "Det var en märklig känsla när ljuset slocknade plötsligt.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "uttryck",
+    "meaning": "Ett sätt att visa vad man tycker eller känner",
+    "example": "Hennes leende var ett uttryck för glädje.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "tillfredsställa",
+    "meaning": "Göra så att någon blir nöjd",
+    "example": "Maten tillfredsställde alla gästerna på festen.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "organisera",
+    "meaning": "Planera och ordna på ett bra sätt",
+    "example": "Klassen fick organisera en utställning tillsammans.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "period",
+    "meaning": "En viss tid som varar en stund",
+    "example": "Under den perioden regnade det mycket.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "övertyga",
+    "meaning": "Få någon att tro på något genom att förklara bra",
+    "example": "Han försökte övertyga läraren om att uppgiften var klar.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "utforska",
+    "meaning": "Undersöka något nytt för att lära sig mer",
+    "example": "Eleverna fick utforska skogen under lektionen.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "grundlig",
+    "meaning": "Noggrann och ordentlig",
+    "example": "Läraren gjorde en grundlig genomgång av kapitlet.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "iaktta",
+    "meaning": "Titta noga på något för att lägga märke till detaljer",
+    "example": "Forskaren fick iaktta djuren från långt håll.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "stämning",
+    "meaning": "Känslan i en grupp eller på en plats",
+    "example": "Stämningen i klassrummet var lugn och trevlig.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "betydande",
+    "meaning": "Viktig och stor",
+    "example": "Det var en betydande förändring i skolans regler.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "påtaglig",
+    "meaning": "Tydlig och möjlig att märka",
+    "example": "Skillnaden mellan årstiderna var påtaglig.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "befogad",
+    "meaning": "Något som har en god anledning eller är rättvist",
+    "example": "Kritiken mot förslaget var befogad.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "samverka",
+    "meaning": "Arbeta tillsammans mot samma mål",
+    "example": "Skolan och föräldrarna samverkade för elevernas bästa.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "successiv",
+    "meaning": "Som sker steg för steg, lite i taget",
+    "example": "Förändringen skedde successivt under flera år.",
+    "level": 5,
+    "category": "tid"
+  },
+  {
+    "word": "påfallande",
+    "meaning": "Väldigt tydlig och lätt att se",
+    "example": "Skillnaden i resultat var påfallande stor.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "händelseförlopp",
+    "meaning": "ordningen som saker hände i",
+    "example": "Läraren bad oss beskriva händelseförloppet i berättelsen.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "vardagsliv",
+    "meaning": "det vanliga livet varje dag",
+    "example": "Boken handlar om människors vardagsliv för länge sedan.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "kompisgäng",
+    "meaning": "en grupp vänner som umgås",
+    "example": "Hon hänger alltid med sitt kompisgäng på rasten.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "svårighet",
+    "meaning": "något som är jobbigt eller krångligt",
+    "example": "Han hade svårighet med att förstå frågan.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "beslutsam",
+    "meaning": "att bestämt vilja göra något",
+    "example": "Hon var beslutsam och gav inte upp trots motgångar.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "granne",
+    "meaning": "en person som bor nära dig",
+    "example": "Vår granne hjälpte oss bära kartongerna.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "samhällsklass",
+    "meaning": "en grupp människor med liknande ekonomisk ställning",
+    "example": "Under den perioden fanns tydliga samhällsklasser.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "naturkatastrof",
+    "meaning": "en stor olycka som naturen orsakar",
+    "example": "Jordbävningen var en fruktansvärd naturkatastrof.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "oro",
+    "meaning": "en känsla av att vara orolig eller rädd",
+    "example": "Hon kände en stark oro innan provet.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "handling",
+    "meaning": "det man gör, en åtgärd",
+    "example": "Hans handling fick stora konsekvenser för alla.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "tidsperiod",
+    "meaning": "en bestämd tid i historien",
+    "example": "Vi läste om en spännande tidsperiod i historien.",
+    "level": 3,
+    "category": "tid"
+  },
+  {
+    "word": "beskrivande",
+    "meaning": "som förklarar hur något ser ut eller är",
+    "example": "Texten var mycket beskrivande och lätt att förstå.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "underlag",
+    "meaning": "material eller information man använder för att förstå något",
+    "example": "Rapporten byggde på ett gediget underlag av fakta.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "samverkansprojekt",
+    "meaning": "ett projekt där flera samarbetar",
+    "example": "Skolan startade ett samverkansprojekt med kommunen.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "framtidsutsikt",
+    "meaning": "hur man tror att det kommer bli i framtiden",
+    "example": "Ekonomerna diskuterade landets framtidsutsikter.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "ovanlig",
+    "meaning": "som inte händer ofta",
+    "example": "Det var en ovanlig fågel som vi aldrig sett förut.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "möte",
+    "meaning": "när flera personer träffas för att prata om något",
+    "example": "Vi hade ett möte för att planera skolresan.",
+    "level": 1,
+    "category": "arbete"
+  },
+  {
+    "word": "vardagsproblem",
+    "meaning": "ett problem som händer i det vanliga livet",
+    "example": "Boken tar upp många vardagsproblem som familjer möter.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "orsakssamband",
+    "meaning": "kopplingen mellan orsak och det som händer",
+    "example": "Vi diskuterade orsakssambandet mellan rökning och sjukdom.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "praktisk",
+    "meaning": "som fungerar bra i verkligheten",
+    "example": "Hon kom med en praktisk lösning på problemet.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "beteendemönster",
+    "meaning": "ett sätt att bete sig som upprepas",
+    "example": "Forskarna studerade djurens beteendemönster.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "livsvillkor",
+    "meaning": "de förhållanden man lever under",
+    "example": "Många människor har svåra livsvillkor i krigsdrabbade länder.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "samhällsnytta",
+    "meaning": "det som är bra för hela samhället",
+    "example": "Skolan har stor samhällsnytta för framtida generationer.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "påverkansfaktor",
+    "meaning": "något som gör att en förändring sker",
+    "example": "Vädret var en viktig påverkansfaktor för skörden.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "överraska",
+    "meaning": "göra att någon blir förvånad utan att förvänta sig det",
+    "example": "Läraren ville överraska klassen med ett roligt experiment.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "krångla",
+    "meaning": "bli svårt eller inte fungera som det ska",
+    "example": "Datorn började krångla mitt i lektionen.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "härma",
+    "meaning": "göra likadant som någon annan gör",
+    "example": "Han brukar härma sin storebror när han pratar.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "sysselsätta",
+    "meaning": "hålla någon aktiv med en uppgift eller arbete",
+    "example": "Läraren hittade på lekar för att sysselsätta eleverna på rasten.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "gnälla",
+    "meaning": "klaga eller vara missnöjd på ett irriterande sätt",
+    "example": "Sluta gnälla och gör klart läxan istället.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "avstånd",
+    "meaning": "hur långt det är mellan två platser",
+    "example": "Det är ett långt avstånd mellan skolan och affären.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "utforma",
+    "meaning": "planera hur något ska se ut eller göras",
+    "example": "Eleverna fick utforma sin egen presentation om vikingatiden.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "sträcka",
+    "meaning": "avstånd man går, kör eller åker",
+    "example": "Vi cyklade en lång sträcka till stranden.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "förutspå",
+    "meaning": "gissa vad som kommer att hända i framtiden",
+    "example": "Forskare försöker förutspå hur klimatet förändras.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "framkalla",
+    "meaning": "göra att något börjar hända eller uppstår",
+    "example": "Regnet kan framkalla översvämningar i vissa områden.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "instämma",
+    "meaning": "hålla med om det någon säger",
+    "example": "Jag instämmer med din åsikt om boken.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "besitta",
+    "meaning": "ha eller äga en egenskap eller sak",
+    "example": "Hon besitter stor kunskap om historia.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tillsätta",
+    "meaning": "utse eller sätta in någon på en plats eller uppgift",
+    "example": "Skolan ska tillsätta en ny rektor nästa termin.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "härröra",
+    "meaning": "komma ifrån eller ha sitt ursprung i något",
+    "example": "Ordet härrör från ett gammalt latinskt ord.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "vittna",
+    "meaning": "berätta om något man sett eller upplevt, oftast i domstol",
+    "example": "Grannen fick vittna om vad hon sett den kvällen.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "avvika",
+    "meaning": "vara annorlunda från det vanliga eller väntade",
+    "example": "Hans svar avvek helt från de andras.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tillskriva",
+    "meaning": "anse att något beror på en viss person eller orsak",
+    "example": "Historiker tillskriver uppfinningen till en okänd forskare.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "vederlägga",
+    "meaning": "bevisa att något är fel eller falskt",
+    "example": "Forskaren kunde vederlägga den gamla teorin med nya bevis.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "föranleda",
+    "meaning": "vara orsaken till att något händer",
+    "example": "Den dåliga väderprognosen föranledde att utflykten ställdes in.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "omintetgöra",
+    "meaning": "göra så att något inte kan hända eller lyckas",
+    "example": "Regnet omintetgjorde planerna för utomhusfesten.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "storm",
+    "meaning": "mycket starkt och farligt väder med hård vind",
+    "example": "En kraftig storm drog in över kusten i natt.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "avfall",
+    "meaning": "sopor eller skräp som blir kvar och slängs",
+    "example": "Vi ska sortera avfallet i olika kärl.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "vardagsrutin",
+    "meaning": "saker man gör varje dag på samma sätt",
+    "example": "Att borsta tänderna är en del av min vardagsrutin.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "framgångsrik",
+    "meaning": "som lyckas bra med det man gör",
+    "example": "Hon är en framgångsrik idrottare inom simning.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "nyfiken",
+    "meaning": "vill gärna veta och lära sig nya saker",
+    "example": "Hon var nyfiken på hur vulkaner fungerar.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "trött",
+    "meaning": "känner sig utan energi och vill sova",
+    "example": "Han var trött efter en lång skoldag.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "snäll",
+    "meaning": "vänlig och hjälpsam mot andra",
+    "example": "Läraren var snäll och hjälpte alla elever.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "kompisar",
+    "meaning": "personer man umgås med och tycker om",
+    "example": "Vi lekte med kompisar på rasten.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "forska",
+    "meaning": "undersöka noga för att lära sig mer om något",
+    "example": "Forskare forskar om djur och natur.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "antagligen",
+    "meaning": "troligen, det är nog så",
+    "example": "Det blir antagligen regn imorgon.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "värdefull",
+    "meaning": "viktig och betyder mycket",
+    "example": "Vatten är en värdefull resurs för alla.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "jämförelse",
+    "meaning": "att se skillnader och likheter mellan saker",
+    "example": "Vi gjorde en jämförelse mellan två länder.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "källkritik",
+    "meaning": "att undersöka om en källa är pålitlig",
+    "example": "I skolan lär vi oss källkritik för att inte tro på allt.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "händelseutveckling",
+    "meaning": "hur något förändras och sker steg för steg över tid",
+    "example": "Läraren bad oss beskriva händelseutvecklingen i boken kapitel för kapitel.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "genomsnitt",
+    "meaning": "ett vanligt värde man räknar ut från flera saker",
+    "example": "Klassens genomsnitt på provet var ganska högt i år.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "utrusta",
+    "meaning": "ge något det som behövs för en uppgift",
+    "example": "Skolan utrustade oss med allt material vi behövde för experimentet.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "skildra",
+    "meaning": "berätta om eller visa något på ett tydligt sätt",
+    "example": "Boken skildrar livet i en liten by för länge sedan.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "uppstå",
+    "meaning": "börja finnas eller hända",
+    "example": "Ett bråk kan uppstå om man inte pratar med varandra.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "hänsyn",
+    "meaning": "att tänka på andras känslor och behov",
+    "example": "Vi måste ta hänsyn till alla i klassen när vi planerar utflykten.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "avstå",
+    "meaning": "att välja att inte göra något",
+    "example": "Han valde att avstå från att svara på frågan.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "tillfälligtvis",
+    "meaning": "under en kort tid, inte för alltid",
+    "example": "Skolan är tillfälligtvis stängd på grund av reparationer.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "genomföra",
+    "meaning": "att göra klart något helt och fullständigt",
+    "example": "Vi ska genomföra ett experiment i naturkunskapen imorgon.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "medvetenhet",
+    "meaning": "att förstå och veta om något",
+    "example": "Kursen ökade vår medvetenhet om miljöfrågor.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "sinnesstämning",
+    "meaning": "hur man känner sig inuti, glad eller ledsen",
+    "example": "Musiken påverkade min sinnesstämning på ett positivt sätt.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "besvara",
+    "meaning": "att ge svar på en fråga",
+    "example": "Vi ska besvara alla frågor i läroboken innan lektionen slutar.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "föreställa",
+    "meaning": "att tänka sig hur något skulle kunna vara",
+    "example": "Försök föreställa dig hur livet var för hundra år sedan.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "erfarenhet",
+    "meaning": "kunskap man får genom att ha gjort eller upplevt något",
+    "example": "Genom sin erfarenhet visste läraren exakt hur hon skulle förklara.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "sammanträffa",
+    "meaning": "att hända samtidigt, eller att träffas",
+    "example": "Det var en slump att våra idéer sammanträffade så bra.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "vidta",
+    "meaning": "att göra något, ofta för att lösa ett problem",
+    "example": "Skolan vidtog åtgärder för att minska mobbning.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "grundläggande",
+    "meaning": "det viktigaste och mest nödvändiga i något",
+    "example": "Matematik bygger på grundläggande kunskaper från tidigare år.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omvärld",
+    "meaning": "allt som finns runt omkring oss i samhället och naturen",
+    "example": "Vi läser om omvärlden för att förstå andra länder bättre.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "räckvidd",
+    "meaning": "hur långt något sträcker sig eller påverkar",
+    "example": "Nyhetens räckvidd var stor och nådde hela landet.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "kompromissvilja",
+    "meaning": "vilja att mötas halvvägs och lösa problem tillsammans",
+    "example": "Deras kompromissvilja gjorde att diskussionen slutade bra.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "tillväxttakt",
+    "meaning": "hur snabbt något växer eller ökar",
+    "example": "Forskarna undersökte befolkningens tillväxttakt i staden.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "avsevärt",
+    "meaning": "på ett stort och tydligt sätt",
+    "example": "Resultatet förbättrades avsevärt efter träningen.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "förnimma",
+    "meaning": "att känna eller uppfatta något svagt",
+    "example": "Hon kunde förnimma en förändring i luften innan stormen kom.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "varsam",
+    "meaning": "Att vara försiktig och noga med något.",
+    "example": "Hon var varsam när hon bar den ömtåliga vasen.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omtänksam",
+    "meaning": "Att tänka på andras behov och känslor.",
+    "example": "Han är alltid omtänksam mot sina vänner.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "tillsammans",
+    "meaning": "Flera personer gör något ihop.",
+    "example": "Vi städade klassrummet tillsammans.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "upptäckt",
+    "meaning": "Något nytt man hittat eller lärt sig.",
+    "example": "Forskarens upptäckt förändrade synen på universum.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "tidsenlig",
+    "meaning": "Något som passar den tid vi lever i.",
+    "example": "Skolan använder tidsenliga metoder för att undervisa.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "samordna",
+    "meaning": "Att planera flera saker så att de fungerar tillsammans.",
+    "example": "Läraren samordnade tiderna för alla prov.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "omvärdera",
+    "meaning": "Att tänka om och ändra sin uppfattning.",
+    "example": "Efter samtalet fick han omvärdera sin åsikt.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "sammansatt",
+    "meaning": "Något som består av flera delar.",
+    "example": "Vattenmolekylen är sammansatt av väte och syre.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "tillfällighet",
+    "meaning": "Något som händer av en slump.",
+    "example": "Det var en tillfällighet att de träffades där.",
+    "level": 3,
+    "category": "tid"
+  },
+  {
+    "word": "grundtanke",
+    "meaning": "Den viktigaste idén bakom något.",
+    "example": "Grundtanken i uppsatsen var att förklara klimatförändringar.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "fördjupa",
+    "meaning": "Att lära sig mer och gå djupare in i ett ämne.",
+    "example": "Eleverna fick fördjupa sig i medeltidens historia.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "utreda",
+    "meaning": "Att undersöka något noga för att förstå det.",
+    "example": "Polisen ska utreda vad som hände på platsen.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "anpassning",
+    "meaning": "När något ändras för att passa bättre.",
+    "example": "Skolan gjorde en anpassning för elever med behov.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "delaktig",
+    "meaning": "Att vara med och påverka något.",
+    "example": "Alla elever kände sig delaktiga i projektet.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "trovärdig",
+    "meaning": "Något man kan lita på.",
+    "example": "Källan verkade trovärdig och pålitlig.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "orsakskedja",
+    "meaning": "En rad händelser som leder till varandra.",
+    "example": "Läraren förklarade orsakskedjan bakom andra världskriget.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "tillstyrka",
+    "meaning": "Att säga ja till ett förslag.",
+    "example": "Kommunen valde att tillstyrka det nya bygget.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "balans",
+    "meaning": "När allt är jämnt fördelat och stabilt.",
+    "example": "Det är viktigt att hitta balans mellan skola och fritid.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "övertygande",
+    "meaning": "Något som gör att man tror på det.",
+    "example": "Hans argument var mycket övertygande.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "ursprung",
+    "meaning": "Var något kommer ifrån från början.",
+    "example": "Ordet har sitt ursprung i det latinska språket.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "riklig",
+    "meaning": "Något som finns i stor mängd.",
+    "example": "Det fanns rikligt med mat på festen.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "minska",
+    "meaning": "bli mindre eller göra något mindre",
+    "example": "Vi måste minska mängden skräp vi slänger.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "öka",
+    "meaning": "bli mer eller göra något större",
+    "example": "Antalet elever i klassen har ökat i år.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "vikt",
+    "meaning": "hur tungt något är, eller hur viktigt något är",
+    "example": "Läraren pratade om vikten av att läsa mycket.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "typisk",
+    "meaning": "vanlig och som man kan förvänta sig",
+    "example": "Det är typiskt för hösten att det blir mörkt tidigt.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "variera",
+    "meaning": "vara olika vid olika tillfällen",
+    "example": "Vädret kan variera mycket under en dag.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "stadig",
+    "meaning": "stabil och säker",
+    "example": "Han höll stadigt i räcket när han gick nerför trappan.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "ordentlig",
+    "meaning": "noggrann och bra gjord",
+    "example": "Hon gjorde ett ordentligt arbete med rapporten.",
+    "level": 2,
+    "category": "arbete"
+  },
+  {
+    "word": "trolig",
+    "meaning": "något som troligen kommer att hända",
+    "example": "Det är troligt att det blir regn imorgon.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "jämn",
+    "meaning": "lika stor eller lika hela vägen",
+    "example": "Vägen var jämn och lätt att cykla på.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "skillnad",
+    "meaning": "det som gör att två saker inte är lika",
+    "example": "Det finns en stor skillnad mellan de två länderna.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "beskaffenhet",
+    "meaning": "hur något är gjort eller vad det består av",
+    "example": "Forskarna undersökte jordens beskaffenhet.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "lämplig",
+    "meaning": "passande för en viss situation",
+    "example": "Det är en lämplig tid att gå ut och leka.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omedveten",
+    "meaning": "när man inte vet eller tänker på något",
+    "example": "Han var omedveten om att han hade glömt boken.",
+    "level": 4,
+    "category": "känslor"
+  },
+  {
+    "word": "strävan",
+    "meaning": "att jobba hårt för att nå ett mål",
+    "example": "Hennes strävan efter goda betyg gjorde att hon pluggade mycket.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "kärnfull",
+    "meaning": "kort och tydlig men innehåller mycket viktigt",
+    "example": "Läraren gav ett kärnfullt svar på frågan.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tolerant",
+    "meaning": "någon som accepterar att andra tycker eller lever olika",
+    "example": "Hon är tolerant mot människor med andra åsikter.",
+    "level": 4,
+    "category": "känslor"
+  },
+  {
+    "word": "nödvändighet",
+    "meaning": "något som man verkligen måste ha eller göra",
+    "example": "Vatten är en nödvändighet för allt liv.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "stämma",
+    "meaning": "vara sant eller riktigt",
+    "example": "Hans berättelse verkade inte stämma med det andra sa.",
+    "level": 2,
+    "category": "resonemang"
+  },
+  {
+    "word": "jämföras",
+    "meaning": "när man ser skillnader eller likheter mellan saker",
+    "example": "Priserna kan jämföras mellan olika affärer.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "upprepa",
+    "meaning": "göra eller säga samma sak igen",
+    "example": "Läraren fick upprepa instruktionen två gånger.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "handlingsplan",
+    "meaning": "en plan för vad man ska göra",
+    "example": "Skolan tog fram en handlingsplan mot mobbning.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "samhällsfråga",
+    "meaning": "en viktig fråga som rör hela samhället",
+    "example": "Klimatet är en viktig samhällsfråga just nu.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "näringsämne",
+    "meaning": "det som finns i mat och som kroppen behöver",
+    "example": "Grönsaker innehåller viktiga näringsämnen.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "livsstil",
+    "meaning": "hur man lever sitt liv, till exempel vad man äter och gör",
+    "example": "En hälsosam livsstil innebär bra mat och motion.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "belastning",
+    "meaning": "det som är tungt eller påfrestande för något",
+    "example": "Trafiken är en stor belastning på miljön.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "omväxlande",
+    "meaning": "när saker byter form eller innehåll ofta",
+    "example": "Vädret var omväxlande hela veckan.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "samhällsutveckling",
+    "meaning": "hur samhället förändras över tid",
+    "example": "Digitaliseringen har påverkat samhällsutvecklingen mycket.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "medvetet",
+    "meaning": "när man gör något med avsikt och vet vad man gör",
+    "example": "Hon valde medvetet att inte svara på frågan.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "omfattas",
+    "meaning": "vara en del av något större",
+    "example": "Alla elever omfattas av samma regler.",
+    "level": 4,
+    "category": "regler"
+  },
+  {
+    "word": "missförstånd",
+    "meaning": "när man tror fel om vad någon menar",
+    "example": "Det blev ett missförstånd om vem som skulle städa.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "tidsram",
+    "meaning": "den tid man har för att göra något",
+    "example": "Vi måste hålla oss inom tidsramen för uppgiften.",
+    "level": 3,
+    "category": "tid"
+  },
+  {
+    "word": "framtidstro",
+    "meaning": "tro på att framtiden blir bra",
+    "example": "Ungdomarna visade stor framtidstro trots svårigheterna.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "handlingskraft",
+    "meaning": "förmågan att snabbt göra något åt en situation",
+    "example": "Politikerna visade handlingskraft efter olyckan.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "jämställdhet",
+    "meaning": "när kvinnor och män har samma rättigheter och möjligheter",
+    "example": "Skolan arbetar aktivt med jämställdhet mellan könen.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "sammanhängande",
+    "meaning": "när saker hänger ihop på ett tydligt sätt",
+    "example": "Uppsatsen var väl skriven och sammanhängande.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "begrunda",
+    "meaning": "tänka noga på något",
+    "example": "Hon satt tyst och begrundade frågan innan hon svarade.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "ihärdig",
+    "meaning": "någon som inte ger upp, envis på ett bra sätt",
+    "example": "Han var ihärdig och övade varje dag tills han klarade provet.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "vardagslunk",
+    "meaning": "det vanliga, lugna sättet livet går på varje dag",
+    "example": "Efter semestern gick allt tillbaka till vardagslunken.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "knapp",
+    "meaning": "lite, precis tillräckligt eller mindre än det",
+    "example": "Laget vann med knapp marginal, bara ett mål.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "osäker",
+    "meaning": "när man inte är säker på något",
+    "example": "Hon kände sig osäker inför det stora provet.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "belåten",
+    "meaning": "nöjd och glad över något",
+    "example": "Läraren var belåten med klassens resultat.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "omtumlad",
+    "meaning": "förvirrad eller chockad efter något som hänt",
+    "example": "Hon kände sig omtumlad efter den plötsliga nyheten.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "framförallt",
+    "meaning": "det som är mest viktigt av allt",
+    "example": "Framförallt måste vi vara snälla mot varandra.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "uppmärksam",
+    "meaning": "när man lägger märke till och lyssnar noga",
+    "example": "Läraren bad eleverna vara uppmärksamma under genomgången.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "knyta",
+    "meaning": "binda ihop eller koppla samman något",
+    "example": "De försökte knyta an till varandra genom att prata om sina intressen.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "omgivande",
+    "meaning": "det som finns runt omkring något",
+    "example": "Djuren anpassar sig till den omgivande naturen.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "utspridd",
+    "meaning": "när något är utplacerat på många olika ställen",
+    "example": "Byarna var utspridda över hela landskapet.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "vidsträckt",
+    "meaning": "stor och som sträcker sig långt",
+    "example": "Framför dem låg en vidsträckt skog.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "benägen",
+    "meaning": "att man ofta tenderar att göra på ett visst sätt",
+    "example": "Han var benägen att ge upp för lätt.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omsorg",
+    "meaning": "när man tar hand om någon med kärlek och försiktighet",
+    "example": "Föräldrarna visade stor omsorg om sina barn.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "medel",
+    "meaning": "ett sätt eller ett verktyg för att uppnå något",
+    "example": "Pengar var bara ett medel för att nå målet.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "övergripande",
+    "meaning": "något som handlar om helheten, inte detaljerna",
+    "example": "Det övergripande målet var att förbättra skolan.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "anmärkningsvärd",
+    "meaning": "något som man lägger märke till för att det är ovanligt eller viktigt",
+    "example": "Resultatet var anmärkningsvärt bra jämfört med tidigare år.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tillkomma",
+    "meaning": "när något läggs till eller uppstår senare",
+    "example": "Nya regler kommer att tillkomma nästa termin.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "missgynna",
+    "meaning": "att behandla någon sämre eller orättvist",
+    "example": "De gamla reglerna missgynnade vissa elever.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "vederhäftig",
+    "meaning": "pålitlig och baserad på fakta",
+    "example": "Källan ansågs vederhäftig eftersom den var väl undersökt.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "omdöme",
+    "meaning": "åsikt eller bedömning om något",
+    "example": "Läraren gav ett tydligt omdöme om elevens arbete.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "kringgå",
+    "meaning": "undvika något genom att gå runt det",
+    "example": "Företaget försökte kringgå reglerna.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "skiss",
+    "meaning": "en enkel snabb teckning eller plan",
+    "example": "Läraren ritade en skiss på tavlan för att förklara uppgiften.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "kaos",
+    "meaning": "stor oordning och förvirring",
+    "example": "Det blev kaos i klassrummet när brandlarmet ljöd.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "envis",
+    "meaning": "någon som inte ger upp lätt och vill ha sin vilja igenom",
+    "example": "Han var envis och övade tills han klarade provet.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "utmärkt",
+    "meaning": "mycket bra, av hög kvalitet",
+    "example": "Hon fick ett utmärkt betyg på sitt prov.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "stödja",
+    "meaning": "hjälpa och backa upp någon",
+    "example": "Vännerna stöttade henne när det var svårt.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "omedelbar",
+    "meaning": "som händer direkt utan dröjsmål",
+    "example": "Läraren gav ett snabbt svar på frågan.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "grundlägga",
+    "meaning": "börja bygga upp något från början",
+    "example": "Skolan hjälper eleverna att bygga upp kunskap steg för steg.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "tveksam",
+    "meaning": "osäker på vad man ska göra eller tycka",
+    "example": "Hon var osäker på om hon skulle svara på frågan.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "tillräckligt",
+    "meaning": "så mycket som behövs, inte mer",
+    "example": "Hon hade nog med tid för att klara provet.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tillfredsställande",
+    "meaning": "bra nog, som gör en nöjd",
+    "example": "Resultatet på provet var bra nog för läraren.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "snarare",
+    "meaning": "ett ord som visar att man menar det ena mer än det andra",
+    "example": "Det var mer en missuppfattning än ett misstag.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "faktiskt",
+    "meaning": "i verkligheten, verkligen",
+    "example": "Han hade verkligen rätt hela tiden.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "noggrann",
+    "meaning": "någon som gör saker mycket ordentligt och exakt",
+    "example": "Hon var mycket ordentlig när hon skrev sin rapport.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tydliggöra",
+    "meaning": "göra något lättare att förstå",
+    "example": "Läraren förklarade tydligare vad uppgiften betydde.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "påfrestande",
+    "meaning": "jobbigt och krävande",
+    "example": "Provveckan var jobbig för alla elever.",
+    "level": 4,
+    "category": "känslor"
+  },
+  {
+    "word": "strukturera",
+    "meaning": "ordna något på ett tydligt och genomtänkt sätt",
+    "example": "Hon ordnade sin text i tydliga stycken.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "omfång",
+    "meaning": "Hur stort eller mycket något är.",
+    "example": "Boken har ett stort omfång med många kapitel.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "skepsis",
+    "meaning": "Att tvivla eller inte lita på något helt.",
+    "example": "Han visade skepsis mot det nya förslaget.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "framsida",
+    "meaning": "Den sida av något som syns först.",
+    "example": "Bilden är på tidningens framsida.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "anteckna",
+    "meaning": "Att skriva ner något kort för att komma ihåg det.",
+    "example": "Läraren bad oss anteckna det viktigaste från lektionen.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "handledning",
+    "meaning": "En text eller person som visar hur man gör något.",
+    "example": "Vi fick en handledning innan experimentet.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "näringsliv",
+    "meaning": "Alla företag och verksamheter i ett land tillsammans.",
+    "example": "Näringslivet i staden växer snabbt.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "befästa",
+    "meaning": "Att göra något starkare eller säkrare.",
+    "example": "Övningarna hjälpte henne att befästa kunskapen.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "vardagsspråk",
+    "meaning": "Det språk man använder när man pratar vanligt.",
+    "example": "I uppsatsen ska du inte skriva vardagsspråk.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "utgångsläge",
+    "meaning": "Det läge man börjar från.",
+    "example": "Vi började från samma utgångsläge i tävlingen.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omkullkasta",
+    "meaning": "Att helt förändra eller motbevisa något.",
+    "example": "Nya bevis kunde omkullkasta teorin.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "redogöra",
+    "meaning": "Att förklara något noggrant och tydligt.",
+    "example": "Eleven fick redogöra för sin lösning.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "vardagsliknande",
+    "meaning": "Något som liknar det vanliga livet.",
+    "example": "Övningen var vardagsliknande och lätt att förstå.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "omständigheter",
+    "meaning": "De saker som påverkar en situation.",
+    "example": "På grund av omständigheterna blev lektionen inställd.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "underhålla",
+    "meaning": "Att ta hand om något så det fungerar bra.",
+    "example": "Man måste underhålla maskinen regelbundet.",
+    "level": 3,
+    "category": "arbete"
+  },
+  {
+    "word": "upprätta",
+    "meaning": "Att skapa eller sätta upp något, till exempel en plan.",
+    "example": "Läraren ska upprätta en ny lektionsplan.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "tillämpbar",
+    "meaning": "Något som går att använda i verkligheten.",
+    "example": "Metoden var enkel och tillämpbar.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "vardagsproblematik",
+    "meaning": "Problem som hör till det vanliga livet.",
+    "example": "Boken handlar om vardagsproblematik hos ungdomar.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "gränsdragning",
+    "meaning": "Att bestämma var en gräns går.",
+    "example": "Det var svårt med gränsdragningen mellan länderna.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "överväga",
+    "meaning": "Att tänka noga innan man bestämmer sig.",
+    "example": "Vi måste överväga alla alternativ.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "handlingsutrymme",
+    "meaning": "Hur mycket man kan göra i en situation.",
+    "example": "Läraren gav eleverna stort handlingsutrymme.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "vardagssituation",
+    "meaning": "En situation som händer i vanliga livet.",
+    "example": "Övningen visade en typisk vardagssituation.",
+    "level": 3,
+    "category": "vardag"
+  },
+  {
+    "word": "skiljelinje",
+    "meaning": "En tydlig gräns mellan två olika saker.",
+    "example": "Det finns en skiljelinje mellan fakta och åsikt.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "belysande",
+    "meaning": "Något som gör en sak lättare att förstå.",
+    "example": "Läraren gav ett belysande exempel.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "utformning",
+    "meaning": "Hur något är byggt eller planerat.",
+    "example": "Utformningen av provet var tydlig.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "omprövning",
+    "meaning": "Att tänka igenom något igen och kanske ändra det.",
+    "example": "Beslutet blev föremål för omprövning.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "olik",
+    "meaning": "Inte samma, skiljer sig från något annat",
+    "example": "De två systrarna är väldigt olika varandra.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "lyckas",
+    "meaning": "Klara av något man försökt göra",
+    "example": "Han lyckades komma i tid till lektionen.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "höra",
+    "meaning": "Att uppfatta ljud med öronen",
+    "example": "Jag kan höra fågelsång genom fönstret.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "skriva",
+    "meaning": "Att sätta bokstäver på papper eller skärm",
+    "example": "Vi ska skriva en berättelse i skolan.",
+    "level": 1,
+    "category": "skola"
+  },
+  {
+    "word": "bra",
+    "meaning": "Något som är gott eller fungerar väl",
+    "example": "Det var en bra idé att öva mer.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "kropp",
+    "meaning": "Hela människans fysiska form",
+    "example": "Vi lärde oss om kroppens olika delar i NO.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "gemensam",
+    "meaning": "Något som flera personer delar tillsammans",
+    "example": "Klassen hade en gemensam uppgift att lösa.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "kunskap",
+    "meaning": "Det man vet eller lärt sig",
+    "example": "Läraren delade med sig av sin kunskap.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "generation",
+    "meaning": "En grupp människor som är födda under samma tid",
+    "example": "Mina föräldrars generation växte upp utan mobiltelefoner.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "aspekt",
+    "meaning": "En del eller sida av en fråga",
+    "example": "Vi tittade på flera aspekter av problemet.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "gestalta",
+    "meaning": "Framställa eller visa något på ett tydligt sätt",
+    "example": "Författaren gestaltar krigets fasor i sin bok.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "förutsätta",
+    "meaning": "Anta att något är sant utan att bevisa det",
+    "example": "Man kan inte förutsätta att alla tänker likadant.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "riktig",
+    "meaning": "Något som är sant eller korrekt, inte fel.",
+    "example": "Han gav ett riktigt svar på frågan.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "vecko",
+    "meaning": "Ett annat ord för sju dagar i rad.",
+    "example": "Vi har prov varje veckoslut.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "hjälpsam",
+    "meaning": "Någon som gärna hjälper andra.",
+    "example": "Hon är alltid hjälpsam mot sina klasskamrater.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "påminna",
+    "meaning": "Att säga till någon om något de ska komma ihåg.",
+    "example": "Läraren fick påminna eleverna om läxan.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "sammanfattning",
+    "meaning": "En kort text som beskriver det viktigaste i något.",
+    "example": "Vi skrev en sammanfattning av boken.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "bedöma",
+    "meaning": "Att tänka efter och avgöra hur bra eller dåligt något är.",
+    "example": "Läraren ska bedöma elevernas uppsatser.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "förbereda",
+    "meaning": "Att göra klart för något som ska hända.",
+    "example": "Vi måste förbereda oss inför provet.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "samhällsklimat",
+    "meaning": "Hur människor i samhället känner och tänker tillsammans.",
+    "example": "Samhällsklimatet har förändrats de senaste åren.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "livskvalitet",
+    "meaning": "Hur bra eller nöjd man är med sitt liv.",
+    "example": "Motion kan förbättra din livskvalitet.",
+    "level": 5,
+    "category": "vardag"
+  },
+  {
+    "word": "trivas",
+    "meaning": "Att känna sig glad och bekväm på en plats.",
+    "example": "Hon trivs verkligen i sin nya klass.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "avgöra",
+    "meaning": "Att bestämma eller besluta något viktigt.",
+    "example": "Domaren fick avgöra vem som vann matchen.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "hänvisa",
+    "meaning": "Att peka på något eller berätta var man kan hitta information.",
+    "example": "Läraren hänvisade till en bra webbsida.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "återkomma",
+    "meaning": "Att komma tillbaka till något igen.",
+    "example": "Jag återkommer med svar imorgon.",
+    "level": 3,
+    "category": "tid"
+  },
+  {
+    "word": "framtidsplan",
+    "meaning": "En plan för vad man vill göra i framtiden.",
+    "example": "Hon har en tydlig framtidsplan för sina studier.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "orsaka",
+    "meaning": "Att göra så att något händer.",
+    "example": "Regnet orsakade en översvämning.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "beslutsfattande",
+    "meaning": "Processen att bestämma något.",
+    "example": "Beslutsfattande i grupp tar ofta längre tid.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "överlägsen",
+    "meaning": "Mycket bättre än andra.",
+    "example": "Laget var överlägset i matchen.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "samexistens",
+    "meaning": "Att leva tillsammans utan konflikt.",
+    "example": "Djur och människor kan ha en fredlig samexistens.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "påvisa",
+    "meaning": "Att tydligt visa att något är sant.",
+    "example": "Studien påvisar att motion är hälsosamt.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "engagera",
+    "meaning": "Att bry sig mycket om något och vilja göra något åt det.",
+    "example": "Hon engagerar sig i miljöfrågor.",
+    "level": 4,
+    "category": "handling"
+  },
+  {
+    "word": "utplåna",
+    "meaning": "göra så att något helt försvinner",
+    "example": "Kriget utplånade hela byn.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "stimulera",
+    "meaning": "få något att bli mer aktivt eller intresserat",
+    "example": "Läraren försökte stimulera elevernas intresse för matte.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "anpassningsbar",
+    "meaning": "kan ändra sig efter nya situationer",
+    "example": "Djur som är anpassningsbara klarar sig bättre i naturen.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "återspegla",
+    "meaning": "visa eller likna något annat",
+    "example": "Boken återspeglar samhället under den tiden.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "markant",
+    "meaning": "tydlig och lätt att se",
+    "example": "Det var en markant skillnad mellan de två grupperna.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "framhålla",
+    "meaning": "säga att något är viktigt",
+    "example": "Läraren framhöll vikten av att läsa varje dag.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "åsyfta",
+    "meaning": "mena eller syfta på något",
+    "example": "Vad åsyftar du med det påståendet?",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "reagera",
+    "meaning": "göra något som svar på något annat",
+    "example": "Han reagerade snabbt när larmet ljöd.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "koppling",
+    "meaning": "ett samband mellan två saker",
+    "example": "Det finns en koppling mellan mat och hälsa.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "skepnad",
+    "meaning": "form eller utseende av något",
+    "example": "Molnen tog skepnaden av ett djur.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "omvälvande",
+    "meaning": "som ändrar mycket och snabbt",
+    "example": "Det var en omvälvande upplevelse för hela klassen.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "drivkraft",
+    "meaning": "det som gör att man vill göra något",
+    "example": "Nyfikenhet var hans drivkraft att lära sig nya saker.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "tillväxtmöjlighet",
+    "meaning": "chans att växa eller bli större",
+    "example": "Företaget såg en tillväxtmöjlighet på den nya marknaden.",
+    "level": 5,
+    "category": "arbete"
+  },
+  {
+    "word": "framtidsutmaning",
+    "meaning": "svårighet som väntar i framtiden",
+    "example": "Klimatet är en stor framtidsutmaning för världen.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "näringsrik",
+    "meaning": "innehåller mycket bra ämnen för kroppen",
+    "example": "Grönsaker är näringsrika och bra för hälsan.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "vanlig",
+    "meaning": "något som förekommer ofta",
+    "example": "Det är vanligt att det snöar på vintern.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "liten",
+    "meaning": "något som har lite storlek",
+    "example": "Katten är liten och söt.",
+    "level": 1,
+    "category": "beskrivning"
+  },
+  {
+    "word": "regn",
+    "meaning": "vatten som faller från himlen",
+    "example": "Det kommer att regna imorgon.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "fråga",
+    "meaning": "be om ett svar från någon",
+    "example": "Jag ska fråga läraren om läxan.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "svar",
+    "meaning": "det man säger som respons på en fråga",
+    "example": "Hon gav ett bra svar på frågan.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "begränsa",
+    "meaning": "göra mindre eller sätta en gräns för något",
+    "example": "Regeringen vill begränsa användningen av plastpåsar.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "fenomenal",
+    "meaning": "mycket bra eller ovanligt bra",
+    "example": "Hon gjorde en fenomenal insats i tävlingen.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "handelsbalans",
+    "meaning": "skillnaden mellan export och import i ett land",
+    "example": "Landet hade en positiv handelsbalans förra året.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "population",
+    "meaning": "antalet människor eller djur på en plats",
+    "example": "Populationen av älgar har minskat i skogen.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "stress",
+    "meaning": "en känsla av press och oro",
+    "example": "Många elever känner stress inför proven.",
+    "level": 2,
+    "category": "känslor"
+  },
+  {
+    "word": "ambition",
+    "meaning": "en stark önskan att lyckas med något",
+    "example": "Hennes ambition är att bli läkare.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "initiativ",
+    "meaning": "att själv börja göra något",
+    "example": "Han tog initiativ till att starta ett skolprojekt.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "trend",
+    "meaning": "något som är populärt just nu",
+    "example": "Det är en trend att äta mer vegetariskt.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "nettoeffekt",
+    "meaning": "den totala effekten när man räknat bort och lagt till olika saker",
+    "example": "Nettoeffekten av åtgärden blev positiv för miljön.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "solidaritet",
+    "meaning": "att hjälpa och stödja varandra",
+    "example": "Klassen visade solidaritet med den nya eleven.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "fördelning",
+    "meaning": "Hur man delar upp något mellan flera",
+    "example": "Läraren gjorde en rättvis fördelning av uppgifterna.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "samhällsstruktur",
+    "meaning": "Hur ett samhälle är uppbyggt och organiserat",
+    "example": "I SO läser vi om olika samhällsstrukturer.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "skog",
+    "meaning": "Ett stort område med många träd",
+    "example": "Vi gick en promenad i skogen.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "morgon",
+    "meaning": "Den första delen av dagen",
+    "example": "Vi äter frukost varje morgon.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "bevisa",
+    "meaning": "Visa att något är sant med fakta",
+    "example": "Hon kunde bevisa att hon hade rätt.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "region",
+    "meaning": "Ett större geografiskt område",
+    "example": "Norrland är en region i Sverige.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "klimatförändring",
+    "meaning": "När vädret på jorden ändras över lång tid",
+    "example": "Vi pratade om klimatförändringar i NO.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "tidsepok",
+    "meaning": "En lång period i historien med gemensamma drag",
+    "example": "Vikingatiden var en spännande tidsepok.",
+    "level": 5,
+    "category": "tid"
+  },
+  {
+    "word": "omvandling",
+    "meaning": "När något ändras till något annat",
+    "example": "Vi lärde oss om vattnets omvandling till is.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "jämlik",
+    "meaning": "när alla har samma värde och rättigheter",
+    "example": "Det är viktigt att alla behandlas jämlikt i skolan.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "samarbete",
+    "meaning": "när flera personer arbetar tillsammans",
+    "example": "Gruppen löste uppgiften genom bra samarbete.",
+    "level": 2,
+    "category": "arbete"
+  },
+  {
+    "word": "problem",
+    "meaning": "något svårt som man måste lösa",
+    "example": "Han fick ett problem med sin dator.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "lösning",
+    "meaning": "svaret på ett problem",
+    "example": "Läraren visade en lösning på uppgiften.",
+    "level": 2,
+    "category": "resonemang"
+  },
+  {
+    "word": "gräns",
+    "meaning": "linje som skiljer två platser eller saker åt",
+    "example": "Floden bildar en naturlig gräns mellan länderna.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "beslut",
+    "meaning": "ett val man gör efter att ha tänkt",
+    "example": "Regeringen fattade ett viktigt beslut igår.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "anledningslös",
+    "meaning": "utan orsak eller skäl",
+    "example": "Hon blev arg utan anledningslös förklaring, tyckte alla.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "jämförbar",
+    "meaning": "kan jämföras med något annat",
+    "example": "Priserna på de två cyklarna är jämförbara.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "beskrivning",
+    "meaning": "en text eller berättelse som förklarar hur något ser ut",
+    "example": "Läraren bad om en beskrivning av huvudpersonen.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "påverkbar",
+    "meaning": "lätt att förändra genom yttre saker",
+    "example": "Priset är påverkbart av utbud och efterfrågan.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "skillnadsmarkör",
+    "meaning": "ord som visar en skillnad mellan saker",
+    "example": "Ordet 'men' är en tydlig skillnadsmarkör i texten.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "förutsättningslös",
+    "meaning": "utan några krav eller villkor",
+    "example": "Diskussionen var förutsättningslös, alla fick säga vad de tyckte.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "slutledning",
+    "meaning": "det man kommer fram till efter att ha tänkt logiskt",
+    "example": "Hans slutledning byggde på flera bevis.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "vardagssyssla",
+    "meaning": "en vanlig uppgift man gör varje dag",
+    "example": "Att diska är en vanlig vardagssyssla.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "skoluppgift",
+    "meaning": "en uppgift man får göra i skolan",
+    "example": "Vi fick en skoluppgift om djur i regnskogen.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "naturresurs",
+    "meaning": "något naturen ger som människor kan använda",
+    "example": "Vatten är en viktig naturresurs.",
+    "level": 3,
+    "category": "natur"
+  },
+  {
+    "word": "samhällsproblem",
+    "meaning": "ett problem som påverkar många i samhället",
+    "example": "Fattigdom är ett stort samhällsproblem.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "känslomässig",
+    "meaning": "som har att göra med känslor",
+    "example": "Filmen var mycket känslomässig och gjorde många ledsna.",
+    "level": 4,
+    "category": "känslor"
+  },
+  {
+    "word": "handlingsförlopp",
+    "meaning": "ordningen på det som händer i en historia",
+    "example": "Läraren bad oss beskriva handlingsförloppet i boken.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "tidsangivelse",
+    "meaning": "information om när något hände eller ska hända",
+    "example": "Texten saknade en tydlig tidsangivelse.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "arbetsuppgift",
+    "meaning": "något man ska göra på jobbet eller i skolan",
+    "example": "Läraren delade ut en ny arbetsuppgift.",
+    "level": 2,
+    "category": "arbete"
+  },
+  {
+    "word": "vardagsspråklig",
+    "meaning": "skriven eller talad på ett enkelt, vanligt sätt",
+    "example": "Texten var vardagsspråklig och lätt att förstå.",
+    "level": 4,
+    "category": "beskrivning"
+  },
+  {
+    "word": "följd",
+    "meaning": "det som händer efter något annat, ett resultat",
+    "example": "Som en följd av stormen blev många vägar blockerade.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "noggrannhet",
+    "meaning": "att göra något mycket exakt och försiktigt",
+    "example": "Han jobbade med stor noggrannhet på sin uppsats.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "jämviktsläge",
+    "meaning": "ett tillstånd där allt är i balans",
+    "example": "Ekosystemet nådde ett jämviktsläge efter många år.",
+    "level": 5,
+    "category": "natur"
+  },
+  {
+    "word": "handlingskraftig",
+    "meaning": "som snabbt agerar och gör något",
+    "example": "Läraren var handlingskraftig när bråket bröt ut.",
+    "level": 5,
+    "category": "handling"
+  },
+  {
+    "word": "vardagsrutinmässig",
+    "meaning": "som hör till det man gör varje dag på samma sätt",
+    "example": "Morgonpasset är vardagsrutinmässigt för de flesta elever.",
+    "level": 4,
+    "category": "vardag"
+  },
+  {
+    "word": "analys",
+    "meaning": "att undersöka något noggrant för att förstå det",
+    "example": "Vi gjorde en analys av texten i klassen.",
+    "level": 5,
+    "category": "skola"
+  },
+  {
+    "word": "glädje",
+    "meaning": "en känsla av att vara lycklig",
+    "example": "Barnen skrattade av glädje på studentexamen.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "avundsjuk",
+    "meaning": "att önska att man hade det som någon annan har",
+    "example": "Hon var avundsjuk på sin systers nya cykel.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "föreslå",
+    "meaning": "att säga en idé som andra kan tänka på",
+    "example": "Han föreslog att klassen skulle åka på utflykt.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "producera",
+    "meaning": "tillverka eller skapa något",
+    "example": "Fabriken producerar tusen bilar varje månad.",
+    "level": 4,
+    "category": "arbete"
+  },
+  {
+    "word": "gas",
+    "meaning": "ett ämne som inte har fast form, som luft",
+    "example": "Ballongen fylldes med en lätt gas som fick den att sväva.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "vätska",
+    "meaning": "ett ämne som kan rinna, som vatten",
+    "example": "Vatten är en vanlig vätska som vi dricker varje dag.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "kraftfull",
+    "meaning": "som har mycket styrka eller påverkan",
+    "example": "En kraftfull storm drog in över kusten.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "century",
+    "meaning": "hundra år",
+    "example": "Under förra seklet skedde stora förändringar i samhället.",
+    "level": 5,
+    "category": "tid"
+  },
+  {
+    "word": "generell",
+    "meaning": "något som gäller för de flesta fall, inte bara ett",
+    "example": "Läraren gav ett generellt råd som passade alla elever.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "vind",
+    "meaning": "Luft som rör sig utomhus",
+    "example": "Vinden blåste löven från träden.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "resa",
+    "meaning": "Att åka till en annan plats",
+    "example": "Familjen ska resa till Spanien i sommar.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "starta",
+    "meaning": "Att börja med något",
+    "example": "Vi ska starta ett nytt projekt idag.",
+    "level": 2,
+    "category": "handling"
+  },
+  {
+    "word": "byta",
+    "meaning": "Att ta bort en sak och sätta en annan istället",
+    "example": "Vi behöver byta ut den trasiga lampan.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "empiri",
+    "meaning": "Kunskap som kommer från erfarenhet eller undersökningar, inte bara teori",
+    "example": "Forskarna samlade empiri genom att observera djuren i naturen.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "premiss",
+    "meaning": "En grundtanke eller ett antagande som ett argument bygger på",
+    "example": "Hela argumentet byggde på en felaktig premiss.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "erkänna",
+    "meaning": "Att säga att något är sant, ofta ett misstag",
+    "example": "Han erkände att han hade fel.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "märka",
+    "meaning": "Att lägga upp ögonen på något, upptäcka",
+    "example": "Jag märkte att dörren var öppen.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "vidga",
+    "meaning": "Att göra något bredare eller större",
+    "example": "De vill vidga vägen genom staden.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "innefatta",
+    "meaning": "Att innehålla eller inkludera något",
+    "example": "Priset innefattar frukost.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "betona",
+    "meaning": "Att lägga extra vikt på något",
+    "example": "Läraren betonade vikten av läxor.",
+    "level": 3,
+    "category": "skola"
+  },
+  {
+    "word": "grundläggas",
+    "meaning": "Att börja finnas eller skapas från grunden",
+    "example": "Skolan grundlades för hundra år sedan.",
+    "level": 4,
+    "category": "tid"
+  },
+  {
+    "word": "identifiera",
+    "meaning": "Att hitta eller känna igen något",
+    "example": "Eleverna ska identifiera huvudpersonen i texten.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "utsläpp",
+    "meaning": "Gaser eller ämnen som släpps ut i naturen",
+    "example": "Bilar orsakar utsläpp som skadar miljön.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "modig",
+    "meaning": "att inte vara rädd, att våga göra saker",
+    "example": "Hon var modig och räddade katten från trädet.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "vänlig",
+    "meaning": "att vara trevlig och god mot andra",
+    "example": "Läraren var vänlig och hjälpte alla elever.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "sjö",
+    "meaning": "en stor vattensamling omgiven av land",
+    "example": "Vi badade i sjön hela sommaren.",
+    "level": 1,
+    "category": "natur"
+  },
+  {
+    "word": "spara",
+    "meaning": "att inte använda upp något, att behålla för senare",
+    "example": "Han sparar pengar för att köpa en cykel.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "diskutera",
+    "meaning": "att prata om olika åsikter kring något",
+    "example": "Klassen diskuterade om skolmaten borde vara nyttigare.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "moral",
+    "meaning": "vad som är rätt och fel att göra",
+    "example": "Berättelsen handlade om moral och goda val.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "signal",
+    "meaning": "ett tecken som visar eller varnar för något",
+    "example": "Röd trafikljus är en signal om att stanna.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "motiv",
+    "meaning": "en anledning till varför man gör något",
+    "example": "Hennes motiv för att hjälpa var att hon brydde sig.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "temperatur",
+    "meaning": "hur varmt eller kallt något är",
+    "example": "Temperaturen sjönk under natten.",
+    "level": 2,
+    "category": "natur"
+  },
+  {
+    "word": "material",
+    "meaning": "det som något är gjort av",
+    "example": "Trä är ett vanligt material i möbler.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "modern",
+    "meaning": "nytt och passar i vår tid",
+    "example": "De köpte en modern soffa till vardagsrummet.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "traditionell",
+    "meaning": "som har gjorts på samma sätt länge",
+    "example": "De firade jul på ett traditionellt sätt.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "diktatur",
+    "meaning": "ett styre där en person eller grupp bestämmer allt",
+    "example": "I en diktatur får folket inte rösta fritt.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "global",
+    "meaning": "som gäller hela världen",
+    "example": "Klimatet är ett globalt problem.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "kunna",
+    "meaning": "Att ha förmåga att göra något",
+    "example": "Hon kan simma väldigt bra.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "gilla",
+    "meaning": "Att tycka om något",
+    "example": "Jag gillar att läsa böcker på helgen.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "leta",
+    "meaning": "Att söka efter något man vill hitta",
+    "example": "Vi letar efter nyckeln som försvann.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "påstånd",
+    "meaning": "Något man säger som man tror är sant",
+    "example": "Läraren bad oss bevisa vårt påstånd med fakta.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "påverkas",
+    "meaning": "Att bli ändrad eller styrd av något annat",
+    "example": "Priserna påverkas av hur mycket folk köper.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "företeelse",
+    "meaning": "Något som händer eller finns och som man kan lägga märke till",
+    "example": "Mobbning är en företeelse som skolan vill stoppa.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "vittne",
+    "meaning": "En person som har sett något hända",
+    "example": "Ett vittne berättade vad som hänt vid olyckan.",
+    "level": 3,
+    "category": "samhälle"
+  },
+  {
+    "word": "flexibel",
+    "meaning": "Att kunna anpassa sig lätt efter olika situationer",
+    "example": "Han är flexibel och kan jobba på olika tider.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "beslutsfattare",
+    "meaning": "En person som bestämmer viktiga saker",
+    "example": "Politiker är exempel på beslutsfattare i samhället.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "verkan",
+    "meaning": "Det som blir resultatet av något",
+    "example": "Medicinen hade snabb verkan på febern.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "tendens",
+    "meaning": "En riktning som något verkar gå åt",
+    "example": "Det finns en tendens till varmare vintrar.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "vikig",
+    "meaning": "något som betyder mycket",
+    "example": "Det är viktigt att komma i tid till skolan.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "lag",
+    "meaning": "regel som alla i ett land måste följa",
+    "example": "Det är mot lagen att köra för fort.",
+    "level": 2,
+    "category": "samhälle"
+  },
+  {
+    "word": "historia",
+    "meaning": "det som har hänt förut i tiden",
+    "example": "Vi läste om Sveriges historia i skolan.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "solidarisk",
+    "meaning": "att stödja andra och känna gemenskap",
+    "example": "Klassen var solidarisk mot den nya eleven.",
+    "level": 5,
+    "category": "känslor"
+  },
+  {
+    "word": "exempelvis",
+    "meaning": "Ett ord man använder för att ge ett exempel",
+    "example": "Man kan äta hälsosamt, exempelvis genom att äta mer grönsaker.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "värdering",
+    "meaning": "vad man tycker är viktigt eller rätt",
+    "example": "Familjens värderingar handlade mycket om ärlighet.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "observera",
+    "meaning": "att titta noga på något för att lära sig mer",
+    "example": "Forskarna observerade djuren i deras naturliga miljö.",
+    "level": 4,
+    "category": "natur"
+  },
+  {
+    "word": "anonym",
+    "meaning": "när man inte vet vem som gjort eller sagt något",
+    "example": "Brevet skickades anonymt utan namn.",
+    "level": 4,
+    "category": "vardag"
+  },
+  {
+    "word": "snäv",
+    "meaning": "trång eller mycket begränsad",
+    "example": "Vägen var för snäv för den stora bilen.",
+    "level": 3,
+    "category": "beskrivning"
+  },
+  {
+    "word": "vinst",
+    "meaning": "Pengar som blir kvar efter att man betalat kostnader",
+    "example": "Företaget gjorde stor vinst förra året.",
+    "level": 3,
+    "category": "arbete"
+  },
+  {
+    "word": "kostnad",
+    "meaning": "Pengar man måste betala för något",
+    "example": "Kostnaden för resan blev högre än vi trodde.",
+    "level": 2,
+    "category": "vardag"
+  },
+  {
+    "word": "besvikelse",
+    "meaning": "En känsla när något inte blev som man hoppats",
+    "example": "Hon kände en stor besvikelse när tävlingen blev inställd.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "stolthet",
+    "meaning": "En känsla av att vara nöjd över något man gjort",
+    "example": "Han kände stolthet efter att ha klarat provet.",
+    "level": 3,
+    "category": "känslor"
+  },
+  {
+    "word": "tidpunkt",
+    "meaning": "En viss stund eller ögonblick i tiden",
+    "example": "Vi måste bestämma en tidpunkt för mötet.",
+    "level": 2,
+    "category": "tid"
+  },
+  {
+    "word": "tidig",
+    "meaning": "som sker före den vanliga tiden",
+    "example": "Vi kom tidigt till skolan idag.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "sen",
+    "meaning": "som sker efter den vanliga tiden",
+    "example": "Han var sen till lektionen igen.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "acceptera",
+    "meaning": "att godta eller hålla med om något",
+    "example": "Han fick acceptera reglerna i klassen.",
+    "level": 3,
+    "category": "handling"
+  },
+  {
+    "word": "reflektion",
+    "meaning": "att tänka djupt över något",
+    "example": "Eleverna skrev en reflektion om boken de läst.",
+    "level": 5,
+    "category": "resonemang"
+  },
+  {
+    "word": "omdömesgill",
+    "meaning": "kan bedöma saker klokt och rätt",
+    "example": "Läraren är omdömesgill när hon rättar prov.",
+    "level": 5,
+    "category": "beskrivning"
+  },
+  {
+    "word": "tolkning",
+    "meaning": "hur man förstår eller förklarar något",
+    "example": "Elevens tolkning av dikten var intressant.",
+    "level": 4,
+    "category": "skola"
+  },
+  {
+    "word": "samhällsskikt",
+    "meaning": "en grupp i samhället med liknande situation",
+    "example": "Historien påverkade olika samhällsskikt på olika sätt.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "effekt",
+    "meaning": "resultatet av något som händer",
+    "example": "Motionen hade en positiv effekt på hälsan.",
+    "level": 3,
+    "category": "resonemang"
+  },
+  {
+    "word": "svår",
+    "meaning": "något som är jobbigt att göra eller förstå",
+    "example": "Matteprovet var väldigt svårt idag.",
+    "level": 2,
+    "category": "beskrivning"
+  },
+  {
+    "word": "syfte",
+    "meaning": "anledningen till varför man gör något",
+    "example": "Syftet med studien var att undersöka klimatet.",
+    "level": 4,
+    "category": "resonemang"
+  },
+  {
+    "word": "laga",
+    "meaning": "Att göra mat eller att fixa något som är trasigt.",
+    "example": "Vi ska laga mat till middagen.",
+    "level": 1,
+    "category": "vardag"
+  },
+  {
+    "word": "vinter",
+    "meaning": "Årstiden då det är kallt och ofta snö.",
+    "example": "På vintern brukar det snöa mycket.",
+    "level": 1,
+    "category": "tid"
+  },
+  {
+    "word": "klass",
+    "meaning": "En grupp elever som går tillsammans i skolan.",
+    "example": "Hela klassen gick på utflykt.",
+    "level": 1,
+    "category": "skola"
+  },
+  {
+    "word": "prov",
+    "meaning": "Ett test i skolan där man visar vad man kan.",
+    "example": "Vi har prov i matte imorgon.",
+    "level": 2,
+    "category": "skola"
+  },
+  {
+    "word": "integritet",
+    "meaning": "Rätten att bestämma över sig själv och sitt privatliv.",
+    "example": "Alla människor har rätt till sin integritet.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "gemensamhet",
+    "meaning": "något som flera personer har lika",
+    "example": "Klassen hittade en gemensamhet i sina åsikter.",
+    "level": 4,
+    "category": "samhälle"
+  },
+  {
+    "word": "påverkbarhet",
+    "meaning": "hur lätt något kan ändras av andra saker",
+    "example": "Elevernas påverkbarhet av reklam diskuterades i klassen.",
+    "level": 5,
+    "category": "samhälle"
+  },
+  {
+    "word": "vilja",
+    "meaning": "att önska göra något",
+    "example": "Jag vill gå ut och leka.",
+    "level": 1,
+    "category": "känslor"
+  },
+  {
+    "word": "tänka",
+    "meaning": "att använda hjärnan för att fundera",
+    "example": "Han satt och tänkte på svaret länge.",
+    "level": 1,
+    "category": "handling"
+  },
+  {
+    "word": "titta",
+    "meaning": "att se på något med ögonen",
+    "example": "Vi tittade på en film i går kväll.",
+    "level": 1,
+    "category": "vardag"
+  }
+]
