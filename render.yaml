@@ -1,0 +1,15 @@
+﻿services:
+  - type: web
+    name: mikallearn
+    runtime: python
+
+    buildCommand: pip install -r requirements.txt
+
+    startCommand: gunicorn app:app
+
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-5
