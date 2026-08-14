@@ -727,25 +727,25 @@ document.addEventListener(
 
         /*
             Viktigt:
-            Ett ord måste bli rätt 4 gånger
+            Ett ord måste bli rätt 5 gånger
             på OLIKA visningar för att räknas
             som behärskat.
         */
 
-        const REQUIRED_CORRECT = 4;
+        const REQUIRED_CORRECT = 5;
 
 
         const SEEN_KEY =
-            "mikal_listening_words_seen_v4";
+            "mikal_listening_words_seen_v5";
 
         const REVIEW_KEY =
-            "mikal_listening_words_review_v4";
+            "mikal_listening_words_review_v5";
 
         const MASTERY_KEY =
-            "mikal_listening_words_mastery_v4";
+            "mikal_listening_words_mastery_v5";
 
         const COUNT_KEY =
-            "mikal_listening_words_count_v4";
+            "mikal_listening_words_count_v5";
 
         const MODE_KEY =
             "mikal_listening_mode_v2";
@@ -1368,7 +1368,7 @@ document.addEventListener(
             /*
                 När alla ord har visats minst
                 en gång prioriterar vi ord som
-                ännu inte har 4/4.
+                ännu inte har 5/5.
             */
 
             const learning =
@@ -1673,7 +1673,7 @@ document.addEventListener(
 
             /*
                 Endast FÖRSTA svaret på denna
-                visning påverkar 4/4-systemet.
+                visning påverkar 5/5-systemet.
 
                 "Gör om" räknas alltså INTE
                 som en ny repetition.
@@ -1728,7 +1728,7 @@ document.addEventListener(
                         /*
                             Även rätt ord måste
                             komma tillbaka tills
-                            det har blivit 4/4.
+                            det har blivit 5/5.
                         */
 
                         addReview(
