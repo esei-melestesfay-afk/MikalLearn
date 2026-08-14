@@ -1,4 +1,4 @@
-﻿/* =========================================================
+/* =========================================================
    MIKALLEARN - LYSSNA & SKRIV V2
 ========================================================= */
 
@@ -15,93 +15,93 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const sentences = [
 
-        "Jag brukar Ã¤ta frukost innan jag gÃ¥r till skolan.",
-        "I morse vaknade jag tidigare Ã¤n vanligt.",
-        "Bussen kom fem minuter senare Ã¤n den brukar.",
+        "Jag brukar äta frukost innan jag går till skolan.",
+        "I morse vaknade jag tidigare än vanligt.",
+        "Bussen kom fem minuter senare än den brukar.",
         "Efter skolan gick jag direkt hem.",
-        "Hon glÃ¶mde sin vattenflaska pÃ¥ kÃ¶ksbordet.",
-        "Vi bÃ¶rjade lektionen klockan Ã¥tta.",
-        "Han gjorde sina lÃ¤xor innan middagen.",
-        "Jag behÃ¶ver kÃ¶pa mjÃ¶lk pÃ¥ vÃ¤gen hem.",
+        "Hon glömde sin vattenflaska på köksbordet.",
+        "Vi började lektionen klockan åtta.",
+        "Han gjorde sina läxor innan middagen.",
+        "Jag behöver köpa mjölk på vägen hem.",
         "PÃ¥ fredag ska klassen skriva ett prov.",
-        "Hon tog pÃ¥ sig jackan eftersom det var kallt.",
+        "Hon tog på sig jackan eftersom det var kallt.",
 
         "Jag missade bussen eftersom jag vaknade sent.",
-        "Efter trÃ¤ningen var jag trÃ¶tt men nÃ¶jd.",
-        "Vi gick till biblioteket fÃ¶r att studera tillsammans.",
-        "Hon fÃ¶rsÃ¶ker fÃ¶rbÃ¤ttra sin svenska varje dag.",
-        "Jag lÃ¤ste frÃ¥gan tvÃ¥ gÃ¥nger innan jag svarade.",
-        "LÃ¤raren fÃ¶rklarade uppgiften innan vi bÃ¶rjade.",
-        "Han sparar pengar fÃ¶r att kÃ¶pa en ny dator.",
-        "PÃ¥ kvÃ¤llen brukar jag fÃ¶rbereda saker infÃ¶r nÃ¤sta dag.",
-        "Det bÃ¶rjade regna nÃ¤r vi gick hem frÃ¥n skolan.",
-        "Jag tycker att det Ã¤r lÃ¤ttare att arbeta nÃ¤r det Ã¤r lugnt.",
+        "Efter träningen var jag trött men nöjd.",
+        "Vi gick till biblioteket för att studera tillsammans.",
+        "Hon försöker förbättra sin svenska varje dag.",
+        "Jag läste frågan två gånger innan jag svarade.",
+        "Läraren förklarade uppgiften innan vi började.",
+        "Han sparar pengar för att köpa en ny dator.",
+        "På kvällen brukar jag förbereda saker inför nästa dag.",
+        "Det började regna när vi gick hem från skolan.",
+        "Jag tycker att det är lättare att arbeta när det är lugnt.",
 
-        "Sara trÃ¤nar fotboll flera gÃ¥nger i veckan.",
-        "Hon vill bli bÃ¤ttre dÃ¤rfÃ¶r trÃ¤nar hon regelbundet.",
-        "Vi stannade hemma eftersom vÃ¤dret var dÃ¥ligt.",
-        "Min kompis hjÃ¤lpte mig nÃ¤r jag inte fÃ¶rstod uppgiften.",
-        "Jag skrev ner de ord som jag inte fÃ¶rstod.",
-        "Efter maten satte han sig och gjorde sina lÃ¤xor.",
-        "Hon var nervÃ¶s innan provet men fÃ¶rsÃ¶kte hÃ¥lla sig lugn.",
-        "Jag behÃ¶ver planera min tid bÃ¤ttre den hÃ¤r veckan.",
-        "Vi jÃ¤mfÃ¶rde vÃ¥ra svar efter att uppgiften var klar.",
-        "Han mÃ¤rkte att trÃ¤ningen gav bÃ¤ttre resultat.",
+        "Sara tränar fotboll flera gånger i veckan.",
+        "Hon vill bli bättre därför tränar hon regelbundet.",
+        "Vi stannade hemma eftersom vädret var dåligt.",
+        "Min kompis hjälpte mig när jag inte förstod uppgiften.",
+        "Jag skrev ner de ord som jag inte förstod.",
+        "Efter maten satte han sig och gjorde sina läxor.",
+        "Hon var nervös innan provet men försökte hålla sig lugn.",
+        "Jag behöver planera min tid bättre den här veckan.",
+        "Vi jämförde våra svar efter att uppgiften var klar.",
+        "Han märkte att träningen gav bättre resultat.",
 
-        "Det Ã¤r viktigt att fÃ¶rstÃ¥ frÃ¥gan innan man bÃ¶rjar skriva.",
-        "Hon Ã¤ndrade sin plan eftersom den fÃ¶rsta inte fungerade.",
-        "Jag fÃ¶rsÃ¶kte fÃ¶rklara problemet med mina egna ord.",
-        "Efter nÃ¥gra veckor mÃ¤rkte hon en tydlig fÃ¶rbÃ¤ttring.",
-        "Vi fick mÃ¶jlighet att gÃ¶ra om uppgiften.",
-        "LÃ¤raren bad eleverna att arbeta i mindre grupper.",
-        "Han kom fÃ¶r sent eftersom tÃ¥get var fÃ¶rsenat.",
-        "Jag blev fÃ¶rvÃ¥nad nÃ¤r jag sÃ¥g resultatet.",
-        "Hon fortsatte fÃ¶rsÃ¶ka trots att uppgiften var svÃ¥r.",
-        "Vi behÃ¶ver ta reda pÃ¥ varfÃ¶r problemet uppstod.",
+        "Det är viktigt att förstå frågan innan man börjar skriva.",
+        "Hon ändrade sin plan eftersom den första inte fungerade.",
+        "Jag försökte förklara problemet med mina egna ord.",
+        "Efter några veckor märkte hon en tydlig förbättring.",
+        "Vi fick möjlighet att göra om uppgiften.",
+        "Läraren bad eleverna att arbeta i mindre grupper.",
+        "Han kom för sent eftersom tåget var försenat.",
+        "Jag blev förvånad när jag såg resultatet.",
+        "Hon fortsatte försöka trots att uppgiften var svår.",
+        "Vi behöver ta reda på varför problemet uppstod.",
 
-        "NÃ¤r jag kom hem mÃ¤rkte jag att mobilen lÃ¥g kvar i skolan.",
-        "Hon bÃ¶rjade plugga tidigare fÃ¶r att slippa stressa pÃ¥ kvÃ¤llen.",
-        "Eleverna diskuterade olika lÃ¶sningar pÃ¥ problemet.",
-        "Jag fÃ¶rsÃ¶kte koncentrera mig trots att det var mycket ljud.",
-        "Han fÃ¶rstod texten bÃ¤ttre efter att han hade lÃ¤st den igen.",
+        "När jag kom hem märkte jag att mobilen låg kvar i skolan.",
+        "Hon började plugga tidigare för att slippa stressa på kvällen.",
+        "Eleverna diskuterade olika lösningar på problemet.",
+        "Jag försökte koncentrera mig trots att det var mycket ljud.",
+        "Han förstod texten bättre efter att han hade läst den igen.",
         "Hon skrev en kort sammanfattning med sina egna ord.",
-        "Vi fick vÃ¤lja vilket Ã¤mne vi ville arbeta med.",
-        "Jag frÃ¥gade lÃ¤raren eftersom jag inte fÃ¶rstod instruktionen.",
+        "Vi fick välja vilket ämne vi ville arbeta med.",
+        "Jag frågade läraren eftersom jag inte förstod instruktionen.",
         "Efter lektionen gick vi igenom svaren tillsammans.",
-        "Han bestÃ¤mde sig fÃ¶r att Ã¤ndra sina studievanor.",
+        "Han bestämde sig för att ändra sina studievanor.",
 
-        "SÃ¶mn kan pÃ¥verka hur lÃ¤tt det Ã¤r att koncentrera sig.",
-        "Det finns flera anledningar till att mÃ¤nniskor trÃ¤nar.",
-        "Hon jÃ¤mfÃ¶rde priser innan hon bestÃ¤mde vad hon skulle kÃ¶pa.",
-        "Vi mÃ¥ste tÃ¤nka pÃ¥ konsekvenserna innan vi fattar ett beslut.",
-        "Han fÃ¶rsÃ¶kte beskriva situationen sÃ¥ tydligt som mÃ¶jligt.",
-        "Resultatet blev bÃ¤ttre Ã¤n hon hade fÃ¶rvÃ¤ntat sig.",
-        "Jag tycker att det Ã¤r viktigt att lyssna pÃ¥ andra mÃ¤nniskor.",
-        "Hon hade svÃ¥rt att komma igÃ¥ng men fortsatte Ã¤ndÃ¥.",
-        "NÃ¤r uppgiften var klar kontrollerade han sitt svar en gÃ¥ng till.",
-        "Vi anvÃ¤nde informationen i texten fÃ¶r att svara pÃ¥ frÃ¥gorna.",
+        "Sömn kan påverka hur lätt det är att koncentrera sig.",
+        "Det finns flera anledningar till att människor tränar.",
+        "Hon jämförde priser innan hon bestämde vad hon skulle köpa.",
+        "Vi måste tänka på konsekvenserna innan vi fattar ett beslut.",
+        "Han försökte beskriva situationen så tydligt som möjligt.",
+        "Resultatet blev bättre än hon hade förväntat sig.",
+        "Jag tycker att det är viktigt att lyssna på andra människor.",
+        "Hon hade svårt att komma igång men fortsatte ändå.",
+        "När uppgiften var klar kontrollerade han sitt svar en gång till.",
+        "Vi använde informationen i texten för att svara på frågorna.",
 
-        "PÃ¥ morgonen upptÃ¤ckte hon att cykeln hade fÃ¥tt punktering.",
-        "Han tog en tidigare buss fÃ¶r att vara sÃ¤ker pÃ¥ att komma i tid.",
-        "Efter presentationen fick gruppen frÃ¥gor frÃ¥n resten av klassen.",
-        "Jag skrev en lista Ã¶ver det viktigaste jag behÃ¶vde gÃ¶ra.",
-        "Hon fÃ¶rsÃ¶kte hitta en lÃ¶sning istÃ¤llet fÃ¶r att ge upp.",
-        "NÃ¤r matchen bÃ¶rjade var bÃ¥da lagen vÃ¤ldigt fokuserade.",
-        "Vi planerade arbetet innan vi bÃ¶rjade skriva rapporten.",
-        "Han lÃ¤ste igenom texten och rÃ¤ttade flera stavfel.",
-        "Jag fÃ¶rstod inte ordet fÃ¶rst men meningen hjÃ¤lpte mig.",
+        "På morgonen upptäckte hon att cykeln hade fått punktering.",
+        "Han tog en tidigare buss för att vara säker på att komma i tid.",
+        "Efter presentationen fick gruppen frågor från resten av klassen.",
+        "Jag skrev en lista över det viktigaste jag behövde göra.",
+        "Hon försökte hitta en lösning istället för att ge upp.",
+        "När matchen började var båda lagen väldigt fokuserade.",
+        "Vi planerade arbetet innan vi började skriva rapporten.",
+        "Han läste igenom texten och rättade flera stavfel.",
+        "Jag förstod inte ordet först men meningen hjälpte mig.",
         "Hon blev klar tidigare eftersom hon hade planerat arbetet.",
 
-        "Trots att han var trÃ¶tt bestÃ¤mde han sig fÃ¶r att gÃ¶ra klart uppgiften.",
-        "NÃ¤r jag jÃ¤mfÃ¶rde de tvÃ¥ texterna sÃ¥g jag flera tydliga skillnader.",
-        "Hon fÃ¶rklarade sin Ã¥sikt och gav ett exempel som stÃ¶d.",
-        "Vi diskuterade varfÃ¶r samma problem kan ha flera olika lÃ¶sningar.",
-        "Han bÃ¶rjade fÃ¶rstÃ¥ sambandet mellan sÃ¶mn och koncentration.",
-        "Efter att hon hade lÃ¤st texten kunde hon sammanfatta huvudidÃ©n.",
-        "Jag fÃ¶rsÃ¶kte anvÃ¤nda det nya ordet i en egen mening.",
-        "LÃ¤raren ville att vi skulle motivera vÃ¥ra svar tydligare.",
-        "Hon upptÃ¤ckte att smÃ¥ fÃ¶rÃ¤ndringar kunde gÃ¶ra stor skillnad.",
-        "Vi behÃ¶vde anvÃ¤nda information frÃ¥n flera delar av texten."
+        "Trots att han var trött bestämde han sig för att göra klart uppgiften.",
+        "När jag jämförde de två texterna såg jag flera tydliga skillnader.",
+        "Hon förklarade sin åsikt och gav ett exempel som stöd.",
+        "Vi diskuterade varför samma problem kan ha flera olika lösningar.",
+        "Han började förstå sambandet mellan sömn och koncentration.",
+        "Efter att hon hade läst texten kunde hon sammanfatta huvudidén.",
+        "Jag försökte använda det nya ordet i en egen mening.",
+        "Läraren ville att vi skulle motivera våra svar tydligare.",
+        "Hon upptäckte att små förändringar kunde göra stor skillnad.",
+        "Vi behövde använda information från flera delar av texten."
 
     ];
 
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       VÃ„LJ NY MENING UTAN REPETITION
+       VÄLJ NY MENING UTAN REPETITION
     ===================================================== */
 
     function chooseNewSentence() {
@@ -420,34 +420,102 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       SVENSK RÃ–ST
+       SVENSK RÖST
     ===================================================== */
 
-    function speak(rate = 0.9) {
-
-        const mode =
-            rate <= 0.75
-                ? "slow"
-                : "normal";
+    
+let mikalAudio = null;
 
 
-        if (
-            window.MikalTTS
-        ) {
+function speak(rate = 0.9) {
 
-            window.MikalTTS.play(
-                sentences[currentIndex],
-                mode
-            );
+    if (mikalAudio) {
 
-        }
+        mikalAudio.pause();
+
+        mikalAudio.currentTime = 0;
 
     }
 
 
+    const number =
+        String(currentIndex + 1)
+            .padStart(
+                3,
+                "0"
+            );
 
 
-    /* =====================================================
+    const audio =
+        new Audio(
+            "/static/audio/listening/mening_"
+            +
+            number
+            +
+            ".mp3"
+        );
+
+
+    audio.volume = 1.0;
+
+
+    audio.playbackRate =
+        rate <= 0.75
+            ? 0.82
+            : 1.0;
+
+
+    try {
+        audio.preservesPitch = true;
+    }
+    catch {
+    }
+
+
+    try {
+        audio.webkitPreservesPitch = true;
+    }
+    catch {
+    }
+
+
+    mikalAudio = audio;
+
+
+    audio.play()
+        .catch(
+            error => {
+
+                console.error(
+                    "Ljudfel:",
+                    error
+                );
+
+
+                const result =
+                    document.getElementById(
+                        "listenResult"
+                    );
+
+
+                if (result) {
+
+                    result.className =
+                        "listen-result listen-warning";
+
+
+                    result.innerHTML =
+                        "<strong>Ljudet kunde inte spelas. Försök igen.</strong>";
+
+                }
+
+            }
+        );
+
+}
+
+
+/* =====================================================
        VISA AKTUELL MENING
     ===================================================== */
 
@@ -466,7 +534,7 @@ document.addEventListener("DOMContentLoaded", () => {
             seen.length +
             " av " +
             sentences.length +
-            " meningar i denna omgÃ¥ng";
+            " meningar i denna omgång";
 
 
         answer.value =
@@ -612,7 +680,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       GÃ–R OM SAMMA
+       GÖR OM SAMMA
     ===================================================== */
 
     function retrySentence() {
@@ -646,7 +714,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       NÃ„STA
+       NÄSTA
     ===================================================== */
 
     function nextSentence() {
