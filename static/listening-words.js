@@ -716,32 +716,47 @@ document.addEventListener(
 
 
         /* =================================================
-           DATA
+           DATA + SMART INLÄRNING V4
         ================================================= */
 
         let words = [];
 
-        let currentIndex =
-            -1;
+        let currentIndex = -1;
 
-        let currentAudio =
-            null;
+        let currentAudio = null;
+
+        /*
+            Viktigt:
+            Ett ord måste bli rätt 4 gånger
+            på OLIKA visningar för att räknas
+            som behärskat.
+        */
+
+        const REQUIRED_CORRECT = 4;
 
 
         const SEEN_KEY =
-            "mikal_listening_words_seen_v2";
+            "mikal_listening_words_seen_v4";
 
+        const REVIEW_KEY =
+            "mikal_listening_words_review_v4";
 
-        const WEAK_KEY =
-            "mikal_listening_words_weak_v2";
-
+        const MASTERY_KEY =
+            "mikal_listening_words_mastery_v4";
 
         const COUNT_KEY =
-            "mikal_listening_words_count_v2";
-
+            "mikal_listening_words_count_v4";
 
         const MODE_KEY =
             "mikal_listening_mode_v2";
+
+
+        /*
+            Hindrar att "Gör om" räknas som
+            en ny repetition av samma ord.
+        */
+
+        let countedThisRound = false;
 
 
 
@@ -761,9 +776,7 @@ document.addEventListener(
 
                 const data =
                     JSON.parse(
-                        localStorage.getItem(
-                            key
-                        )
+                        localStorage.getItem(key)
                         || "[]"
                     );
 
@@ -792,6 +805,153 @@ document.addEventListener(
             localStorage.setItem(
                 key,
                 JSON.stringify(array)
+            );
+
+        }
+
+
+
+        function getMastery() {
+
+            try {
+
+                const data =
+                    JSON.parse(
+                        localStorage.getItem(
+                            MASTERY_KEY
+                        )
+                        || "{}"
+                    );
+
+
+                if (
+                    data
+                    &&
+                    typeof data === "object"
+                    &&
+                    !Array.isArray(data)
+                ) {
+
+                    return data;
+
+                }
+
+            }
+
+            catch {
+            }
+
+
+            return {};
+
+        }
+
+
+
+        function saveMastery(data) {
+
+            localStorage.setItem(
+                MASTERY_KEY,
+                JSON.stringify(data)
+            );
+
+        }
+
+
+
+        function getWordKey(index) {
+
+            if (
+                index < 0
+                ||
+                !words[index]
+            ) {
+
+                return "";
+
+            }
+
+
+            return normalize(
+                words[index].word
+            );
+
+        }
+
+
+
+        function getStreak(index) {
+
+            const key =
+                getWordKey(index);
+
+
+            if (!key) {
+
+                return 0;
+
+            }
+
+
+            const mastery =
+                getMastery();
+
+
+            return Math.min(
+                REQUIRED_CORRECT,
+                Number(
+                    mastery[key]
+                    || 0
+                )
+            );
+
+        }
+
+
+
+        function isMastered(index) {
+
+            return (
+                getStreak(index)
+                >= REQUIRED_CORRECT
+            );
+
+        }
+
+
+
+        function setStreak(
+            index,
+            value
+        ) {
+
+            const key =
+                getWordKey(index);
+
+
+            if (!key) {
+
+                return;
+
+            }
+
+
+            const mastery =
+                getMastery();
+
+
+            mastery[key] =
+                Math.max(
+                    0,
+                    Math.min(
+                        REQUIRED_CORRECT,
+                        value
+                    )
+                );
+
+
+            saveMastery(
+                mastery
             );
 
         }
@@ -907,7 +1067,7 @@ document.addEventListener(
 
             const response =
                 await fetch(
-                    "/static/listening_words.json?v=2"
+                    "/static/listening_words.json?v=4"
                 );
 
 
@@ -922,7 +1082,6 @@ document.addEventListener(
 
             words =
                 await response.json();
-
 
         }
 
@@ -959,75 +1118,124 @@ document.addEventListener(
                 );
 
 
+            const mastery =
+                getMastery();
+
+
+            let mastered =
+                0;
+
+
+            words.forEach(
+                item => {
+
+                    const key =
+                        normalize(
+                            item.word
+                        );
+
+
+                    if (
+                        Number(
+                            mastery[key]
+                            || 0
+                        )
+                        >= REQUIRED_CORRECT
+                    ) {
+
+                        mastered++;
+
+                    }
+
+                }
+            );
+
+
             document
                 .getElementById(
                     "wordListenProgressV2"
                 )
                 .textContent =
+                mastered
+                +
+                " behärskade • "
+                +
                 seen.length
                 +
-                " av "
+                "/"
                 +
                 words.length
                 +
-                " ord";
+                " tränade";
 
         }
 
 
 
         /* =================================================
-           WEAK WORDS
+           REPETITIONSLISTA
         ================================================= */
 
-        function addWeak(index) {
+        function getReviewWords() {
 
-            let weak =
-                getStorageArray(
-                    WEAK_KEY
-                );
-
-
-            if (
-                !weak.includes(
-                    index
-                )
-            ) {
-
-                weak.push(
-                    index
-                );
-
-            }
-
-
-            saveStorageArray(
-                WEAK_KEY,
-                weak
+            return getStorageArray(
+                REVIEW_KEY
+            )
+            .filter(
+                index =>
+                    index >= 0
+                    &&
+                    index < words.length
+                    &&
+                    !isMastered(index)
             );
 
         }
 
 
 
-        function removeWeak(index) {
+        function addReview(index) {
 
-            let weak =
+            let review =
+                getReviewWords();
+
+
+            if (
+                !review.includes(index)
+            ) {
+
+                review.push(index);
+
+            }
+
+
+            saveStorageArray(
+                REVIEW_KEY,
+                review
+            );
+
+        }
+
+
+
+        function removeReview(index) {
+
+            let review =
                 getStorageArray(
-                    WEAK_KEY
+                    REVIEW_KEY
                 );
 
 
-            weak =
-                weak.filter(
+            review =
+                review.filter(
                     item =>
                         item !== index
                 );
 
 
             saveStorageArray(
-                WEAK_KEY,
-                weak
+                REVIEW_KEY,
+                review
             );
 
         }
@@ -1035,7 +1243,7 @@ document.addEventListener(
 
 
         /* =================================================
-           CHOOSE WORD
+           VÄLJ NÄSTA ORD
         ================================================= */
 
         function chooseNewWord() {
@@ -1046,18 +1254,11 @@ document.addEventListener(
                 );
 
 
-            let weak =
-                getStorageArray(
-                    WEAK_KEY
-                ).filter(
-                    index =>
-                        index >= 0
-                        &&
-                        index < words.length
-                );
+            let review =
+                getReviewWords();
 
 
-            let count =
+            const count =
                 Number(
                     localStorage.getItem(
                         COUNT_KEY
@@ -1067,46 +1268,43 @@ document.addEventListener(
 
 
             /*
-               Var sjätte ord:
-               träna ett tidigare fel ord igen.
+                Var tredje övning försöker vi
+                ta tillbaka ett ord som ännu
+                inte är behärskat.
             */
 
-            const practiceWeak =
-                weak.length > 0
+            const reviewNow =
+                review.length > 0
                 &&
                 count > 0
                 &&
-                count % 6 === 0;
+                count % 3 === 0;
 
 
+            if (reviewNow) {
 
-            if (
-                practiceWeak
-            ) {
-
-                const availableWeak =
-                    weak.filter(
+                const candidates =
+                    review.filter(
                         index =>
-                            index !==
-                            currentIndex
+                            index !== currentIndex
                     );
 
 
                 if (
-                    availableWeak.length
+                    candidates.length > 0
                 ) {
 
                     currentIndex =
-                        availableWeak[
+                        candidates[
                             Math.floor(
                                 Math.random()
                                 *
-                                availableWeak.length
+                                candidates.length
                             )
                         ];
 
 
-                    resetWord();
+                    startNewRound();
 
                     return;
 
@@ -1116,23 +1314,11 @@ document.addEventListener(
 
 
 
-            if (
-                seen.length >=
-                words.length
-            ) {
+            /*
+                Först prioriteras helt nya ord.
+            */
 
-                seen = [];
-
-                saveStorageArray(
-                    SEEN_KEY,
-                    seen
-                );
-
-            }
-
-
-
-            const available =
+            const newWords =
                 words
                     .map(
                         (_, index) =>
@@ -1140,49 +1326,132 @@ document.addEventListener(
                     )
                     .filter(
                         index =>
-                            !seen.includes(
-                                index
-                            )
+                            !seen.includes(index)
                             &&
-                            index !==
-                            currentIndex
+                            index !== currentIndex
                     );
 
 
-
-            currentIndex =
-                available[
-                    Math.floor(
-                        Math.random()
-                        *
-                        available.length
-                    )
-                ];
-
-
-
             if (
-                !seen.includes(
-                    currentIndex
-                )
+                newWords.length > 0
             ) {
+
+                currentIndex =
+                    newWords[
+                        Math.floor(
+                            Math.random()
+                            *
+                            newWords.length
+                        )
+                    ];
+
 
                 seen.push(
                     currentIndex
                 );
 
+
+                saveStorageArray(
+                    SEEN_KEY,
+                    seen
+                );
+
+
+                startNewRound();
+
+                return;
+
             }
 
 
-            saveStorageArray(
-                SEEN_KEY,
-                seen
-            );
+
+            /*
+                När alla ord har visats minst
+                en gång prioriterar vi ord som
+                ännu inte har 4/4.
+            */
+
+            const learning =
+                words
+                    .map(
+                        (_, index) =>
+                            index
+                    )
+                    .filter(
+                        index =>
+                            !isMastered(index)
+                            &&
+                            index !== currentIndex
+                    );
 
 
-            updateProgress();
+            if (
+                learning.length > 0
+            ) {
 
-            resetWord();
+                currentIndex =
+                    learning[
+                        Math.floor(
+                            Math.random()
+                            *
+                            learning.length
+                        )
+                    ];
+
+
+                addReview(
+                    currentIndex
+                );
+
+
+                startNewRound();
+
+                return;
+
+            }
+
+
+
+            /*
+                Om ALLA ord är behärskade kan
+                vi fortfarande repetera ibland.
+            */
+
+            const all =
+                words
+                    .map(
+                        (_, index) =>
+                            index
+                    )
+                    .filter(
+                        index =>
+                            index !== currentIndex
+                    );
+
+
+            if (
+                all.length > 0
+            ) {
+
+                currentIndex =
+                    all[
+                        Math.floor(
+                            Math.random()
+                            *
+                            all.length
+                        )
+                    ];
+
+            }
+
+            else {
+
+                currentIndex = 0;
+
+            }
+
+
+            startNewRound();
 
         }
 
@@ -1199,7 +1468,9 @@ document.addEventListener(
             if (
                 currentIndex < 0
             ) {
+
                 return;
+
             }
 
 
@@ -1281,10 +1552,10 @@ document.addEventListener(
 
 
         /* =================================================
-           RESET
+           NY OMGÅNG
         ================================================= */
 
-        function resetWord() {
+        function clearExercise() {
 
             document
                 .getElementById(
@@ -1294,13 +1565,11 @@ document.addEventListener(
                 "";
 
 
-            const result =
-                document.getElementById(
+            document
+                .getElementById(
                     "commonWordResult"
-                );
-
-
-            result.innerHTML =
+                )
+                .innerHTML =
                 "";
 
 
@@ -1330,8 +1599,27 @@ document.addEventListener(
 
 
 
+        function startNewRound() {
+
+            /*
+                Ny visning av ordet =
+                nästa svar får räknas.
+            */
+
+            countedThisRound =
+                false;
+
+
+            clearExercise();
+
+            updateProgress();
+
+        }
+
+
+
         /* =================================================
-           CHECK
+           KONTROLLERA
         ================================================= */
 
         function checkWord() {
@@ -1380,58 +1668,202 @@ document.addEventListener(
 
 
             const correct =
-                answer ===
-                correctWord;
+                answer === correctWord;
 
+
+            /*
+                Endast FÖRSTA svaret på denna
+                visning påverkar 4/4-systemet.
+
+                "Gör om" räknas alltså INTE
+                som en ny repetition.
+            */
+
+            const countsForMastery =
+                !countedThisRound;
+
+
+            if (
+                countsForMastery
+            ) {
+
+                countedThisRound =
+                    true;
+
+
+                if (correct) {
+
+                    const oldStreak =
+                        getStreak(
+                            currentIndex
+                        );
+
+
+                    const newStreak =
+                        Math.min(
+                            REQUIRED_CORRECT,
+                            oldStreak + 1
+                        );
+
+
+                    setStreak(
+                        currentIndex,
+                        newStreak
+                    );
+
+
+                    if (
+                        newStreak
+                        >= REQUIRED_CORRECT
+                    ) {
+
+                        removeReview(
+                            currentIndex
+                        );
+
+                    }
+
+                    else {
+
+                        /*
+                            Även rätt ord måste
+                            komma tillbaka tills
+                            det har blivit 4/4.
+                        */
+
+                        addReview(
+                            currentIndex
+                        );
+
+                    }
+
+                }
+
+                else {
+
+                    /*
+                        Ett fel betyder att hon
+                        ännu inte kan ordet säkert.
+
+                        3/4 + fel = tillbaka till 0/4.
+                    */
+
+                    setStreak(
+                        currentIndex,
+                        0
+                    );
+
+
+                    addReview(
+                        currentIndex
+                    );
+
+                }
+
+            }
+
+
+            const streak =
+                getStreak(
+                    currentIndex
+                );
 
 
             if (correct) {
 
-                removeWeak(
-                    currentIndex
-                );
+                if (
+                    streak >=
+                    REQUIRED_CORRECT
+                ) {
 
+                    result.innerHTML = `
 
-                result.innerHTML = `
-
-                    <div class="word-listen-correct-v2">
-
-                        <strong>
-                            ✅ Rätt!
-                        </strong>
-
-                        <p>
-                            Bra, du stavade ordet rätt.
-                        </p>
-
-                        <div class="word-answer-display-v2">
-
-                            <span>
-                                RÄTT ORD
-                            </span>
+                        <div class="word-listen-correct-v2">
 
                             <strong>
-                                ${escapeHTML(item.word)}
+                                🏆 Behärskat!
                             </strong>
 
-                            <div class="word-spelling-v2">
-                                ${spellWord(item.word)}
+                            <p>
+                                Du har nu stavat ordet rätt
+                                ${REQUIRED_CORRECT} gånger på olika tillfällen.
+                            </p>
+
+                            <div class="word-answer-display-v2">
+
+                                <span>
+                                    BEHÄRSKAT ORD
+                                </span>
+
+                                <strong>
+                                    ${escapeHTML(item.word)}
+                                </strong>
+
+                                <div class="word-spelling-v2">
+                                    ${spellWord(item.word)}
+                                </div>
+
                             </div>
+
+                            <p>
+                                ✅ ${REQUIRED_CORRECT}/${REQUIRED_CORRECT} rätt
+                            </p>
 
                         </div>
 
-                    </div>
+                    `;
 
-                `;
+                }
+
+                else {
+
+                    const extraText =
+                        countsForMastery
+                            ? "Bra! Ordet kommer tillbaka senare så att vi vet att stavningen verkligen sitter."
+                            : "Bra! Men detta var samma omgång. Nästa gång ordet kommer tillbaka kan du höja din nivå igen.";
+
+
+                    result.innerHTML = `
+
+                        <div class="word-listen-correct-v2">
+
+                            <strong>
+                                ✅ Rätt!
+                            </strong>
+
+                            <p>
+                                ${extraText}
+                            </p>
+
+                            <div class="word-answer-display-v2">
+
+                                <span>
+                                    RÄTT ORD
+                                </span>
+
+                                <strong>
+                                    ${escapeHTML(item.word)}
+                                </strong>
+
+                                <div class="word-spelling-v2">
+                                    ${spellWord(item.word)}
+                                </div>
+
+                            </div>
+
+                            <p>
+                                🧠 ${streak}/${REQUIRED_CORRECT} rätt mot behärskat
+                            </p>
+
+                        </div>
+
+                    `;
+
+                }
 
             }
 
             else {
-
-                addWeak(
-                    currentIndex
-                );
-
 
                 result.innerHTML = `
 
@@ -1442,8 +1874,8 @@ document.addEventListener(
                         </strong>
 
                         <p>
-                            Titta på stavningen och försök igen.
-                            Ordet kommer också tillbaka senare.
+                            Ordet är inte behärskat ännu.
+                            Det kommer tillbaka igen senare.
                         </p>
 
                         <div class="word-answer-display-v2">
@@ -1462,12 +1894,18 @@ document.addEventListener(
 
                         </div>
 
+                        <p>
+                            🔁 0/${REQUIRED_CORRECT} — börja bygga upp ordet igen
+                        </p>
+
                     </div>
 
                 `;
 
             }
 
+
+            updateProgress();
 
 
             document
@@ -1503,7 +1941,13 @@ document.addEventListener(
                             : 0,
                         {
                             word:
-                                item.word
+                                item.word,
+
+                            mastery:
+                                streak,
+
+                            required:
+                                REQUIRED_CORRECT
                         }
                     );
 
@@ -1514,7 +1958,7 @@ document.addEventListener(
 
 
         /* =================================================
-           NEXT
+           NÄSTA
         ================================================= */
 
         function nextWord() {
@@ -1544,12 +1988,21 @@ document.addEventListener(
 
 
         /* =================================================
-           RETRY
+           GÖR OM
         ================================================= */
 
         function retryWord() {
 
-            resetWord();
+            /*
+                Vi tömmer övningen men sätter INTE
+                countedThisRound till false.
+
+                Därför kan hon träna samma ord igen,
+                men inte få fyra poäng genom att
+                trycka Gör om fyra gånger.
+            */
+
+            clearExercise();
 
             playWord(
                 false
