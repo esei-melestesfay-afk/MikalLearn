@@ -1,2816 +1,2504 @@
 {
   "words": [
     {
-      "id": "word_001",
-      "type": "word",
-      "text": "jag",
-      "audio": "/static/audio/listening_words/ord_001.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_002",
-      "type": "word",
-      "text": "du",
-      "audio": "/static/audio/listening_words/ord_002.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_003",
-      "type": "word",
-      "text": "han",
-      "audio": "/static/audio/listening_words/ord_003.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_004",
-      "type": "word",
-      "text": "hon",
-      "audio": "/static/audio/listening_words/ord_004.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_005",
-      "type": "word",
-      "text": "vi",
-      "audio": "/static/audio/listening_words/ord_005.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_006",
-      "type": "word",
-      "text": "ni",
-      "audio": "/static/audio/listening_words/ord_006.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_007",
-      "type": "word",
-      "text": "mig",
-      "audio": "/static/audio/listening_words/ord_007.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_008",
-      "type": "word",
-      "text": "dig",
-      "audio": "/static/audio/listening_words/ord_008.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_009",
-      "type": "word",
-      "text": "oss",
-      "audio": "/static/audio/listening_words/ord_009.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_010",
-      "type": "word",
-      "text": "min",
-      "audio": "/static/audio/listening_words/ord_011.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_011",
-      "type": "word",
-      "text": "mitt",
-      "audio": "/static/audio/listening_words/ord_012.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_012",
-      "type": "word",
-      "text": "mina",
-      "audio": "/static/audio/listening_words/ord_013.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_013",
-      "type": "word",
-      "text": "din",
-      "audio": "/static/audio/listening_words/ord_014.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0001",
+      "word": "jag",
+      "audio": "/static/audio/listening_words/ord_001.mp3"
     },
     {
-      "id": "word_014",
-      "type": "word",
-      "text": "ditt",
-      "audio": "/static/audio/listening_words/ord_015.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0002",
+      "word": "du",
+      "audio": "/static/audio/listening_words/ord_002.mp3"
     },
     {
-      "id": "word_015",
-      "type": "word",
-      "text": "dina",
-      "audio": "/static/audio/listening_words/ord_016.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0003",
+      "word": "han",
+      "audio": "/static/audio/listening_words/ord_003.mp3"
     },
     {
-      "id": "word_016",
-      "type": "word",
-      "text": "hans",
-      "audio": "/static/audio/listening_words/ord_017.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0004",
+      "word": "hon",
+      "audio": "/static/audio/listening_words/ord_004.mp3"
     },
     {
-      "id": "word_017",
-      "type": "word",
-      "text": "hennes",
-      "audio": "/static/audio/listening_words/ord_018.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0005",
+      "word": "vi",
+      "audio": "/static/audio/listening_words/ord_005.mp3"
     },
     {
-      "id": "word_018",
-      "type": "word",
-      "text": "vår",
-      "audio": "/static/audio/listening_words/ord_019.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0006",
+      "word": "ni",
+      "audio": "/static/audio/listening_words/ord_006.mp3"
     },
     {
-      "id": "word_019",
-      "type": "word",
-      "text": "vårt",
-      "audio": "/static/audio/listening_words/ord_020.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0007",
+      "word": "mig",
+      "audio": "/static/audio/listening_words/ord_007.mp3"
     },
     {
-      "id": "word_020",
-      "type": "word",
-      "text": "våra",
-      "audio": "/static/audio/listening_words/ord_021.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0008",
+      "word": "dig",
+      "audio": "/static/audio/listening_words/ord_008.mp3"
     },
     {
-      "id": "word_021",
-      "type": "word",
-      "text": "deras",
-      "audio": "/static/audio/listening_words/ord_023.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0009",
+      "word": "oss",
+      "audio": "/static/audio/listening_words/ord_009.mp3"
     },
     {
-      "id": "word_022",
-      "type": "word",
-      "text": "den",
-      "audio": "/static/audio/listening_words/ord_024.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0010",
+      "word": "dem",
+      "audio": "/static/audio/listening_words/ord_010.mp3"
     },
     {
-      "id": "word_023",
-      "type": "word",
-      "text": "det",
-      "audio": "/static/audio/listening_words/ord_025.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0011",
+      "word": "min",
+      "audio": "/static/audio/listening_words/ord_011.mp3"
     },
     {
-      "id": "word_024",
-      "type": "word",
-      "text": "de",
-      "audio": "/static/audio/listening_words/ord_026.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0012",
+      "word": "mitt",
+      "audio": "/static/audio/listening_words/ord_012.mp3"
     },
     {
-      "id": "word_025",
-      "type": "word",
-      "text": "en",
-      "audio": "/static/audio/listening_words/ord_044.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0013",
+      "word": "mina",
+      "audio": "/static/audio/listening_words/ord_013.mp3"
     },
     {
-      "id": "word_026",
-      "type": "word",
-      "text": "ett",
-      "audio": "/static/audio/listening_words/ord_045.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0014",
+      "word": "din",
+      "audio": "/static/audio/listening_words/ord_014.mp3"
     },
     {
-      "id": "word_027",
-      "type": "word",
-      "text": "är",
-      "audio": "/static/audio/listening_words/ord_080.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0015",
+      "word": "ditt",
+      "audio": "/static/audio/listening_words/ord_015.mp3"
     },
     {
-      "id": "word_028",
-      "type": "word",
-      "text": "har",
-      "audio": "/static/audio/listening_words/ord_081.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0016",
+      "word": "dina",
+      "audio": "/static/audio/listening_words/ord_016.mp3"
     },
     {
-      "id": "word_029",
-      "type": "word",
-      "text": "kan",
-      "audio": "/static/audio/listening_words/ord_083.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0017",
+      "word": "hans",
+      "audio": "/static/audio/listening_words/ord_017.mp3"
     },
     {
-      "id": "word_030",
-      "type": "word",
-      "text": "ska",
-      "audio": "/static/audio/listening_words/ord_085.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0018",
+      "word": "hennes",
+      "audio": "/static/audio/listening_words/ord_018.mp3"
     },
     {
-      "id": "word_031",
-      "type": "word",
-      "text": "vill",
-      "audio": "/static/audio/listening_words/ord_087.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0019",
+      "word": "vår",
+      "audio": "/static/audio/listening_words/ord_019.mp3"
     },
     {
-      "id": "word_032",
-      "type": "word",
-      "text": "får",
-      "audio": "/static/audio/listening_words/ord_089.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0020",
+      "word": "vårt",
+      "audio": "/static/audio/listening_words/ord_020.mp3"
     },
     {
-      "id": "word_033",
-      "type": "word",
-      "text": "måste",
-      "audio": "/static/audio/listening_words/ord_091.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0021",
+      "word": "våra",
+      "audio": "/static/audio/listening_words/ord_021.mp3"
     },
     {
-      "id": "word_034",
-      "type": "word",
-      "text": "behöver",
-      "audio": "/static/audio/listening_words/ord_092.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0022",
+      "word": "er",
+      "audio": "/static/audio/listening_words/ord_022.mp3"
     },
     {
-      "id": "word_035",
-      "type": "word",
-      "text": "blir",
-      "audio": "/static/audio/listening_words/ord_094.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0023",
+      "word": "deras",
+      "audio": "/static/audio/listening_words/ord_023.mp3"
     },
     {
-      "id": "word_036",
-      "type": "word",
-      "text": "gör",
-      "audio": "/static/audio/listening_words/ord_096.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0024",
+      "word": "den",
+      "audio": "/static/audio/listening_words/ord_024.mp3"
     },
     {
-      "id": "word_037",
-      "type": "word",
-      "text": "går",
-      "audio": "/static/audio/listening_words/ord_098.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0025",
+      "word": "det",
+      "audio": "/static/audio/listening_words/ord_025.mp3"
     },
     {
-      "id": "word_038",
-      "type": "word",
-      "text": "kommer",
-      "audio": "/static/audio/listening_words/ord_100.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0026",
+      "word": "de",
+      "audio": "/static/audio/listening_words/ord_026.mp3"
     },
     {
-      "id": "word_039",
-      "type": "word",
-      "text": "ser",
-      "audio": "/static/audio/listening_words/ord_102.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0027",
+      "word": "denna",
+      "audio": "/static/audio/listening_words/ord_027.mp3"
     },
     {
-      "id": "word_040",
-      "type": "word",
-      "text": "vet",
-      "audio": "/static/audio/listening_words/ord_104.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0028",
+      "word": "detta",
+      "audio": "/static/audio/listening_words/ord_028.mp3"
     },
     {
-      "id": "word_041",
-      "type": "word",
-      "text": "säger",
-      "audio": "/static/audio/listening_words/ord_106.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0029",
+      "word": "dessa",
+      "audio": "/static/audio/listening_words/ord_029.mp3"
     },
     {
-      "id": "word_042",
-      "type": "word",
-      "text": "tar",
-      "audio": "/static/audio/listening_words/ord_108.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0030",
+      "word": "någon",
+      "audio": "/static/audio/listening_words/ord_030.mp3"
     },
     {
-      "id": "word_043",
-      "type": "word",
-      "text": "ger",
-      "audio": "/static/audio/listening_words/ord_110.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0031",
+      "word": "något",
+      "audio": "/static/audio/listening_words/ord_031.mp3"
     },
     {
-      "id": "word_044",
-      "type": "word",
-      "text": "finns",
-      "audio": "/static/audio/listening_words/ord_112.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0032",
+      "word": "några",
+      "audio": "/static/audio/listening_words/ord_032.mp3"
     },
     {
-      "id": "word_045",
-      "type": "word",
-      "text": "tycker",
-      "audio": "/static/audio/listening_words/ord_114.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0033",
+      "word": "ingen",
+      "audio": "/static/audio/listening_words/ord_033.mp3"
     },
     {
-      "id": "word_046",
-      "type": "word",
-      "text": "tänker",
-      "audio": "/static/audio/listening_words/ord_116.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0034",
+      "word": "inget",
+      "audio": "/static/audio/listening_words/ord_034.mp3"
     },
     {
-      "id": "word_047",
-      "type": "word",
-      "text": "känner",
-      "audio": "/static/audio/listening_words/ord_118.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0035",
+      "word": "inga",
+      "audio": "/static/audio/listening_words/ord_035.mp3"
     },
     {
-      "id": "word_048",
-      "type": "word",
-      "text": "börjar",
-      "audio": "/static/audio/listening_words/ord_120.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0036",
+      "word": "alla",
+      "audio": "/static/audio/listening_words/ord_036.mp3"
     },
     {
-      "id": "word_049",
-      "type": "word",
-      "text": "slutar",
-      "audio": "/static/audio/listening_words/ord_122.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0037",
+      "word": "allt",
+      "audio": "/static/audio/listening_words/ord_037.mp3"
     },
     {
-      "id": "word_050",
-      "type": "word",
-      "text": "läser",
-      "audio": "/static/audio/listening_words/ord_126.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0038",
+      "word": "varje",
+      "audio": "/static/audio/listening_words/ord_038.mp3"
     },
     {
-      "id": "word_051",
-      "type": "word",
-      "text": "skriver",
-      "audio": "/static/audio/listening_words/ord_128.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0039",
+      "word": "samma",
+      "audio": "/static/audio/listening_words/ord_041.mp3"
     },
     {
-      "id": "word_052",
-      "type": "word",
-      "text": "lyssnar",
-      "audio": "/static/audio/listening_words/ord_130.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0040",
+      "word": "annan",
+      "audio": "/static/audio/listening_words/ord_042.mp3"
     },
     {
-      "id": "word_053",
-      "type": "word",
-      "text": "pratar",
-      "audio": "/static/audio/listening_words/ord_132.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0041",
+      "word": "andra",
+      "audio": "/static/audio/listening_words/ord_043.mp3"
     },
     {
-      "id": "word_054",
-      "type": "word",
-      "text": "frågar",
-      "audio": "/static/audio/listening_words/ord_134.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0042",
+      "word": "själv",
+      "audio": "/static/audio/listening_words/ord_040.mp3"
     },
     {
-      "id": "word_055",
-      "type": "word",
-      "text": "svarar",
-      "audio": "/static/audio/listening_words/ord_136.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0043",
+      "word": "en",
+      "audio": "/static/audio/listening_words/ord_044.mp3"
     },
     {
-      "id": "word_056",
-      "type": "word",
-      "text": "hjälper",
-      "audio": "/static/audio/listening_words/ord_138.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0044",
+      "word": "ett",
+      "audio": "/static/audio/listening_words/ord_045.mp3"
     },
     {
-      "id": "word_057",
-      "type": "word",
-      "text": "försöker",
-      "audio": "/static/audio/listening_words/ord_140.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0045",
+      "word": "och",
+      "audio": "/static/audio/listening_words/ord_046.mp3"
     },
     {
-      "id": "word_058",
-      "type": "word",
-      "text": "lär",
-      "audio": "/static/audio/listening_words/ord_142.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0046",
+      "word": "eller",
+      "audio": "/static/audio/listening_words/ord_047.mp3"
     },
     {
-      "id": "word_059",
-      "type": "word",
-      "text": "använder",
-      "audio": "/static/audio/listening_words/ord_144.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0047",
+      "word": "men",
+      "audio": "/static/audio/listening_words/ord_048.mp3"
     },
     {
-      "id": "word_060",
-      "type": "word",
-      "text": "hittar",
-      "audio": "/static/audio/listening_words/ord_146.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0048",
+      "word": "att",
+      "audio": "/static/audio/listening_words/ord_049.mp3"
     },
     {
-      "id": "word_061",
-      "type": "word",
-      "text": "väntar",
-      "audio": "/static/audio/listening_words/ord_148.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0049",
+      "word": "som",
+      "audio": "/static/audio/listening_words/ord_050.mp3"
     },
     {
-      "id": "word_062",
-      "type": "word",
-      "text": "bor",
-      "audio": "/static/audio/listening_words/ord_150.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0050",
+      "word": "om",
+      "audio": "/static/audio/listening_words/ord_051.mp3"
     },
     {
-      "id": "word_063",
-      "type": "word",
-      "text": "heter",
-      "audio": "/static/audio/listening_words/ord_152.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0051",
+      "word": "för",
+      "audio": "/static/audio/listening_words/ord_064.mp3"
     },
     {
-      "id": "word_064",
-      "type": "word",
-      "text": "och",
-      "audio": "/static/audio/listening_words/ord_046.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0052",
+      "word": "med",
+      "audio": "/static/audio/listening_words/ord_065.mp3"
     },
     {
-      "id": "word_065",
-      "type": "word",
-      "text": "eller",
-      "audio": "/static/audio/listening_words/ord_047.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0053",
+      "word": "utan",
+      "audio": "/static/audio/listening_words/ord_066.mp3"
     },
     {
-      "id": "word_066",
-      "type": "word",
-      "text": "men",
-      "audio": "/static/audio/listening_words/ord_048.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0054",
+      "word": "till",
+      "audio": "/static/audio/listening_words/ord_067.mp3"
     },
     {
-      "id": "word_067",
-      "type": "word",
-      "text": "att",
-      "audio": "/static/audio/listening_words/ord_049.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0055",
+      "word": "från",
+      "audio": "/static/audio/listening_words/ord_068.mp3"
     },
     {
-      "id": "word_068",
-      "type": "word",
-      "text": "som",
-      "audio": "/static/audio/listening_words/ord_050.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0056",
+      "word": "av",
+      "audio": "/static/audio/listening_words/ord_069.mp3"
     },
     {
-      "id": "word_069",
-      "type": "word",
-      "text": "om",
-      "audio": "/static/audio/listening_words/ord_051.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0057",
+      "word": "på",
+      "audio": "/static/audio/listening_words/ord_070.mp3"
     },
     {
-      "id": "word_070",
-      "type": "word",
-      "text": "när",
-      "audio": "/static/audio/listening_words/ord_052.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0058",
+      "word": "i",
+      "audio": "/static/audio/listening_words/ord_071.mp3"
     },
     {
-      "id": "word_071",
-      "type": "word",
-      "text": "då",
-      "audio": "/static/audio/listening_words/ord_053.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0059",
+      "word": "under",
+      "audio": "/static/audio/listening_words/ord_072.mp3"
     },
     {
-      "id": "word_072",
-      "type": "word",
-      "text": "där",
-      "audio": "/static/audio/listening_words/ord_054.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0060",
+      "word": "över",
+      "audio": "/static/audio/listening_words/ord_073.mp3"
     },
     {
-      "id": "word_073",
-      "type": "word",
-      "text": "här",
-      "audio": "/static/audio/listening_words/ord_055.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0061",
+      "word": "mellan",
+      "audio": "/static/audio/listening_words/ord_074.mp3"
     },
     {
-      "id": "word_074",
-      "type": "word",
-      "text": "vem",
-      "audio": "/static/audio/listening_words/ord_056.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0062",
+      "word": "genom",
+      "audio": "/static/audio/listening_words/ord_075.mp3"
     },
     {
-      "id": "word_075",
-      "type": "word",
-      "text": "vad",
-      "audio": "/static/audio/listening_words/ord_057.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0063",
+      "word": "mot",
+      "audio": "/static/audio/listening_words/ord_078.mp3"
     },
     {
-      "id": "word_076",
-      "type": "word",
-      "text": "var",
-      "audio": "/static/audio/listening_words/ord_058.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0064",
+      "word": "hos",
+      "audio": "/static/audio/listening_words/ord_079.mp3"
     },
     {
-      "id": "word_077",
-      "type": "word",
-      "text": "varför",
-      "audio": "/static/audio/listening_words/ord_059.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0065",
+      "word": "före",
+      "audio": "/static/audio/lasloop_words/word_0065.mp3"
     },
     {
-      "id": "word_078",
-      "type": "word",
-      "text": "hur",
-      "audio": "/static/audio/listening_words/ord_060.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0066",
+      "word": "efter",
+      "audio": "/static/audio/listening_words/ord_077.mp3"
     },
     {
-      "id": "word_079",
-      "type": "word",
-      "text": "vilken",
-      "audio": "/static/audio/listening_words/ord_061.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0067",
+      "word": "innan",
+      "audio": "/static/audio/listening_words/ord_076.mp3"
     },
     {
-      "id": "word_080",
-      "type": "word",
-      "text": "vilket",
-      "audio": "/static/audio/listening_words/ord_062.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0068",
+      "word": "är",
+      "audio": "/static/audio/listening_words/ord_080.mp3"
     },
     {
-      "id": "word_081",
-      "type": "word",
-      "text": "vilka",
-      "audio": "/static/audio/listening_words/ord_063.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0069",
+      "word": "var",
+      "audio": "/static/audio/listening_words/ord_058.mp3"
     },
     {
-      "id": "word_082",
-      "type": "word",
-      "text": "för",
-      "audio": "/static/audio/listening_words/ord_064.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0070",
+      "word": "har",
+      "audio": "/static/audio/listening_words/ord_081.mp3"
     },
     {
-      "id": "word_083",
-      "type": "word",
-      "text": "med",
-      "audio": "/static/audio/listening_words/ord_065.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0071",
+      "word": "hade",
+      "audio": "/static/audio/listening_words/ord_082.mp3"
     },
     {
-      "id": "word_084",
-      "type": "word",
-      "text": "utan",
-      "audio": "/static/audio/listening_words/ord_066.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0072",
+      "word": "kan",
+      "audio": "/static/audio/listening_words/ord_083.mp3"
     },
     {
-      "id": "word_085",
-      "type": "word",
-      "text": "till",
-      "audio": "/static/audio/listening_words/ord_067.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0073",
+      "word": "kunde",
+      "audio": "/static/audio/listening_words/ord_084.mp3"
     },
     {
-      "id": "word_086",
-      "type": "word",
-      "text": "från",
-      "audio": "/static/audio/listening_words/ord_068.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0074",
+      "word": "ska",
+      "audio": "/static/audio/listening_words/ord_085.mp3"
     },
     {
-      "id": "word_087",
-      "type": "word",
-      "text": "av",
-      "audio": "/static/audio/listening_words/ord_069.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0075",
+      "word": "skulle",
+      "audio": "/static/audio/listening_words/ord_086.mp3"
     },
     {
-      "id": "word_088",
-      "type": "word",
-      "text": "på",
-      "audio": "/static/audio/listening_words/ord_070.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0076",
+      "word": "vill",
+      "audio": "/static/audio/listening_words/ord_087.mp3"
     },
     {
-      "id": "word_089",
-      "type": "word",
-      "text": "i",
-      "audio": "/static/audio/listening_words/ord_071.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0077",
+      "word": "ville",
+      "audio": "/static/audio/listening_words/ord_088.mp3"
     },
     {
-      "id": "word_090",
-      "type": "word",
-      "text": "under",
-      "audio": "/static/audio/listening_words/ord_072.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0078",
+      "word": "får",
+      "audio": "/static/audio/listening_words/ord_089.mp3"
     },
     {
-      "id": "word_091",
-      "type": "word",
-      "text": "över",
-      "audio": "/static/audio/listening_words/ord_073.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0079",
+      "word": "fick",
+      "audio": "/static/audio/listening_words/ord_090.mp3"
     },
     {
-      "id": "word_092",
-      "type": "word",
-      "text": "mellan",
-      "audio": "/static/audio/listening_words/ord_074.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0080",
+      "word": "måste",
+      "audio": "/static/audio/listening_words/ord_091.mp3"
     },
     {
-      "id": "word_093",
-      "type": "word",
-      "text": "innan",
-      "audio": "/static/audio/listening_words/ord_076.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0081",
+      "word": "behöver",
+      "audio": "/static/audio/listening_words/ord_092.mp3"
     },
     {
-      "id": "word_094",
-      "type": "word",
-      "text": "efter",
-      "audio": "/static/audio/listening_words/ord_077.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0082",
+      "word": "behövde",
+      "audio": "/static/audio/listening_words/ord_093.mp3"
     },
     {
-      "id": "word_095",
-      "type": "word",
-      "text": "också",
-      "audio": "/static/audio/listening_words/ord_181.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0083",
+      "word": "blir",
+      "audio": "/static/audio/listening_words/ord_094.mp3"
     },
     {
-      "id": "word_096",
-      "type": "word",
-      "text": "bara",
-      "audio": "/static/audio/listening_words/ord_180.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0084",
+      "word": "blev",
+      "audio": "/static/audio/listening_words/ord_095.mp3"
     },
     {
-      "id": "word_097",
-      "type": "word",
-      "text": "alltid",
-      "audio": "/static/audio/listening_words/ord_173.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0085",
+      "word": "gör",
+      "audio": "/static/audio/listening_words/ord_096.mp3"
     },
     {
-      "id": "word_098",
-      "type": "word",
-      "text": "ofta",
-      "audio": "/static/audio/listening_words/ord_174.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0086",
+      "word": "gjorde",
+      "audio": "/static/audio/listening_words/ord_097.mp3"
     },
     {
-      "id": "word_099",
-      "type": "word",
-      "text": "ibland",
-      "audio": "/static/audio/listening_words/ord_175.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0087",
+      "word": "går",
+      "audio": "/static/audio/listening_words/ord_098.mp3"
     },
     {
-      "id": "word_100",
-      "type": "word",
-      "text": "aldrig",
-      "audio": "/static/audio/listening_words/ord_176.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0088",
+      "word": "gick",
+      "audio": "/static/audio/listening_words/ord_099.mp3"
     },
     {
-      "id": "word_101",
-      "type": "word",
-      "text": "nu",
-      "audio": "/static/audio/listening_words/ord_165.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0089",
+      "word": "kommer",
+      "audio": "/static/audio/listening_words/ord_100.mp3"
     },
     {
-      "id": "word_102",
-      "type": "word",
-      "text": "snart",
-      "audio": "/static/audio/listening_words/ord_166.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0090",
+      "word": "kom",
+      "audio": "/static/audio/listening_words/ord_101.mp3"
     },
     {
-      "id": "word_103",
-      "type": "word",
-      "text": "sedan",
-      "audio": "/static/audio/listening_words/ord_167.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0091",
+      "word": "ser",
+      "audio": "/static/audio/listening_words/ord_102.mp3"
     },
     {
-      "id": "word_104",
-      "type": "word",
-      "text": "igen",
-      "audio": "/static/audio/listening_words/ord_172.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0092",
+      "word": "såg",
+      "audio": "/static/audio/listening_words/ord_103.mp3"
     },
     {
-      "id": "word_105",
-      "type": "word",
-      "text": "först",
-      "audio": "/static/audio/listening_words/ord_169.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0093",
+      "word": "vet",
+      "audio": "/static/audio/listening_words/ord_104.mp3"
     },
     {
-      "id": "word_106",
-      "type": "word",
-      "text": "sist",
-      "audio": "/static/audio/listening_words/ord_170.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0094",
+      "word": "visste",
+      "audio": "/static/audio/listening_words/ord_105.mp3"
     },
     {
-      "id": "word_107",
-      "type": "word",
-      "text": "redan",
-      "audio": "/static/audio/listening_words/ord_171.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0095",
+      "word": "säger",
+      "audio": "/static/audio/listening_words/ord_106.mp3"
     },
     {
-      "id": "word_108",
-      "type": "word",
-      "text": "mycket",
-      "audio": "/static/audio/listening_words/ord_182.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0096",
+      "word": "sa",
+      "audio": "/static/audio/listening_words/ord_107.mp3"
     },
     {
-      "id": "word_109",
-      "type": "word",
-      "text": "lite",
-      "audio": "/static/audio/listening_words/ord_183.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0097",
+      "word": "tar",
+      "audio": "/static/audio/listening_words/ord_108.mp3"
     },
     {
-      "id": "word_110",
-      "type": "word",
-      "text": "mer",
-      "audio": "/static/audio/listening_words/ord_184.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0098",
+      "word": "tog",
+      "audio": "/static/audio/listening_words/ord_109.mp3"
     },
     {
-      "id": "word_111",
-      "type": "word",
-      "text": "mindre",
-      "audio": "/static/audio/listening_words/ord_185.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0099",
+      "word": "ger",
+      "audio": "/static/audio/listening_words/ord_110.mp3"
     },
     {
-      "id": "word_112",
-      "type": "word",
-      "text": "bra",
-      "audio": "/static/audio/listening_words/ord_201.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0100",
+      "word": "gav",
+      "audio": "/static/audio/listening_words/ord_111.mp3"
     },
     {
-      "id": "word_113",
-      "type": "word",
-      "text": "rätt",
-      "audio": "/static/audio/listening_words/ord_204.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0101",
+      "word": "finns",
+      "audio": "/static/audio/listening_words/ord_112.mp3"
     },
     {
-      "id": "word_114",
-      "type": "word",
-      "text": "fel",
-      "audio": "/static/audio/listening_words/ord_205.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0102",
+      "word": "fanns",
+      "audio": "/static/audio/listening_words/ord_113.mp3"
     },
     {
-      "id": "word_115",
-      "type": "word",
-      "text": "stor",
-      "audio": "/static/audio/listening_words/ord_206.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0103",
+      "word": "tycker",
+      "audio": "/static/audio/listening_words/ord_114.mp3"
     },
     {
-      "id": "word_116",
-      "type": "word",
-      "text": "liten",
-      "audio": "/static/audio/listening_words/ord_207.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0104",
+      "word": "tyckte",
+      "audio": "/static/audio/listening_words/ord_115.mp3"
     },
     {
-      "id": "word_117",
-      "type": "word",
-      "text": "lång",
-      "audio": "/static/audio/listening_words/ord_208.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0105",
+      "word": "tänker",
+      "audio": "/static/audio/listening_words/ord_116.mp3"
     },
     {
-      "id": "word_118",
-      "type": "word",
-      "text": "kort",
-      "audio": "/static/audio/listening_words/ord_209.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0106",
+      "word": "tänkte",
+      "audio": "/static/audio/listening_words/ord_117.mp3"
     },
     {
-      "id": "word_119",
-      "type": "word",
-      "text": "ny",
-      "audio": "/static/audio/listening_words/ord_210.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0107",
+      "word": "känner",
+      "audio": "/static/audio/listening_words/ord_118.mp3"
     },
     {
-      "id": "word_120",
-      "type": "word",
-      "text": "gammal",
-      "audio": "/static/audio/listening_words/ord_211.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0108",
+      "word": "kände",
+      "audio": "/static/audio/listening_words/ord_119.mp3"
     },
     {
-      "id": "word_121",
-      "type": "word",
-      "text": "lätt",
-      "audio": "/static/audio/listening_words/ord_212.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0109",
+      "word": "börjar",
+      "audio": "/static/audio/listening_words/ord_120.mp3"
     },
     {
-      "id": "word_122",
-      "type": "word",
-      "text": "svårt",
-      "audio": "/static/audio/listening_words/ord_213.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0110",
+      "word": "började",
+      "audio": "/static/audio/listening_words/ord_121.mp3"
     },
     {
-      "id": "word_123",
-      "type": "word",
-      "text": "glad",
-      "audio": "/static/audio/listening_words/ord_218.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0111",
+      "word": "slutar",
+      "audio": "/static/audio/listening_words/ord_122.mp3"
     },
     {
-      "id": "word_124",
-      "type": "word",
-      "text": "ledsen",
-      "audio": "/static/audio/listening_words/ord_219.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0112",
+      "word": "slutade",
+      "audio": "/static/audio/listening_words/ord_123.mp3"
     },
     {
-      "id": "word_125",
-      "type": "word",
-      "text": "trött",
-      "audio": "/static/audio/listening_words/ord_220.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0113",
+      "word": "arbetar",
+      "audio": "/static/audio/listening_words/ord_124.mp3"
     },
     {
-      "id": "word_126",
-      "type": "word",
-      "text": "idag",
-      "audio": "/static/audio/listening_words/ord_154.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0114",
+      "word": "arbetade",
+      "audio": "/static/audio/listening_words/ord_125.mp3"
     },
     {
-      "id": "word_127",
-      "type": "word",
-      "text": "igår",
-      "audio": "/static/audio/listening_words/ord_155.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0115",
+      "word": "läser",
+      "audio": "/static/audio/listening_words/ord_126.mp3"
     },
     {
-      "id": "word_128",
-      "type": "word",
-      "text": "imorgon",
-      "audio": "/static/audio/listening_words/ord_156.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0116",
+      "word": "läste",
+      "audio": "/static/audio/listening_words/ord_127.mp3"
     },
     {
-      "id": "word_129",
-      "type": "word",
-      "text": "morgon",
-      "audio": "/static/audio/listening_words/ord_157.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0117",
+      "word": "skriver",
+      "audio": "/static/audio/listening_words/ord_128.mp3"
     },
     {
-      "id": "word_130",
-      "type": "word",
-      "text": "kväll",
-      "audio": "/static/audio/listening_words/ord_158.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0118",
+      "word": "skrev",
+      "audio": "/static/audio/listening_words/ord_129.mp3"
     },
     {
-      "id": "word_131",
-      "type": "word",
-      "text": "natt",
-      "audio": "/static/audio/listening_words/ord_159.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0119",
+      "word": "lyssnar",
+      "audio": "/static/audio/listening_words/ord_130.mp3"
     },
     {
-      "id": "word_132",
-      "type": "word",
-      "text": "dag",
-      "audio": "/static/audio/listening_words/ord_160.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0120",
+      "word": "lyssnade",
+      "audio": "/static/audio/listening_words/ord_131.mp3"
     },
     {
-      "id": "word_133",
-      "type": "word",
-      "text": "vecka",
-      "audio": "/static/audio/listening_words/ord_161.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0121",
+      "word": "pratar",
+      "audio": "/static/audio/listening_words/ord_132.mp3"
     },
     {
-      "id": "word_134",
-      "type": "word",
-      "text": "månad",
-      "audio": "/static/audio/listening_words/ord_162.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0122",
+      "word": "pratade",
+      "audio": "/static/audio/listening_words/ord_133.mp3"
     },
     {
-      "id": "word_135",
-      "type": "word",
-      "text": "år",
-      "audio": "/static/audio/listening_words/ord_163.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0123",
+      "word": "frågar",
+      "audio": "/static/audio/listening_words/ord_134.mp3"
     },
     {
-      "id": "word_136",
-      "type": "word",
-      "text": "tid",
-      "audio": "/static/audio/listening_words/ord_164.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0124",
+      "word": "frågade",
+      "audio": "/static/audio/listening_words/ord_135.mp3"
     },
     {
-      "id": "word_137",
-      "type": "word",
-      "text": "hem",
-      "audio": "/static/audio/listening_words/ord_242.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0125",
+      "word": "svarar",
+      "audio": "/static/audio/listening_words/ord_136.mp3"
     },
     {
-      "id": "word_138",
-      "type": "word",
-      "text": "hemma",
-      "audio": "/static/audio/listening_words/ord_192.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0126",
+      "word": "svarade",
+      "audio": "/static/audio/listening_words/ord_137.mp3"
     },
     {
-      "id": "word_139",
-      "type": "word",
-      "text": "ute",
-      "audio": "/static/audio/listening_words/ord_193.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0127",
+      "word": "hjälper",
+      "audio": "/static/audio/listening_words/ord_138.mp3"
     },
     {
-      "id": "word_140",
-      "type": "word",
-      "text": "inne",
-      "audio": "/static/audio/listening_words/ord_194.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0128",
+      "word": "hjälpte",
+      "audio": "/static/audio/listening_words/ord_139.mp3"
     },
     {
-      "id": "word_141",
-      "type": "word",
-      "text": "upp",
-      "audio": "/static/audio/listening_words/ord_195.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0129",
+      "word": "försöker",
+      "audio": "/static/audio/listening_words/ord_140.mp3"
     },
     {
-      "id": "word_142",
-      "type": "word",
-      "text": "ner",
-      "audio": "/static/audio/listening_words/ord_196.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0130",
+      "word": "försökte",
+      "audio": "/static/audio/listening_words/ord_141.mp3"
     },
     {
-      "id": "word_143",
-      "type": "word",
-      "text": "in",
-      "audio": "/static/audio/listening_words/ord_197.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0131",
+      "word": "lär",
+      "audio": "/static/audio/listening_words/ord_142.mp3"
     },
     {
-      "id": "word_144",
-      "type": "word",
-      "text": "ut",
-      "audio": "/static/audio/listening_words/ord_198.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0132",
+      "word": "lärde",
+      "audio": "/static/audio/listening_words/ord_143.mp3"
     },
     {
-      "id": "word_145",
-      "type": "word",
-      "text": "bort",
-      "audio": "/static/audio/listening_words/ord_199.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0133",
+      "word": "använder",
+      "audio": "/static/audio/listening_words/ord_144.mp3"
     },
     {
-      "id": "word_146",
-      "type": "word",
-      "text": "kvar",
-      "audio": "/static/audio/listening_words/ord_200.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0134",
+      "word": "använde",
+      "audio": "/static/audio/listening_words/ord_145.mp3"
     },
     {
-      "id": "word_147",
-      "type": "word",
-      "text": "skola",
-      "audio": "/static/audio/listening_words/ord_226.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0135",
+      "word": "hittar",
+      "audio": "/static/audio/listening_words/ord_146.mp3"
     },
     {
-      "id": "word_148",
-      "type": "word",
-      "text": "lärare",
-      "audio": "/static/audio/listening_words/ord_227.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0136",
+      "word": "hittade",
+      "audio": "/static/audio/listening_words/ord_147.mp3"
     },
     {
-      "id": "word_149",
-      "type": "word",
-      "text": "elev",
-      "audio": "/static/audio/listening_words/ord_228.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0137",
+      "word": "väntar",
+      "audio": "/static/audio/listening_words/ord_148.mp3"
     },
     {
-      "id": "word_150",
-      "type": "word",
-      "text": "klass",
-      "audio": "/static/audio/listening_words/ord_229.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0138",
+      "word": "väntade",
+      "audio": "/static/audio/listening_words/ord_149.mp3"
     },
     {
-      "id": "word_151",
-      "type": "word",
-      "text": "bok",
-      "audio": "/static/audio/listening_words/ord_230.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0139",
+      "word": "bor",
+      "audio": "/static/audio/listening_words/ord_150.mp3"
     },
     {
-      "id": "word_152",
-      "type": "word",
-      "text": "text",
-      "audio": "/static/audio/listening_words/ord_231.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0140",
+      "word": "bodde",
+      "audio": "/static/audio/listening_words/ord_151.mp3"
     },
     {
-      "id": "word_153",
-      "type": "word",
-      "text": "ord",
-      "audio": "/static/audio/listening_words/ord_232.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0141",
+      "word": "heter",
+      "audio": "/static/audio/listening_words/ord_152.mp3"
     },
     {
-      "id": "word_154",
-      "type": "word",
-      "text": "mening",
-      "audio": "/static/audio/listening_words/ord_233.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0142",
+      "word": "hette",
+      "audio": "/static/audio/listening_words/ord_153.mp3"
     },
     {
-      "id": "word_155",
-      "type": "word",
-      "text": "fråga",
-      "audio": "/static/audio/listening_words/ord_234.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0143",
+      "word": "vem",
+      "audio": "/static/audio/listening_words/ord_056.mp3"
     },
     {
-      "id": "word_156",
-      "type": "word",
-      "text": "svar",
-      "audio": "/static/audio/listening_words/ord_235.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0144",
+      "word": "vad",
+      "audio": "/static/audio/listening_words/ord_057.mp3"
     },
     {
-      "id": "word_157",
-      "type": "word",
-      "text": "uppgift",
-      "audio": "/static/audio/listening_words/ord_236.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0145",
+      "word": "varför",
+      "audio": "/static/audio/listening_words/ord_059.mp3"
     },
     {
-      "id": "word_158",
-      "type": "word",
-      "text": "arbete",
-      "audio": "/static/audio/listening_words/ord_237.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0146",
+      "word": "hur",
+      "audio": "/static/audio/listening_words/ord_060.mp3"
     },
     {
-      "id": "word_159",
-      "type": "word",
-      "text": "problem",
-      "audio": "/static/audio/listening_words/ord_238.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0147",
+      "word": "vilken",
+      "audio": "/static/audio/listening_words/ord_061.mp3"
     },
     {
-      "id": "word_160",
-      "type": "word",
-      "text": "hjälp",
-      "audio": "/static/audio/listening_words/ord_239.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0148",
+      "word": "vilket",
+      "audio": "/static/audio/listening_words/ord_062.mp3"
     },
     {
-      "id": "word_161",
-      "type": "word",
-      "text": "vän",
-      "audio": "/static/audio/listening_words/ord_244.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0149",
+      "word": "vilka",
+      "audio": "/static/audio/listening_words/ord_063.mp3"
     },
     {
-      "id": "word_162",
-      "type": "word",
-      "text": "kompis",
-      "audio": "/static/audio/listening_words/ord_245.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0150",
+      "word": "när",
+      "audio": "/static/audio/listening_words/ord_052.mp3"
     },
     {
-      "id": "word_163",
-      "type": "word",
-      "text": "familj",
-      "audio": "/static/audio/listening_words/ord_243.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0151",
+      "word": "då",
+      "audio": "/static/audio/listening_words/ord_053.mp3"
     },
     {
-      "id": "word_164",
-      "type": "word",
-      "text": "mamma",
-      "audio": "/static/audio/listening_words/ord_247.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0152",
+      "word": "där",
+      "audio": "/static/audio/listening_words/ord_054.mp3"
     },
     {
-      "id": "word_165",
-      "type": "word",
-      "text": "pappa",
-      "audio": "/static/audio/listening_words/ord_248.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0153",
+      "word": "här",
+      "audio": "/static/audio/listening_words/ord_055.mp3"
     },
     {
-      "id": "word_166",
-      "type": "word",
-      "text": "syster",
-      "audio": "/static/audio/listening_words/ord_249.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0154",
+      "word": "inte",
+      "audio": "/static/audio/lasloop_words/word_0154.mp3"
     },
     {
-      "id": "word_167",
-      "type": "word",
-      "text": "bror",
-      "audio": "/static/audio/listening_words/ord_250.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0155",
+      "word": "också",
+      "audio": "/static/audio/listening_words/ord_181.mp3"
     },
     {
-      "id": "word_168",
-      "type": "word",
-      "text": "mat",
-      "audio": "/static/audio/listening_words/ord_251.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0156",
+      "word": "bara",
+      "audio": "/static/audio/listening_words/ord_180.mp3"
     },
     {
-      "id": "word_169",
-      "type": "word",
-      "text": "vatten",
-      "audio": "/static/audio/listening_words/ord_252.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0157",
+      "word": "alltid",
+      "audio": "/static/audio/listening_words/ord_173.mp3"
     },
     {
-      "id": "word_170",
-      "type": "word",
-      "text": "buss",
-      "audio": "/static/audio/listening_words/ord_254.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0158",
+      "word": "ofta",
+      "audio": "/static/audio/listening_words/ord_174.mp3"
     },
     {
-      "id": "word_171",
-      "type": "word",
-      "text": "bil",
-      "audio": "/static/audio/listening_words/ord_255.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0159",
+      "word": "ibland",
+      "audio": "/static/audio/listening_words/ord_175.mp3"
     },
     {
-      "id": "word_172",
-      "type": "word",
-      "text": "rum",
-      "audio": "/static/audio/listening_words/ord_258.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0160",
+      "word": "aldrig",
+      "audio": "/static/audio/listening_words/ord_176.mp3"
     },
     {
-      "id": "word_173",
-      "type": "word",
-      "text": "bord",
-      "audio": "/static/audio/listening_words/ord_259.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0161",
+      "word": "kanske",
+      "audio": "/static/audio/listening_words/ord_177.mp3"
     },
     {
-      "id": "word_174",
-      "type": "word",
-      "text": "stol",
-      "audio": "/static/audio/listening_words/ord_260.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0162",
+      "word": "nästan",
+      "audio": "/static/audio/listening_words/ord_178.mp3"
     },
     {
-      "id": "word_175",
-      "type": "word",
-      "text": "dörr",
-      "audio": "/static/audio/listening_words/ord_261.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0163",
+      "word": "verkligen",
+      "audio": "/static/audio/listening_words/ord_179.mp3"
     },
     {
-      "id": "word_176",
-      "type": "word",
-      "text": "mobil",
-      "audio": "/static/audio/listening_words/ord_263.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0164",
+      "word": "mycket",
+      "audio": "/static/audio/listening_words/ord_182.mp3"
     },
     {
-      "id": "word_177",
-      "type": "word",
-      "text": "dator",
-      "audio": "/static/audio/listening_words/ord_264.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0165",
+      "word": "lite",
+      "audio": "/static/audio/listening_words/ord_183.mp3"
     },
     {
-      "id": "word_178",
-      "type": "word",
-      "text": "telefon",
-      "audio": "/static/audio/listening_words/ord_265.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0166",
+      "word": "mer",
+      "audio": "/static/audio/listening_words/ord_184.mp3"
     },
     {
-      "id": "word_179",
-      "type": "word",
-      "text": "butik",
-      "audio": "/static/audio/listening_words/ord_266.mp3",
-      "word_count": 1,
-      "requires": []
+      "id": "word_0167",
+      "word": "mindre",
+      "audio": "/static/audio/listening_words/ord_185.mp3"
     },
     {
-      "id": "word_180",
-      "type": "word",
-      "text": "jobb",
-      "audio": "/static/audio/listening_words/ord_268.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_181",
-      "type": "word",
-      "text": "rast",
-      "audio": "/static/audio/listening_words/ord_269.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_182",
-      "type": "word",
-      "text": "lektion",
-      "audio": "/static/audio/listening_words/ord_270.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_183",
-      "type": "word",
-      "text": "prov",
-      "audio": "/static/audio/listening_words/ord_271.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_184",
-      "type": "word",
-      "text": "person",
-      "audio": "/static/audio/listening_words/ord_277.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_185",
-      "type": "word",
-      "text": "namn",
-      "audio": "/static/audio/listening_words/ord_279.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_186",
-      "type": "word",
-      "text": "nummer",
-      "audio": "/static/audio/listening_words/ord_280.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_187",
-      "type": "word",
-      "text": "därför",
-      "audio": "/static/audio/listening_words/ord_187.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_188",
-      "type": "word",
-      "text": "eftersom",
-      "audio": "/static/audio/listening_words/ord_188.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_189",
-      "type": "word",
-      "text": "ändå",
-      "audio": "/static/audio/listening_words/ord_189.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_190",
-      "type": "word",
-      "text": "tillsammans",
-      "audio": "/static/audio/listening_words/ord_191.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_191",
-      "type": "word",
-      "text": "direkt",
-      "audio": "/static/audio/listening_words/ord_190.mp3",
-      "word_count": 1,
-      "requires": []
-    },
-    {
-      "id": "word_192",
-      "type": "word",
-      "text": "kanske",
-      "audio": "/static/audio/listening_words/ord_177.mp3",
-      "word_count": 1,
-      "requires": []
-    }
-  ],
-  "phrases": [
-    {
-      "id": "phrase_001",
-      "type": "phrase",
-      "text": "jag är",
-      "audio": "/static/audio/lasloop/phrase_001.mp3",
-      "word_count": 2,
-      "requires": [
-        "jag",
-        "är"
-      ]
-    },
-    {
-      "id": "phrase_002",
-      "type": "phrase",
-      "text": "du är",
-      "audio": "/static/audio/lasloop/phrase_002.mp3",
-      "word_count": 2,
-      "requires": [
-        "du",
-        "är"
-      ]
-    },
-    {
-      "id": "phrase_003",
-      "type": "phrase",
-      "text": "han är",
-      "audio": "/static/audio/lasloop/phrase_003.mp3",
-      "word_count": 2,
-      "requires": [
-        "han",
-        "är"
-      ]
-    },
-    {
-      "id": "phrase_004",
-      "type": "phrase",
-      "text": "hon är",
-      "audio": "/static/audio/lasloop/phrase_004.mp3",
-      "word_count": 2,
-      "requires": [
-        "hon",
-        "är"
-      ]
-    },
-    {
-      "id": "phrase_005",
-      "type": "phrase",
-      "text": "vi är",
-      "audio": "/static/audio/lasloop/phrase_005.mp3",
-      "word_count": 2,
-      "requires": [
-        "vi",
-        "är"
-      ]
-    },
-    {
-      "id": "phrase_006",
-      "type": "phrase",
-      "text": "det är",
-      "audio": "/static/audio/lasloop/phrase_006.mp3",
-      "word_count": 2,
-      "requires": [
-        "det",
-        "är"
-      ]
-    },
-    {
-      "id": "phrase_007",
-      "type": "phrase",
-      "text": "jag har",
-      "audio": "/static/audio/lasloop/phrase_007.mp3",
-      "word_count": 2,
-      "requires": [
-        "jag",
-        "har"
-      ]
-    },
-    {
-      "id": "phrase_008",
-      "type": "phrase",
-      "text": "du har",
-      "audio": "/static/audio/lasloop/phrase_008.mp3",
-      "word_count": 2,
-      "requires": [
-        "du",
-        "har"
-      ]
-    },
-    {
-      "id": "phrase_009",
-      "type": "phrase",
-      "text": "hon har",
-      "audio": "/static/audio/lasloop/phrase_009.mp3",
-      "word_count": 2,
-      "requires": [
-        "hon",
-        "har"
-      ]
-    },
-    {
-      "id": "phrase_010",
-      "type": "phrase",
-      "text": "han har",
-      "audio": "/static/audio/lasloop/phrase_010.mp3",
-      "word_count": 2,
-      "requires": [
-        "han",
-        "har"
-      ]
-    },
-    {
-      "id": "phrase_011",
-      "type": "phrase",
-      "text": "vi har",
-      "audio": "/static/audio/lasloop/phrase_011.mp3",
-      "word_count": 2,
-      "requires": [
-        "vi",
-        "har"
-      ]
-    },
-    {
-      "id": "phrase_012",
-      "type": "phrase",
-      "text": "jag kan",
-      "audio": "/static/audio/lasloop/phrase_012.mp3",
-      "word_count": 2,
-      "requires": [
-        "jag",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_013",
-      "type": "phrase",
-      "text": "du kan",
-      "audio": "/static/audio/lasloop/phrase_013.mp3",
-      "word_count": 2,
-      "requires": [
-        "du",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_014",
-      "type": "phrase",
-      "text": "hon kan",
-      "audio": "/static/audio/lasloop/phrase_014.mp3",
-      "word_count": 2,
-      "requires": [
-        "hon",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_015",
-      "type": "phrase",
-      "text": "han kan",
-      "audio": "/static/audio/lasloop/phrase_015.mp3",
-      "word_count": 2,
-      "requires": [
-        "han",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_016",
-      "type": "phrase",
-      "text": "vi kan",
-      "audio": "/static/audio/lasloop/phrase_016.mp3",
-      "word_count": 2,
-      "requires": [
-        "vi",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_017",
-      "type": "phrase",
-      "text": "jag vill",
-      "audio": "/static/audio/lasloop/phrase_017.mp3",
-      "word_count": 2,
-      "requires": [
-        "jag",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_018",
-      "type": "phrase",
-      "text": "hon vill",
-      "audio": "/static/audio/lasloop/phrase_018.mp3",
-      "word_count": 2,
-      "requires": [
-        "hon",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_019",
-      "type": "phrase",
-      "text": "han vill",
-      "audio": "/static/audio/lasloop/phrase_019.mp3",
-      "word_count": 2,
-      "requires": [
-        "han",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_020",
-      "type": "phrase",
-      "text": "vi vill",
-      "audio": "/static/audio/lasloop/phrase_020.mp3",
-      "word_count": 2,
-      "requires": [
-        "vi",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_021",
-      "type": "phrase",
-      "text": "jag ska",
-      "audio": "/static/audio/lasloop/phrase_021.mp3",
-      "word_count": 2,
-      "requires": [
-        "jag",
-        "ska"
-      ]
-    },
-    {
-      "id": "phrase_022",
-      "type": "phrase",
-      "text": "hon ska",
-      "audio": "/static/audio/lasloop/phrase_022.mp3",
-      "word_count": 2,
-      "requires": [
-        "hon",
-        "ska"
-      ]
-    },
-    {
-      "id": "phrase_023",
-      "type": "phrase",
-      "text": "han ska",
-      "audio": "/static/audio/lasloop/phrase_023.mp3",
-      "word_count": 2,
-      "requires": [
-        "han",
-        "ska"
-      ]
-    },
-    {
-      "id": "phrase_024",
-      "type": "phrase",
-      "text": "vi ska",
-      "audio": "/static/audio/lasloop/phrase_024.mp3",
-      "word_count": 2,
-      "requires": [
-        "vi",
-        "ska"
-      ]
-    },
-    {
-      "id": "phrase_025",
-      "type": "phrase",
-      "text": "jag är hemma",
-      "audio": "/static/audio/lasloop/phrase_025.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "är",
-        "hemma"
-      ]
-    },
-    {
-      "id": "phrase_026",
-      "type": "phrase",
-      "text": "hon är hemma",
-      "audio": "/static/audio/lasloop/phrase_026.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "är",
-        "hemma"
-      ]
-    },
-    {
-      "id": "phrase_027",
-      "type": "phrase",
-      "text": "han är hemma",
-      "audio": "/static/audio/lasloop/phrase_027.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "är",
-        "hemma"
-      ]
-    },
-    {
-      "id": "phrase_028",
-      "type": "phrase",
-      "text": "vi är hemma",
-      "audio": "/static/audio/lasloop/phrase_028.mp3",
-      "word_count": 3,
-      "requires": [
-        "vi",
-        "är",
-        "hemma"
-      ]
-    },
-    {
-      "id": "phrase_029",
-      "type": "phrase",
-      "text": "det är bra",
-      "audio": "/static/audio/lasloop/phrase_029.mp3",
-      "word_count": 3,
-      "requires": [
-        "det",
-        "är",
-        "bra"
-      ]
-    },
-    {
-      "id": "phrase_030",
-      "type": "phrase",
-      "text": "det är svårt",
-      "audio": "/static/audio/lasloop/phrase_030.mp3",
-      "word_count": 3,
-      "requires": [
-        "det",
-        "är",
-        "svårt"
-      ]
-    },
-    {
-      "id": "phrase_031",
-      "type": "phrase",
-      "text": "det är lätt",
-      "audio": "/static/audio/lasloop/phrase_031.mp3",
-      "word_count": 3,
-      "requires": [
-        "det",
-        "är",
-        "lätt"
-      ]
-    },
-    {
-      "id": "phrase_032",
-      "type": "phrase",
-      "text": "jag kan läsa",
-      "audio": "/static/audio/lasloop/phrase_032.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_033",
-      "type": "phrase",
-      "text": "hon kan läsa",
-      "audio": "/static/audio/lasloop/phrase_033.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_034",
-      "type": "phrase",
-      "text": "han kan läsa",
-      "audio": "/static/audio/lasloop/phrase_034.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_035",
-      "type": "phrase",
-      "text": "jag kan skriva",
-      "audio": "/static/audio/lasloop/phrase_035.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_036",
-      "type": "phrase",
-      "text": "hon kan skriva",
-      "audio": "/static/audio/lasloop/phrase_036.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_037",
-      "type": "phrase",
-      "text": "vi kan gå",
-      "audio": "/static/audio/lasloop/phrase_037.mp3",
-      "word_count": 3,
-      "requires": [
-        "vi",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_038",
-      "type": "phrase",
-      "text": "jag vill gå",
-      "audio": "/static/audio/lasloop/phrase_038.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_039",
-      "type": "phrase",
-      "text": "hon vill gå",
-      "audio": "/static/audio/lasloop/phrase_039.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_040",
-      "type": "phrase",
-      "text": "han vill gå",
-      "audio": "/static/audio/lasloop/phrase_040.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_041",
-      "type": "phrase",
-      "text": "vi ska gå",
-      "audio": "/static/audio/lasloop/phrase_041.mp3",
-      "word_count": 3,
-      "requires": [
-        "vi",
-        "ska"
-      ]
-    },
-    {
-      "id": "phrase_042",
-      "type": "phrase",
-      "text": "jag går hem",
-      "audio": "/static/audio/lasloop/phrase_042.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "går",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_043",
-      "type": "phrase",
-      "text": "hon går hem",
-      "audio": "/static/audio/lasloop/phrase_043.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "går",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_044",
-      "type": "phrase",
-      "text": "han går hem",
-      "audio": "/static/audio/lasloop/phrase_044.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "går",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_045",
-      "type": "phrase",
-      "text": "vi går hem",
-      "audio": "/static/audio/lasloop/phrase_045.mp3",
-      "word_count": 3,
-      "requires": [
-        "vi",
-        "går",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_046",
-      "type": "phrase",
-      "text": "jag går ut",
-      "audio": "/static/audio/lasloop/phrase_046.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "går",
-        "ut"
-      ]
-    },
-    {
-      "id": "phrase_047",
-      "type": "phrase",
-      "text": "hon går ut",
-      "audio": "/static/audio/lasloop/phrase_047.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "går",
-        "ut"
-      ]
-    },
-    {
-      "id": "phrase_048",
-      "type": "phrase",
-      "text": "han går ut",
-      "audio": "/static/audio/lasloop/phrase_048.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "går",
-        "ut"
-      ]
-    },
-    {
-      "id": "phrase_049",
-      "type": "phrase",
-      "text": "jag kommer snart",
-      "audio": "/static/audio/lasloop/phrase_049.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "kommer",
-        "snart"
-      ]
-    },
-    {
-      "id": "phrase_050",
-      "type": "phrase",
-      "text": "hon kommer snart",
-      "audio": "/static/audio/lasloop/phrase_050.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "kommer",
-        "snart"
-      ]
-    },
-    {
-      "id": "phrase_051",
-      "type": "phrase",
-      "text": "jag går till skolan",
-      "audio": "/static/audio/lasloop/phrase_051.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "går",
-        "till"
-      ]
-    },
-    {
-      "id": "phrase_052",
-      "type": "phrase",
-      "text": "hon går till skolan",
-      "audio": "/static/audio/lasloop/phrase_052.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "går",
-        "till"
-      ]
-    },
-    {
-      "id": "phrase_053",
-      "type": "phrase",
-      "text": "han går till skolan",
-      "audio": "/static/audio/lasloop/phrase_053.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "går",
-        "till"
-      ]
-    },
-    {
-      "id": "phrase_054",
-      "type": "phrase",
-      "text": "vi går till skolan",
-      "audio": "/static/audio/lasloop/phrase_054.mp3",
-      "word_count": 4,
-      "requires": [
-        "vi",
-        "går",
-        "till"
-      ]
-    },
-    {
-      "id": "phrase_055",
-      "type": "phrase",
-      "text": "jag är hemma nu",
-      "audio": "/static/audio/lasloop/phrase_055.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "är",
-        "hemma",
-        "nu"
-      ]
-    },
-    {
-      "id": "phrase_056",
-      "type": "phrase",
-      "text": "hon är hemma nu",
-      "audio": "/static/audio/lasloop/phrase_056.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "är",
-        "hemma",
-        "nu"
-      ]
-    },
-    {
-      "id": "phrase_057",
-      "type": "phrase",
-      "text": "han är hemma nu",
-      "audio": "/static/audio/lasloop/phrase_057.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "är",
-        "hemma",
-        "nu"
-      ]
-    },
-    {
-      "id": "phrase_058",
-      "type": "phrase",
-      "text": "jag vill gå hem",
-      "audio": "/static/audio/lasloop/phrase_058.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "vill",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_059",
-      "type": "phrase",
-      "text": "hon vill gå hem",
-      "audio": "/static/audio/lasloop/phrase_059.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "vill",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_060",
-      "type": "phrase",
-      "text": "han vill gå hem",
-      "audio": "/static/audio/lasloop/phrase_060.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "vill",
-        "hem"
-      ]
-    },
-    {
-      "id": "phrase_061",
-      "type": "phrase",
-      "text": "jag kan göra det",
-      "audio": "/static/audio/lasloop/phrase_061.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "kan",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_062",
-      "type": "phrase",
-      "text": "hon kan göra det",
-      "audio": "/static/audio/lasloop/phrase_062.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "kan",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_063",
-      "type": "phrase",
-      "text": "han kan göra det",
-      "audio": "/static/audio/lasloop/phrase_063.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "kan",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_064",
-      "type": "phrase",
-      "text": "vi kan göra det",
-      "audio": "/static/audio/lasloop/phrase_064.mp3",
-      "word_count": 4,
-      "requires": [
-        "vi",
-        "kan",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_065",
-      "type": "phrase",
-      "text": "jag har en bok",
-      "audio": "/static/audio/lasloop/phrase_065.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "har",
-        "en",
-        "bok"
-      ]
-    },
-    {
-      "id": "phrase_066",
-      "type": "phrase",
-      "text": "hon har en bok",
-      "audio": "/static/audio/lasloop/phrase_066.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "har",
-        "en",
-        "bok"
-      ]
-    },
-    {
-      "id": "phrase_067",
-      "type": "phrase",
-      "text": "han har en bok",
-      "audio": "/static/audio/lasloop/phrase_067.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "har",
-        "en",
-        "bok"
-      ]
-    },
-    {
-      "id": "phrase_068",
-      "type": "phrase",
-      "text": "det är en bok",
-      "audio": "/static/audio/lasloop/phrase_068.mp3",
-      "word_count": 4,
-      "requires": [
-        "det",
-        "är",
-        "en",
-        "bok"
-      ]
-    },
-    {
-      "id": "phrase_069",
-      "type": "phrase",
-      "text": "jag läser en bok",
-      "audio": "/static/audio/lasloop/phrase_069.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "läser",
-        "en",
-        "bok"
-      ]
-    },
-    {
-      "id": "phrase_070",
-      "type": "phrase",
-      "text": "hon läser en bok",
-      "audio": "/static/audio/lasloop/phrase_070.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "läser",
-        "en",
-        "bok"
-      ]
-    },
-    {
-      "id": "phrase_071",
-      "type": "phrase",
-      "text": "jag vet inte",
-      "audio": "/static/audio/lasloop/phrase_071.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "vet"
-      ]
-    },
-    {
-      "id": "phrase_072",
-      "type": "phrase",
-      "text": "hon vet inte",
-      "audio": "/static/audio/lasloop/phrase_072.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "vet"
-      ]
-    },
-    {
-      "id": "phrase_073",
-      "type": "phrase",
-      "text": "han vet inte",
-      "audio": "/static/audio/lasloop/phrase_073.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "vet"
-      ]
-    },
-    {
-      "id": "phrase_074",
-      "type": "phrase",
-      "text": "jag kan inte",
-      "audio": "/static/audio/lasloop/phrase_074.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_075",
-      "type": "phrase",
-      "text": "hon kan inte",
-      "audio": "/static/audio/lasloop/phrase_075.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_076",
-      "type": "phrase",
-      "text": "han kan inte",
-      "audio": "/static/audio/lasloop/phrase_076.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "kan"
-      ]
-    },
-    {
-      "id": "phrase_077",
-      "type": "phrase",
-      "text": "jag vill inte",
-      "audio": "/static/audio/lasloop/phrase_077.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_078",
-      "type": "phrase",
-      "text": "hon vill inte",
-      "audio": "/static/audio/lasloop/phrase_078.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_079",
-      "type": "phrase",
-      "text": "han vill inte",
-      "audio": "/static/audio/lasloop/phrase_079.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "vill"
-      ]
-    },
-    {
-      "id": "phrase_080",
-      "type": "phrase",
-      "text": "vad är det",
-      "audio": "/static/audio/lasloop/phrase_080.mp3",
-      "word_count": 3,
-      "requires": [
-        "vad",
-        "är",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_081",
-      "type": "phrase",
-      "text": "vem är det",
-      "audio": "/static/audio/lasloop/phrase_081.mp3",
-      "word_count": 3,
-      "requires": [
-        "vem",
-        "är",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_082",
-      "type": "phrase",
-      "text": "var är hon",
-      "audio": "/static/audio/lasloop/phrase_082.mp3",
-      "word_count": 3,
-      "requires": [
-        "var",
-        "är",
-        "hon"
-      ]
-    },
-    {
-      "id": "phrase_083",
-      "type": "phrase",
-      "text": "var är han",
-      "audio": "/static/audio/lasloop/phrase_083.mp3",
-      "word_count": 3,
-      "requires": [
-        "var",
-        "är",
-        "han"
-      ]
-    },
-    {
-      "id": "phrase_084",
-      "type": "phrase",
-      "text": "hur är det",
-      "audio": "/static/audio/lasloop/phrase_084.mp3",
-      "word_count": 3,
-      "requires": [
-        "hur",
-        "är",
-        "det"
-      ]
-    },
-    {
-      "id": "phrase_085",
-      "type": "phrase",
-      "text": "när kommer hon",
-      "audio": "/static/audio/lasloop/phrase_085.mp3",
-      "word_count": 3,
-      "requires": [
-        "när",
-        "kommer",
-        "hon"
-      ]
-    },
-    {
-      "id": "phrase_086",
-      "type": "phrase",
-      "text": "när kommer han",
-      "audio": "/static/audio/lasloop/phrase_086.mp3",
-      "word_count": 3,
-      "requires": [
-        "när",
-        "kommer",
-        "han"
-      ]
-    },
-    {
-      "id": "phrase_087",
-      "type": "phrase",
-      "text": "jag kommer hem snart",
-      "audio": "/static/audio/lasloop/phrase_087.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "kommer",
-        "hem",
-        "snart"
-      ]
-    },
-    {
-      "id": "phrase_088",
-      "type": "phrase",
-      "text": "hon kommer hem snart",
-      "audio": "/static/audio/lasloop/phrase_088.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "kommer",
-        "hem",
-        "snart"
-      ]
-    },
-    {
-      "id": "phrase_089",
-      "type": "phrase",
-      "text": "han kommer hem snart",
-      "audio": "/static/audio/lasloop/phrase_089.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "kommer",
-        "hem",
-        "snart"
-      ]
-    },
-    {
-      "id": "phrase_090",
-      "type": "phrase",
-      "text": "vi kommer hem snart",
-      "audio": "/static/audio/lasloop/phrase_090.mp3",
-      "word_count": 4,
-      "requires": [
-        "vi",
-        "kommer",
-        "hem",
-        "snart"
-      ]
-    },
-    {
-      "id": "phrase_091",
-      "type": "phrase",
-      "text": "jag går ut nu",
-      "audio": "/static/audio/lasloop/phrase_091.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "går",
-        "ut",
-        "nu"
-      ]
-    },
-    {
-      "id": "phrase_092",
-      "type": "phrase",
-      "text": "hon går ut nu",
-      "audio": "/static/audio/lasloop/phrase_092.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "går",
-        "ut",
-        "nu"
-      ]
-    },
-    {
-      "id": "phrase_093",
-      "type": "phrase",
-      "text": "han går ut nu",
-      "audio": "/static/audio/lasloop/phrase_093.mp3",
-      "word_count": 4,
-      "requires": [
-        "han",
-        "går",
-        "ut",
-        "nu"
-      ]
-    },
-    {
-      "id": "phrase_094",
-      "type": "phrase",
-      "text": "jag läser texten",
-      "audio": "/static/audio/lasloop/phrase_094.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "läser"
-      ]
-    },
-    {
-      "id": "phrase_095",
-      "type": "phrase",
-      "text": "hon läser texten",
-      "audio": "/static/audio/lasloop/phrase_095.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "läser"
-      ]
-    },
-    {
-      "id": "phrase_096",
-      "type": "phrase",
-      "text": "han läser texten",
-      "audio": "/static/audio/lasloop/phrase_096.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "läser"
-      ]
-    },
-    {
-      "id": "phrase_097",
-      "type": "phrase",
-      "text": "jag skriver ett svar",
-      "audio": "/static/audio/lasloop/phrase_097.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "skriver",
-        "ett",
-        "svar"
-      ]
-    },
-    {
-      "id": "phrase_098",
-      "type": "phrase",
-      "text": "hon skriver ett svar",
-      "audio": "/static/audio/lasloop/phrase_098.mp3",
-      "word_count": 4,
-      "requires": [
-        "hon",
-        "skriver",
-        "ett",
-        "svar"
-      ]
-    },
-    {
-      "id": "phrase_099",
-      "type": "phrase",
-      "text": "vi skriver ett svar",
-      "audio": "/static/audio/lasloop/phrase_099.mp3",
-      "word_count": 4,
-      "requires": [
-        "vi",
-        "skriver",
-        "ett",
-        "svar"
-      ]
-    },
-    {
-      "id": "phrase_100",
-      "type": "phrase",
-      "text": "jag frågar läraren",
-      "audio": "/static/audio/lasloop/phrase_100.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "frågar"
-      ]
-    },
-    {
-      "id": "phrase_101",
-      "type": "phrase",
-      "text": "hon frågar läraren",
-      "audio": "/static/audio/lasloop/phrase_101.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "frågar"
-      ]
-    },
-    {
-      "id": "phrase_102",
-      "type": "phrase",
-      "text": "han frågar läraren",
-      "audio": "/static/audio/lasloop/phrase_102.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "frågar"
-      ]
-    },
-    {
-      "id": "phrase_103",
-      "type": "phrase",
-      "text": "jag behöver hjälp",
-      "audio": "/static/audio/lasloop/phrase_103.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag",
-        "behöver",
-        "hjälp"
-      ]
-    },
-    {
-      "id": "phrase_104",
-      "type": "phrase",
-      "text": "hon behöver hjälp",
-      "audio": "/static/audio/lasloop/phrase_104.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon",
-        "behöver",
-        "hjälp"
-      ]
-    },
-    {
-      "id": "phrase_105",
-      "type": "phrase",
-      "text": "han behöver hjälp",
-      "audio": "/static/audio/lasloop/phrase_105.mp3",
-      "word_count": 3,
-      "requires": [
-        "han",
-        "behöver",
-        "hjälp"
-      ]
-    },
-    {
-      "id": "phrase_106",
-      "type": "phrase",
-      "text": "vi behöver hjälp",
-      "audio": "/static/audio/lasloop/phrase_106.mp3",
-      "word_count": 3,
-      "requires": [
-        "vi",
-        "behöver",
-        "hjälp"
-      ]
-    },
-    {
-      "id": "phrase_107",
-      "type": "phrase",
-      "text": "jag förstår frågan",
-      "audio": "/static/audio/lasloop/phrase_107.mp3",
-      "word_count": 3,
-      "requires": [
-        "jag"
-      ]
-    },
-    {
-      "id": "phrase_108",
-      "type": "phrase",
-      "text": "hon förstår frågan",
-      "audio": "/static/audio/lasloop/phrase_108.mp3",
-      "word_count": 3,
-      "requires": [
-        "hon"
-      ]
-    },
-    {
-      "id": "phrase_109",
-      "type": "phrase",
-      "text": "jag svarar på frågan",
-      "audio": "/static/audio/lasloop/phrase_109.mp3",
-      "word_count": 4,
-      "requires": [
-        "jag",
-        "svarar",
-        "på"
-      ]
+      "id": "word_0168",
+      "word": "ganska",
+      "audio": "/static/audio/listening_words/ord_186.mp3"
+    },
+    {
+      "id": "word_0169",
+      "word": "därför",
+      "audio": "/static/audio/listening_words/ord_187.mp3"
+    },
+    {
+      "id": "word_0170",
+      "word": "eftersom",
+      "audio": "/static/audio/listening_words/ord_188.mp3"
+    },
+    {
+      "id": "word_0171",
+      "word": "ändå",
+      "audio": "/static/audio/listening_words/ord_189.mp3"
+    },
+    {
+      "id": "word_0172",
+      "word": "direkt",
+      "audio": "/static/audio/listening_words/ord_190.mp3"
+    },
+    {
+      "id": "word_0173",
+      "word": "tillsammans",
+      "audio": "/static/audio/listening_words/ord_191.mp3"
+    },
+    {
+      "id": "word_0174",
+      "word": "idag",
+      "audio": "/static/audio/listening_words/ord_154.mp3"
+    },
+    {
+      "id": "word_0175",
+      "word": "igår",
+      "audio": "/static/audio/listening_words/ord_155.mp3"
+    },
+    {
+      "id": "word_0176",
+      "word": "imorgon",
+      "audio": "/static/audio/listening_words/ord_156.mp3"
+    },
+    {
+      "id": "word_0177",
+      "word": "morgon",
+      "audio": "/static/audio/listening_words/ord_157.mp3"
+    },
+    {
+      "id": "word_0178",
+      "word": "kväll",
+      "audio": "/static/audio/listening_words/ord_158.mp3"
+    },
+    {
+      "id": "word_0179",
+      "word": "natt",
+      "audio": "/static/audio/listening_words/ord_159.mp3"
+    },
+    {
+      "id": "word_0180",
+      "word": "dag",
+      "audio": "/static/audio/listening_words/ord_160.mp3"
+    },
+    {
+      "id": "word_0181",
+      "word": "vecka",
+      "audio": "/static/audio/listening_words/ord_161.mp3"
+    },
+    {
+      "id": "word_0182",
+      "word": "månad",
+      "audio": "/static/audio/listening_words/ord_162.mp3"
+    },
+    {
+      "id": "word_0183",
+      "word": "år",
+      "audio": "/static/audio/listening_words/ord_163.mp3"
+    },
+    {
+      "id": "word_0184",
+      "word": "tid",
+      "audio": "/static/audio/listening_words/ord_164.mp3"
+    },
+    {
+      "id": "word_0185",
+      "word": "nu",
+      "audio": "/static/audio/listening_words/ord_165.mp3"
+    },
+    {
+      "id": "word_0186",
+      "word": "snart",
+      "audio": "/static/audio/listening_words/ord_166.mp3"
+    },
+    {
+      "id": "word_0187",
+      "word": "sedan",
+      "audio": "/static/audio/listening_words/ord_167.mp3"
+    },
+    {
+      "id": "word_0188",
+      "word": "sen",
+      "audio": "/static/audio/listening_words/ord_168.mp3"
+    },
+    {
+      "id": "word_0189",
+      "word": "först",
+      "audio": "/static/audio/listening_words/ord_169.mp3"
+    },
+    {
+      "id": "word_0190",
+      "word": "sist",
+      "audio": "/static/audio/listening_words/ord_170.mp3"
+    },
+    {
+      "id": "word_0191",
+      "word": "redan",
+      "audio": "/static/audio/listening_words/ord_171.mp3"
+    },
+    {
+      "id": "word_0192",
+      "word": "igen",
+      "audio": "/static/audio/listening_words/ord_172.mp3"
+    },
+    {
+      "id": "word_0193",
+      "word": "hem",
+      "audio": "/static/audio/listening_words/ord_242.mp3"
+    },
+    {
+      "id": "word_0194",
+      "word": "hemma",
+      "audio": "/static/audio/listening_words/ord_192.mp3"
+    },
+    {
+      "id": "word_0195",
+      "word": "ute",
+      "audio": "/static/audio/listening_words/ord_193.mp3"
+    },
+    {
+      "id": "word_0196",
+      "word": "inne",
+      "audio": "/static/audio/listening_words/ord_194.mp3"
+    },
+    {
+      "id": "word_0197",
+      "word": "upp",
+      "audio": "/static/audio/listening_words/ord_195.mp3"
+    },
+    {
+      "id": "word_0198",
+      "word": "ner",
+      "audio": "/static/audio/listening_words/ord_196.mp3"
+    },
+    {
+      "id": "word_0199",
+      "word": "in",
+      "audio": "/static/audio/listening_words/ord_197.mp3"
+    },
+    {
+      "id": "word_0200",
+      "word": "ut",
+      "audio": "/static/audio/listening_words/ord_198.mp3"
+    },
+    {
+      "id": "word_0201",
+      "word": "bort",
+      "audio": "/static/audio/listening_words/ord_199.mp3"
+    },
+    {
+      "id": "word_0202",
+      "word": "kvar",
+      "audio": "/static/audio/listening_words/ord_200.mp3"
+    },
+    {
+      "id": "word_0203",
+      "word": "bra",
+      "audio": "/static/audio/listening_words/ord_201.mp3"
+    },
+    {
+      "id": "word_0204",
+      "word": "bättre",
+      "audio": "/static/audio/listening_words/ord_202.mp3"
+    },
+    {
+      "id": "word_0205",
+      "word": "bäst",
+      "audio": "/static/audio/listening_words/ord_203.mp3"
+    },
+    {
+      "id": "word_0206",
+      "word": "rätt",
+      "audio": "/static/audio/listening_words/ord_204.mp3"
+    },
+    {
+      "id": "word_0207",
+      "word": "fel",
+      "audio": "/static/audio/listening_words/ord_205.mp3"
+    },
+    {
+      "id": "word_0208",
+      "word": "stor",
+      "audio": "/static/audio/listening_words/ord_206.mp3"
+    },
+    {
+      "id": "word_0209",
+      "word": "liten",
+      "audio": "/static/audio/listening_words/ord_207.mp3"
+    },
+    {
+      "id": "word_0210",
+      "word": "lång",
+      "audio": "/static/audio/listening_words/ord_208.mp3"
+    },
+    {
+      "id": "word_0211",
+      "word": "kort",
+      "audio": "/static/audio/listening_words/ord_209.mp3"
+    },
+    {
+      "id": "word_0212",
+      "word": "ny",
+      "audio": "/static/audio/listening_words/ord_210.mp3"
+    },
+    {
+      "id": "word_0213",
+      "word": "gammal",
+      "audio": "/static/audio/listening_words/ord_211.mp3"
+    },
+    {
+      "id": "word_0214",
+      "word": "lätt",
+      "audio": "/static/audio/listening_words/ord_212.mp3"
+    },
+    {
+      "id": "word_0215",
+      "word": "svårt",
+      "audio": "/static/audio/listening_words/ord_213.mp3"
+    },
+    {
+      "id": "word_0216",
+      "word": "viktig",
+      "audio": "/static/audio/listening_words/ord_214.mp3"
+    },
+    {
+      "id": "word_0217",
+      "word": "viktigt",
+      "audio": "/static/audio/listening_words/ord_215.mp3"
+    },
+    {
+      "id": "word_0218",
+      "word": "enkel",
+      "audio": "/static/audio/listening_words/ord_216.mp3"
+    },
+    {
+      "id": "word_0219",
+      "word": "enkelt",
+      "audio": "/static/audio/listening_words/ord_217.mp3"
+    },
+    {
+      "id": "word_0220",
+      "word": "snabb",
+      "audio": "/static/audio/listening_words/ord_224.mp3"
+    },
+    {
+      "id": "word_0221",
+      "word": "långsam",
+      "audio": "/static/audio/listening_words/ord_225.mp3"
+    },
+    {
+      "id": "word_0222",
+      "word": "glad",
+      "audio": "/static/audio/listening_words/ord_218.mp3"
+    },
+    {
+      "id": "word_0223",
+      "word": "ledsen",
+      "audio": "/static/audio/listening_words/ord_219.mp3"
+    },
+    {
+      "id": "word_0224",
+      "word": "trött",
+      "audio": "/static/audio/listening_words/ord_220.mp3"
+    },
+    {
+      "id": "word_0225",
+      "word": "hungrig",
+      "audio": "/static/audio/listening_words/ord_221.mp3"
+    },
+    {
+      "id": "word_0226",
+      "word": "kall",
+      "audio": "/static/audio/listening_words/ord_222.mp3"
+    },
+    {
+      "id": "word_0227",
+      "word": "varm",
+      "audio": "/static/audio/listening_words/ord_223.mp3"
+    },
+    {
+      "id": "word_0228",
+      "word": "skola",
+      "audio": "/static/audio/listening_words/ord_226.mp3"
+    },
+    {
+      "id": "word_0229",
+      "word": "lärare",
+      "audio": "/static/audio/listening_words/ord_227.mp3"
+    },
+    {
+      "id": "word_0230",
+      "word": "elev",
+      "audio": "/static/audio/listening_words/ord_228.mp3"
+    },
+    {
+      "id": "word_0231",
+      "word": "klass",
+      "audio": "/static/audio/listening_words/ord_229.mp3"
+    },
+    {
+      "id": "word_0232",
+      "word": "lektion",
+      "audio": "/static/audio/listening_words/ord_270.mp3"
+    },
+    {
+      "id": "word_0233",
+      "word": "rast",
+      "audio": "/static/audio/listening_words/ord_269.mp3"
+    },
+    {
+      "id": "word_0234",
+      "word": "prov",
+      "audio": "/static/audio/listening_words/ord_271.mp3"
+    },
+    {
+      "id": "word_0235",
+      "word": "bok",
+      "audio": "/static/audio/listening_words/ord_230.mp3"
+    },
+    {
+      "id": "word_0236",
+      "word": "text",
+      "audio": "/static/audio/listening_words/ord_231.mp3"
+    },
+    {
+      "id": "word_0237",
+      "word": "ord",
+      "audio": "/static/audio/listening_words/ord_232.mp3"
+    },
+    {
+      "id": "word_0238",
+      "word": "mening",
+      "audio": "/static/audio/listening_words/ord_233.mp3"
+    },
+    {
+      "id": "word_0239",
+      "word": "fråga",
+      "audio": "/static/audio/listening_words/ord_234.mp3"
+    },
+    {
+      "id": "word_0240",
+      "word": "svar",
+      "audio": "/static/audio/listening_words/ord_235.mp3"
+    },
+    {
+      "id": "word_0241",
+      "word": "uppgift",
+      "audio": "/static/audio/listening_words/ord_236.mp3"
+    },
+    {
+      "id": "word_0242",
+      "word": "arbete",
+      "audio": "/static/audio/listening_words/ord_237.mp3"
+    },
+    {
+      "id": "word_0243",
+      "word": "problem",
+      "audio": "/static/audio/listening_words/ord_238.mp3"
+    },
+    {
+      "id": "word_0244",
+      "word": "hjälp",
+      "audio": "/static/audio/listening_words/ord_239.mp3"
+    },
+    {
+      "id": "word_0245",
+      "word": "exempel",
+      "audio": "/static/audio/listening_words/ord_240.mp3"
+    },
+    {
+      "id": "word_0246",
+      "word": "resultat",
+      "audio": "/static/audio/listening_words/ord_272.mp3"
+    },
+    {
+      "id": "word_0247",
+      "word": "familj",
+      "audio": "/static/audio/listening_words/ord_243.mp3"
+    },
+    {
+      "id": "word_0248",
+      "word": "vän",
+      "audio": "/static/audio/listening_words/ord_244.mp3"
+    },
+    {
+      "id": "word_0249",
+      "word": "kompis",
+      "audio": "/static/audio/listening_words/ord_245.mp3"
+    },
+    {
+      "id": "word_0250",
+      "word": "barn",
+      "audio": "/static/audio/listening_words/ord_246.mp3"
+    },
+    {
+      "id": "word_0251",
+      "word": "mamma",
+      "audio": "/static/audio/listening_words/ord_247.mp3"
+    },
+    {
+      "id": "word_0252",
+      "word": "pappa",
+      "audio": "/static/audio/listening_words/ord_248.mp3"
+    },
+    {
+      "id": "word_0253",
+      "word": "syster",
+      "audio": "/static/audio/listening_words/ord_249.mp3"
+    },
+    {
+      "id": "word_0254",
+      "word": "bror",
+      "audio": "/static/audio/listening_words/ord_250.mp3"
+    },
+    {
+      "id": "word_0255",
+      "word": "mat",
+      "audio": "/static/audio/listening_words/ord_251.mp3"
+    },
+    {
+      "id": "word_0256",
+      "word": "vatten",
+      "audio": "/static/audio/listening_words/ord_252.mp3"
+    },
+    {
+      "id": "word_0257",
+      "word": "pengar",
+      "audio": "/static/audio/listening_words/ord_253.mp3"
+    },
+    {
+      "id": "word_0258",
+      "word": "buss",
+      "audio": "/static/audio/listening_words/ord_254.mp3"
+    },
+    {
+      "id": "word_0259",
+      "word": "bil",
+      "audio": "/static/audio/listening_words/ord_255.mp3"
+    },
+    {
+      "id": "word_0260",
+      "word": "cykel",
+      "audio": "/static/audio/listening_words/ord_256.mp3"
+    },
+    {
+      "id": "word_0261",
+      "word": "väg",
+      "audio": "/static/audio/listening_words/ord_257.mp3"
+    },
+    {
+      "id": "word_0262",
+      "word": "gata",
+      "audio": "/static/audio/lasloop_words/word_0262.mp3"
+    },
+    {
+      "id": "word_0263",
+      "word": "rum",
+      "audio": "/static/audio/listening_words/ord_258.mp3"
+    },
+    {
+      "id": "word_0264",
+      "word": "bord",
+      "audio": "/static/audio/listening_words/ord_259.mp3"
+    },
+    {
+      "id": "word_0265",
+      "word": "stol",
+      "audio": "/static/audio/listening_words/ord_260.mp3"
+    },
+    {
+      "id": "word_0266",
+      "word": "dörr",
+      "audio": "/static/audio/listening_words/ord_261.mp3"
+    },
+    {
+      "id": "word_0267",
+      "word": "fönster",
+      "audio": "/static/audio/listening_words/ord_262.mp3"
+    },
+    {
+      "id": "word_0268",
+      "word": "mobil",
+      "audio": "/static/audio/listening_words/ord_263.mp3"
+    },
+    {
+      "id": "word_0269",
+      "word": "dator",
+      "audio": "/static/audio/listening_words/ord_264.mp3"
+    },
+    {
+      "id": "word_0270",
+      "word": "telefon",
+      "audio": "/static/audio/listening_words/ord_265.mp3"
+    },
+    {
+      "id": "word_0271",
+      "word": "butik",
+      "audio": "/static/audio/listening_words/ord_266.mp3"
+    },
+    {
+      "id": "word_0272",
+      "word": "affär",
+      "audio": "/static/audio/listening_words/ord_267.mp3"
+    },
+    {
+      "id": "word_0273",
+      "word": "jobb",
+      "audio": "/static/audio/listening_words/ord_268.mp3"
+    },
+    {
+      "id": "word_0274",
+      "word": "plan",
+      "audio": "/static/audio/listening_words/ord_273.mp3"
+    },
+    {
+      "id": "word_0275",
+      "word": "idé",
+      "audio": "/static/audio/listening_words/ord_274.mp3"
+    },
+    {
+      "id": "word_0276",
+      "word": "sak",
+      "audio": "/static/audio/listening_words/ord_275.mp3"
+    },
+    {
+      "id": "word_0277",
+      "word": "saker",
+      "audio": "/static/audio/listening_words/ord_276.mp3"
+    },
+    {
+      "id": "word_0278",
+      "word": "person",
+      "audio": "/static/audio/listening_words/ord_277.mp3"
+    },
+    {
+      "id": "word_0279",
+      "word": "människor",
+      "audio": "/static/audio/listening_words/ord_278.mp3"
+    },
+    {
+      "id": "word_0280",
+      "word": "namn",
+      "audio": "/static/audio/listening_words/ord_279.mp3"
+    },
+    {
+      "id": "word_0281",
+      "word": "nummer",
+      "audio": "/static/audio/listening_words/ord_280.mp3"
+    },
+    {
+      "id": "word_0282",
+      "word": "spelar",
+      "audio": "/static/audio/lasloop_words/word_0282.mp3"
+    },
+    {
+      "id": "word_0283",
+      "word": "tränar",
+      "audio": "/static/audio/lasloop_words/word_0283.mp3"
+    },
+    {
+      "id": "word_0284",
+      "word": "springer",
+      "audio": "/static/audio/lasloop_words/word_0284.mp3"
+    },
+    {
+      "id": "word_0285",
+      "word": "äter",
+      "audio": "/static/audio/lasloop_words/word_0285.mp3"
+    },
+    {
+      "id": "word_0286",
+      "word": "dricker",
+      "audio": "/static/audio/lasloop_words/word_0286.mp3"
+    },
+    {
+      "id": "word_0287",
+      "word": "sover",
+      "audio": "/static/audio/lasloop_words/word_0287.mp3"
+    },
+    {
+      "id": "word_0288",
+      "word": "vaknar",
+      "audio": "/static/audio/lasloop_words/word_0288.mp3"
+    },
+    {
+      "id": "word_0289",
+      "word": "köper",
+      "audio": "/static/audio/lasloop_words/word_0289.mp3"
+    },
+    {
+      "id": "word_0290",
+      "word": "säljer",
+      "audio": "/static/audio/lasloop_words/word_0290.mp3"
+    },
+    {
+      "id": "word_0291",
+      "word": "betalar",
+      "audio": "/static/audio/lasloop_words/word_0291.mp3"
+    },
+    {
+      "id": "word_0292",
+      "word": "öppnar",
+      "audio": "/static/audio/lasloop_words/word_0292.mp3"
+    },
+    {
+      "id": "word_0293",
+      "word": "stänger",
+      "audio": "/static/audio/lasloop_words/word_0293.mp3"
+    },
+    {
+      "id": "word_0294",
+      "word": "tittar",
+      "audio": "/static/audio/lasloop_words/word_0294.mp3"
+    },
+    {
+      "id": "word_0295",
+      "word": "visar",
+      "audio": "/static/audio/lasloop_words/word_0295.mp3"
+    },
+    {
+      "id": "word_0296",
+      "word": "förstår",
+      "audio": "/static/audio/lasloop_words/word_0296.mp3"
+    },
+    {
+      "id": "word_0297",
+      "word": "minns",
+      "audio": "/static/audio/lasloop_words/word_0297.mp3"
+    },
+    {
+      "id": "word_0298",
+      "word": "glömmer",
+      "audio": "/static/audio/lasloop_words/word_0298.mp3"
+    },
+    {
+      "id": "word_0299",
+      "word": "berättar",
+      "audio": "/static/audio/lasloop_words/word_0299.mp3"
+    },
+    {
+      "id": "word_0300",
+      "word": "förklarar",
+      "audio": "/static/audio/lasloop_words/word_0300.mp3"
+    },
+    {
+      "id": "word_0301",
+      "word": "svenska",
+      "audio": "/static/audio/lasloop_words/word_0301.mp3"
+    },
+    {
+      "id": "word_0302",
+      "word": "engelska",
+      "audio": "/static/audio/lasloop_words/word_0302.mp3"
+    },
+    {
+      "id": "word_0303",
+      "word": "språk",
+      "audio": "/static/audio/lasloop_words/word_0303.mp3"
+    },
+    {
+      "id": "word_0304",
+      "word": "läsa",
+      "audio": "/static/audio/lasloop_words/word_0304.mp3"
+    },
+    {
+      "id": "word_0305",
+      "word": "skriva",
+      "audio": "/static/audio/lasloop_words/word_0305.mp3"
+    },
+    {
+      "id": "word_0306",
+      "word": "lyssna",
+      "audio": "/static/audio/lasloop_words/word_0306.mp3"
+    },
+    {
+      "id": "word_0307",
+      "word": "tala",
+      "audio": "/static/audio/lasloop_words/word_0307.mp3"
+    },
+    {
+      "id": "word_0308",
+      "word": "stavar",
+      "audio": "/static/audio/lasloop_words/word_0308.mp3"
+    },
+    {
+      "id": "word_0309",
+      "word": "betyder",
+      "audio": "/static/audio/lasloop_words/word_0309.mp3"
+    },
+    {
+      "id": "word_0310",
+      "word": "stad",
+      "audio": "/static/audio/lasloop_words/word_0310.mp3"
+    },
+    {
+      "id": "word_0311",
+      "word": "land",
+      "audio": "/static/audio/lasloop_words/word_0311.mp3"
+    },
+    {
+      "id": "word_0312",
+      "word": "plats",
+      "audio": "/static/audio/listening_words/ord_241.mp3"
+    },
+    {
+      "id": "word_0313",
+      "word": "hus",
+      "audio": "/static/audio/lasloop_words/word_0313.mp3"
+    },
+    {
+      "id": "word_0314",
+      "word": "lägenhet",
+      "audio": "/static/audio/lasloop_words/word_0314.mp3"
+    },
+    {
+      "id": "word_0315",
+      "word": "tidigt",
+      "audio": "/static/audio/lasloop_words/word_0315.mp3"
+    },
+    {
+      "id": "word_0316",
+      "word": "sent",
+      "audio": "/static/audio/lasloop_words/word_0316.mp3"
+    },
+    {
+      "id": "word_0317",
+      "word": "länge",
+      "audio": "/static/audio/lasloop_words/word_0317.mp3"
+    },
+    {
+      "id": "word_0318",
+      "word": "första",
+      "audio": "/static/audio/lasloop_words/word_0318.mp3"
+    },
+    {
+      "id": "word_0319",
+      "word": "tredje",
+      "audio": "/static/audio/lasloop_words/word_0319.mp3"
+    },
+    {
+      "id": "word_0320",
+      "word": "nästa",
+      "audio": "/static/audio/lasloop_words/word_0320.mp3"
+    },
+    {
+      "id": "word_0321",
+      "word": "sista",
+      "audio": "/static/audio/lasloop_words/word_0321.mp3"
+    },
+    {
+      "id": "word_0322",
+      "word": "många",
+      "audio": "/static/audio/lasloop_words/word_0322.mp3"
+    },
+    {
+      "id": "word_0323",
+      "word": "få",
+      "audio": "/static/audio/lasloop_words/word_0323.mp3"
+    },
+    {
+      "id": "word_0324",
+      "word": "roligt",
+      "audio": "/static/audio/lasloop_words/word_0324.mp3"
+    },
+    {
+      "id": "word_0325",
+      "word": "tråkigt",
+      "audio": "/static/audio/lasloop_words/word_0325.mp3"
+    },
+    {
+      "id": "word_0326",
+      "word": "snäll",
+      "audio": "/static/audio/lasloop_words/word_0326.mp3"
+    },
+    {
+      "id": "word_0327",
+      "word": "arg",
+      "audio": "/static/audio/lasloop_words/word_0327.mp3"
+    },
+    {
+      "id": "word_0328",
+      "word": "rädd",
+      "audio": "/static/audio/lasloop_words/word_0328.mp3"
+    },
+    {
+      "id": "word_0329",
+      "word": "trygg",
+      "audio": "/static/audio/lasloop_words/word_0329.mp3"
+    },
+    {
+      "id": "word_0330",
+      "word": "stark",
+      "audio": "/static/audio/lasloop_words/word_0330.mp3"
+    },
+    {
+      "id": "word_0331",
+      "word": "svag",
+      "audio": "/static/audio/lasloop_words/word_0331.mp3"
+    },
+    {
+      "id": "word_0332",
+      "word": "fin",
+      "audio": "/static/audio/lasloop_words/word_0332.mp3"
+    },
+    {
+      "id": "word_0333",
+      "word": "ful",
+      "audio": "/static/audio/lasloop_words/word_0333.mp3"
+    },
+    {
+      "id": "word_0334",
+      "word": "ren",
+      "audio": "/static/audio/lasloop_words/word_0334.mp3"
+    },
+    {
+      "id": "word_0335",
+      "word": "smutsig",
+      "audio": "/static/audio/lasloop_words/word_0335.mp3"
+    },
+    {
+      "id": "word_0336",
+      "word": "full",
+      "audio": "/static/audio/lasloop_words/word_0336.mp3"
+    },
+    {
+      "id": "word_0337",
+      "word": "tom",
+      "audio": "/static/audio/lasloop_words/word_0337.mp3"
+    },
+    {
+      "id": "word_0338",
+      "word": "öppen",
+      "audio": "/static/audio/lasloop_words/word_0338.mp3"
+    },
+    {
+      "id": "word_0339",
+      "word": "stängd",
+      "audio": "/static/audio/lasloop_words/word_0339.mp3"
+    },
+    {
+      "id": "word_0340",
+      "word": "nära",
+      "audio": "/static/audio/lasloop_words/word_0340.mp3"
+    },
+    {
+      "id": "word_0341",
+      "word": "långt",
+      "audio": "/static/audio/lasloop_words/word_0341.mp3"
+    },
+    {
+      "id": "word_0342",
+      "word": "fram",
+      "audio": "/static/audio/lasloop_words/word_0342.mp3"
+    },
+    {
+      "id": "word_0343",
+      "word": "bak",
+      "audio": "/static/audio/lasloop_words/word_0343.mp3"
+    },
+    {
+      "id": "word_0344",
+      "word": "vänster",
+      "audio": "/static/audio/lasloop_words/word_0344.mp3"
+    },
+    {
+      "id": "word_0345",
+      "word": "höger",
+      "audio": "/static/audio/lasloop_words/word_0345.mp3"
+    },
+    {
+      "id": "word_0346",
+      "word": "framför",
+      "audio": "/static/audio/lasloop_words/word_0346.mp3"
+    },
+    {
+      "id": "word_0347",
+      "word": "bakom",
+      "audio": "/static/audio/lasloop_words/word_0347.mp3"
+    },
+    {
+      "id": "word_0348",
+      "word": "bredvid",
+      "audio": "/static/audio/lasloop_words/word_0348.mp3"
+    },
+    {
+      "id": "word_0349",
+      "word": "springa",
+      "audio": "/static/audio/lasloop_words/word_0349.mp3"
+    },
+    {
+      "id": "word_0350",
+      "word": "prata",
+      "audio": "/static/audio/lasloop_words/word_0350.mp3"
+    },
+    {
+      "id": "word_0351",
+      "word": "arbeta",
+      "audio": "/static/audio/lasloop_words/word_0351.mp3"
+    },
+    {
+      "id": "word_0352",
+      "word": "regel",
+      "audio": "/static/audio/lasloop_words/word_0352.mp3"
+    },
+    {
+      "id": "word_0353",
+      "word": "miljö",
+      "audio": "/static/audio/lasloop_words/word_0353.mp3"
+    },
+    {
+      "id": "word_0354",
+      "word": "besviken",
+      "audio": "/static/audio/lasloop_words/word_0354.mp3"
+    },
+    {
+      "id": "word_0355",
+      "word": "undersöka",
+      "audio": "/static/audio/lasloop_words/word_0355.mp3"
+    },
+    {
+      "id": "word_0356",
+      "word": "framtid",
+      "audio": "/static/audio/lasloop_words/word_0356.mp3"
+    },
+    {
+      "id": "word_0357",
+      "word": "tydlig",
+      "audio": "/static/audio/lasloop_words/word_0357.mp3"
+    },
+    {
+      "id": "word_0358",
+      "word": "samarbeta",
+      "audio": "/static/audio/lasloop_words/word_0358.mp3"
+    },
+    {
+      "id": "word_0359",
+      "word": "invånare",
+      "audio": "/static/audio/lasloop_words/word_0359.mp3"
+    },
+    {
+      "id": "word_0360",
+      "word": "klimat",
+      "audio": "/static/audio/lasloop_words/word_0360.mp3"
+    },
+    {
+      "id": "word_0361",
+      "word": "jämföra",
+      "audio": "/static/audio/lasloop_words/word_0361.mp3"
+    },
+    {
+      "id": "word_0362",
+      "word": "påverka",
+      "audio": "/static/audio/lasloop_words/word_0362.mp3"
+    },
+    {
+      "id": "word_0363",
+      "word": "anledning",
+      "audio": "/static/audio/lasloop_words/word_0363.mp3"
+    },
+    {
+      "id": "word_0364",
+      "word": "beskriva",
+      "audio": "/static/audio/lasloop_words/word_0364.mp3"
+    },
+    {
+      "id": "word_0365",
+      "word": "resurs",
+      "audio": "/static/audio/lasloop_words/word_0365.mp3"
+    },
+    {
+      "id": "word_0366",
+      "word": "befolkning",
+      "audio": "/static/audio/lasloop_words/word_0366.mp3"
+    },
+    {
+      "id": "word_0367",
+      "word": "upplevelse",
+      "audio": "/static/audio/lasloop_words/word_0367.mp3"
+    },
+    {
+      "id": "word_0368",
+      "word": "orsak",
+      "audio": "/static/audio/lasloop_words/word_0368.mp3"
+    },
+    {
+      "id": "word_0369",
+      "word": "metod",
+      "audio": "/static/audio/lasloop_words/word_0369.mp3"
+    },
+    {
+      "id": "word_0370",
+      "word": "omgivning",
+      "audio": "/static/audio/lasloop_words/word_0370.mp3"
+    },
+    {
+      "id": "word_0371",
+      "word": "situation",
+      "audio": "/static/audio/lasloop_words/word_0371.mp3"
+    },
+    {
+      "id": "word_0372",
+      "word": "tolka",
+      "audio": "/static/audio/lasloop_words/word_0372.mp3"
+    },
+    {
+      "id": "word_0373",
+      "word": "utveckla",
+      "audio": "/static/audio/lasloop_words/word_0373.mp3"
+    },
+    {
+      "id": "word_0374",
+      "word": "princip",
+      "audio": "/static/audio/lasloop_words/word_0374.mp3"
+    },
+    {
+      "id": "word_0375",
+      "word": "granska",
+      "audio": "/static/audio/lasloop_words/word_0375.mp3"
+    },
+    {
+      "id": "word_0376",
+      "word": "konsekvens",
+      "audio": "/static/audio/lasloop_words/word_0376.mp3"
+    },
+    {
+      "id": "word_0377",
+      "word": "slutsats",
+      "audio": "/static/audio/lasloop_words/word_0377.mp3"
+    },
+    {
+      "id": "word_0378",
+      "word": "förutsättning",
+      "audio": "/static/audio/lasloop_words/word_0378.mp3"
+    },
+    {
+      "id": "word_0379",
+      "word": "utveckling",
+      "audio": "/static/audio/lasloop_words/word_0379.mp3"
+    },
+    {
+      "id": "word_0380",
+      "word": "perspektiv",
+      "audio": "/static/audio/lasloop_words/word_0380.mp3"
+    },
+    {
+      "id": "word_0381",
+      "word": "argument",
+      "audio": "/static/audio/lasloop_words/word_0381.mp3"
+    },
+    {
+      "id": "word_0382",
+      "word": "struktur",
+      "audio": "/static/audio/lasloop_words/word_0382.mp3"
+    },
+    {
+      "id": "word_0383",
+      "word": "process",
+      "audio": "/static/audio/lasloop_words/word_0383.mp3"
+    },
+    {
+      "id": "word_0384",
+      "word": "faktor",
+      "audio": "/static/audio/lasloop_words/word_0384.mp3"
+    },
+    {
+      "id": "word_0385",
+      "word": "analysera",
+      "audio": "/static/audio/lasloop_words/word_0385.mp3"
+    },
+    {
+      "id": "word_0386",
+      "word": "identitet",
+      "audio": "/static/audio/lasloop_words/word_0386.mp3"
+    },
+    {
+      "id": "word_0387",
+      "word": "jämlikhet",
+      "audio": "/static/audio/lasloop_words/word_0387.mp3"
+    },
+    {
+      "id": "word_0388",
+      "word": "debatt",
+      "audio": "/static/audio/lasloop_words/word_0388.mp3"
+    },
+    {
+      "id": "word_0389",
+      "word": "kritisk",
+      "audio": "/static/audio/lasloop_words/word_0389.mp3"
+    },
+    {
+      "id": "word_0390",
+      "word": "påstående",
+      "audio": "/static/audio/lasloop_words/word_0390.mp3"
+    },
+    {
+      "id": "word_0391",
+      "word": "omfattande",
+      "audio": "/static/audio/lasloop_words/word_0391.mp3"
+    },
+    {
+      "id": "word_0392",
+      "word": "påfrestning",
+      "audio": "/static/audio/lasloop_words/word_0392.mp3"
+    },
+    {
+      "id": "word_0393",
+      "word": "källa",
+      "audio": "/static/audio/lasloop_words/word_0393.mp3"
+    },
+    {
+      "id": "word_0394",
+      "word": "samband",
+      "audio": "/static/audio/lasloop_words/word_0394.mp3"
+    },
+    {
+      "id": "word_0395",
+      "word": "fenomen",
+      "audio": "/static/audio/lasloop_words/word_0395.mp3"
+    },
+    {
+      "id": "word_0396",
+      "word": "komplex",
+      "audio": "/static/audio/lasloop_words/word_0396.mp3"
+    },
+    {
+      "id": "word_0397",
+      "word": "objektiv",
+      "audio": "/static/audio/lasloop_words/word_0397.mp3"
+    },
+    {
+      "id": "word_0398",
+      "word": "subjektiv",
+      "audio": "/static/audio/lasloop_words/word_0398.mp3"
+    },
+    {
+      "id": "word_0399",
+      "word": "hypotes",
+      "audio": "/static/audio/lasloop_words/word_0399.mp3"
+    },
+    {
+      "id": "word_0400",
+      "word": "kriterium",
+      "audio": "/static/audio/lasloop_words/word_0400.mp3"
+    },
+    {
+      "id": "word_0401",
+      "word": "relevant",
+      "audio": "/static/audio/lasloop_words/word_0401.mp3"
+    },
+    {
+      "id": "word_0402",
+      "word": "generalisera",
+      "audio": "/static/audio/lasloop_words/word_0402.mp3"
+    },
+    {
+      "id": "word_0403",
+      "word": "ideologi",
+      "audio": "/static/audio/lasloop_words/word_0403.mp3"
+    },
+    {
+      "id": "word_0404",
+      "word": "globalisering",
+      "audio": "/static/audio/lasloop_words/word_0404.mp3"
+    },
+    {
+      "id": "word_0405",
+      "word": "ekosystem",
+      "audio": "/static/audio/lasloop_words/word_0405.mp3"
+    },
+    {
+      "id": "word_0406",
+      "word": "integration",
+      "audio": "/static/audio/lasloop_words/word_0406.mp3"
+    },
+    {
+      "id": "word_0407",
+      "word": "diskrimination",
+      "audio": "/static/audio/lasloop_words/word_0407.mp3"
+    },
+    {
+      "id": "word_0408",
+      "word": "empati",
+      "audio": "/static/audio/lasloop_words/word_0408.mp3"
+    },
+    {
+      "id": "word_0409",
+      "word": "motivation",
+      "audio": "/static/audio/lasloop_words/word_0409.mp3"
+    },
+    {
+      "id": "word_0410",
+      "word": "koncentration",
+      "audio": "/static/audio/lasloop_words/word_0410.mp3"
+    },
+    {
+      "id": "word_0411",
+      "word": "kompromiss",
+      "audio": "/static/audio/lasloop_words/word_0411.mp3"
+    },
+    {
+      "id": "word_0412",
+      "word": "variation",
+      "audio": "/static/audio/lasloop_words/word_0412.mp3"
+    },
+    {
+      "id": "word_0413",
+      "word": "dominera",
+      "audio": "/static/audio/lasloop_words/word_0413.mp3"
+    },
+    {
+      "id": "word_0414",
+      "word": "effektiv",
+      "audio": "/static/audio/lasloop_words/word_0414.mp3"
+    },
+    {
+      "id": "word_0415",
+      "word": "ansvar",
+      "audio": "/static/audio/lasloop_words/word_0415.mp3"
+    },
+    {
+      "id": "word_0416",
+      "word": "rättighet",
+      "audio": "/static/audio/lasloop_words/word_0416.mp3"
+    },
+    {
+      "id": "word_0417",
+      "word": "skyldighet",
+      "audio": "/static/audio/lasloop_words/word_0417.mp3"
+    },
+    {
+      "id": "word_0418",
+      "word": "demokrati",
+      "audio": "/static/audio/lasloop_words/word_0418.mp3"
+    },
+    {
+      "id": "word_0419",
+      "word": "ekonomi",
+      "audio": "/static/audio/lasloop_words/word_0419.mp3"
+    },
+    {
+      "id": "word_0420",
+      "word": "kultur",
+      "audio": "/static/audio/lasloop_words/word_0420.mp3"
+    },
+    {
+      "id": "word_0421",
+      "word": "tradition",
+      "audio": "/static/audio/lasloop_words/word_0421.mp3"
+    },
+    {
+      "id": "word_0422",
+      "word": "energi",
+      "audio": "/static/audio/lasloop_words/word_0422.mp3"
+    },
+    {
+      "id": "word_0423",
+      "word": "näring",
+      "audio": "/static/audio/lasloop_words/word_0423.mp3"
+    },
+    {
+      "id": "word_0424",
+      "word": "organism",
+      "audio": "/static/audio/lasloop_words/word_0424.mp3"
+    },
+    {
+      "id": "word_0425",
+      "word": "cell",
+      "audio": "/static/audio/lasloop_words/word_0425.mp3"
+    },
+    {
+      "id": "word_0426",
+      "word": "experiment",
+      "audio": "/static/audio/lasloop_words/word_0426.mp3"
+    },
+    {
+      "id": "word_0427",
+      "word": "observation",
+      "audio": "/static/audio/lasloop_words/word_0427.mp3"
+    },
+    {
+      "id": "word_0428",
+      "word": "teori",
+      "audio": "/static/audio/lasloop_words/word_0428.mp3"
+    },
+    {
+      "id": "word_0429",
+      "word": "berätta",
+      "audio": "/static/audio/lasloop_words/word_0429.mp3"
+    },
+    {
+      "id": "word_0430",
+      "word": "besluta",
+      "audio": "/static/audio/lasloop_words/word_0430.mp3"
+    },
+    {
+      "id": "word_0431",
+      "word": "delta",
+      "audio": "/static/audio/lasloop_words/word_0431.mp3"
+    },
+    {
+      "id": "word_0432",
+      "word": "förklara",
+      "audio": "/static/audio/lasloop_words/word_0432.mp3"
+    },
+    {
+      "id": "word_0433",
+      "word": "värdera",
+      "audio": "/static/audio/lasloop_words/word_0433.mp3"
+    },
+    {
+      "id": "word_0434",
+      "word": "vänta",
+      "audio": "/static/audio/lasloop_words/word_0434.mp3"
+    },
+    {
+      "id": "word_0435",
+      "word": "hjälpa",
+      "audio": "/static/audio/lasloop_words/word_0435.mp3"
+    },
+    {
+      "id": "word_0436",
+      "word": "tillfälle",
+      "audio": "/static/audio/lasloop_words/word_0436.mp3"
+    },
+    {
+      "id": "word_0437",
+      "word": "ordning",
+      "audio": "/static/audio/lasloop_words/word_0437.mp3"
+    },
+    {
+      "id": "word_0438",
+      "word": "beteende",
+      "audio": "/static/audio/lasloop_words/word_0438.mp3"
+    },
+    {
+      "id": "word_0439",
+      "word": "gemenskap",
+      "audio": "/static/audio/lasloop_words/word_0439.mp3"
+    },
+    {
+      "id": "word_0440",
+      "word": "betydelse",
+      "audio": "/static/audio/lasloop_words/word_0440.mp3"
+    },
+    {
+      "id": "word_0441",
+      "word": "sammanhang",
+      "audio": "/static/audio/lasloop_words/word_0441.mp3"
+    },
+    {
+      "id": "word_0442",
+      "word": "villkor",
+      "audio": "/static/audio/lasloop_words/word_0442.mp3"
+    },
+    {
+      "id": "word_0443",
+      "word": "medveten",
+      "audio": "/static/audio/lasloop_words/word_0443.mp3"
+    },
+    {
+      "id": "word_0444",
+      "word": "omständighet",
+      "audio": "/static/audio/lasloop_words/word_0444.mp3"
+    },
+    {
+      "id": "word_0445",
+      "word": "innebörd",
+      "audio": "/static/audio/lasloop_words/word_0445.mp3"
+    },
+    {
+      "id": "word_0446",
+      "word": "framställa",
+      "audio": "/static/audio/lasloop_words/word_0446.mp3"
+    },
+    {
+      "id": "word_0447",
+      "word": "utgångspunkt",
+      "audio": "/static/audio/lasloop_words/word_0447.mp3"
+    },
+    {
+      "id": "word_0448",
+      "word": "förhållande",
+      "audio": "/static/audio/lasloop_words/word_0448.mp3"
+    },
+    {
+      "id": "word_0449",
+      "word": "tillstånd",
+      "audio": "/static/audio/lasloop_words/word_0449.mp3"
+    },
+    {
+      "id": "word_0450",
+      "word": "omfatta",
+      "audio": "/static/audio/lasloop_words/word_0450.mp3"
+    },
+    {
+      "id": "word_0451",
+      "word": "principiell",
+      "audio": "/static/audio/lasloop_words/word_0451.mp3"
+    },
+    {
+      "id": "word_0452",
+      "word": "nyansera",
+      "audio": "/static/audio/lasloop_words/word_0452.mp3"
+    },
+    {
+      "id": "word_0453",
+      "word": "konkret",
+      "audio": "/static/audio/lasloop_words/word_0453.mp3"
+    },
+    {
+      "id": "word_0454",
+      "word": "abstrakt",
+      "audio": "/static/audio/lasloop_words/word_0454.mp3"
+    },
+    {
+      "id": "word_0455",
+      "word": "varierande",
+      "audio": "/static/audio/lasloop_words/word_0455.mp3"
+    },
+    {
+      "id": "word_0456",
+      "word": "gynna",
+      "audio": "/static/audio/lasloop_words/word_0456.mp3"
+    },
+    {
+      "id": "word_0457",
+      "word": "underlätta",
+      "audio": "/static/audio/lasloop_words/word_0457.mp3"
+    },
+    {
+      "id": "word_0458",
+      "word": "sträva",
+      "audio": "/static/audio/lasloop_words/word_0458.mp3"
+    },
+    {
+      "id": "word_0459",
+      "word": "hinder",
+      "audio": "/static/audio/lasloop_words/word_0459.mp3"
+    },
+    {
+      "id": "word_0460",
+      "word": "uppfatta",
+      "audio": "/static/audio/lasloop_words/word_0460.mp3"
+    },
+    {
+      "id": "word_0461",
+      "word": "tillägga",
+      "audio": "/static/audio/lasloop_words/word_0461.mp3"
+    },
+    {
+      "id": "word_0462",
+      "word": "framgång",
+      "audio": "/static/audio/lasloop_words/word_0462.mp3"
+    },
+    {
+      "id": "word_0463",
+      "word": "misslyckas",
+      "audio": "/static/audio/lasloop_words/word_0463.mp3"
+    },
+    {
+      "id": "word_0464",
+      "word": "avsikt",
+      "audio": "/static/audio/lasloop_words/word_0464.mp3"
+    },
+    {
+      "id": "word_0465",
+      "word": "innehåll",
+      "audio": "/static/audio/lasloop_words/word_0465.mp3"
+    },
+    {
+      "id": "word_0466",
+      "word": "sammanfatta",
+      "audio": "/static/audio/lasloop_words/word_0466.mp3"
+    },
+    {
+      "id": "word_0467",
+      "word": "bidra",
+      "audio": "/static/audio/lasloop_words/word_0467.mp3"
+    },
+    {
+      "id": "word_0468",
+      "word": "medlem",
+      "audio": "/static/audio/lasloop_words/word_0468.mp3"
+    },
+    {
+      "id": "word_0469",
+      "word": "organisation",
+      "audio": "/static/audio/lasloop_words/word_0469.mp3"
+    },
+    {
+      "id": "word_0470",
+      "word": "lagstiftning",
+      "audio": "/static/audio/lasloop_words/word_0470.mp3"
+    },
+    {
+      "id": "word_0471",
+      "word": "utrota",
+      "audio": "/static/audio/lasloop_words/word_0471.mp3"
+    },
+    {
+      "id": "word_0472",
+      "word": "art",
+      "audio": "/static/audio/lasloop_words/word_0472.mp3"
+    },
+    {
+      "id": "word_0473",
+      "word": "livsmiljö",
+      "audio": "/static/audio/lasloop_words/word_0473.mp3"
+    },
+    {
+      "id": "word_0474",
+      "word": "förbruka",
+      "audio": "/static/audio/lasloop_words/word_0474.mp3"
+    },
+    {
+      "id": "word_0475",
+      "word": "hushålla",
+      "audio": "/static/audio/lasloop_words/word_0475.mp3"
+    },
+    {
+      "id": "word_0476",
+      "word": "besvär",
+      "audio": "/static/audio/lasloop_words/word_0476.mp3"
+    },
+    {
+      "id": "word_0477",
+      "word": "irritation",
+      "audio": "/static/audio/lasloop_words/word_0477.mp3"
+    },
+    {
+      "id": "word_0478",
+      "word": "uppskatta",
+      "audio": "/static/audio/lasloop_words/word_0478.mp3"
+    },
+    {
+      "id": "word_0479",
+      "word": "successivt",
+      "audio": "/static/audio/lasloop_words/word_0479.mp3"
+    },
+    {
+      "id": "word_0480",
+      "word": "avgörande",
+      "audio": "/static/audio/lasloop_words/word_0480.mp3"
+    },
+    {
+      "id": "word_0481",
+      "word": "kompetens",
+      "audio": "/static/audio/lasloop_words/word_0481.mp3"
+    },
+    {
+      "id": "word_0482",
+      "word": "bevis",
+      "audio": "/static/audio/lasloop_words/word_0482.mp3"
+    },
+    {
+      "id": "word_0483",
+      "word": "tillväxt",
+      "audio": "/static/audio/lasloop_words/word_0483.mp3"
+    },
+    {
+      "id": "word_0484",
+      "word": "undvika",
+      "audio": "/static/audio/lasloop_words/word_0484.mp3"
+    },
+    {
+      "id": "word_0485",
+      "word": "påpeka",
+      "audio": "/static/audio/lasloop_words/word_0485.mp3"
+    },
+    {
+      "id": "word_0486",
+      "word": "tillfällig",
+      "audio": "/static/audio/lasloop_words/word_0486.mp3"
+    },
+    {
+      "id": "word_0487",
+      "word": "vardaglig",
+      "audio": "/static/audio/lasloop_words/word_0487.mp3"
+    },
+    {
+      "id": "word_0488",
+      "word": "tillgång",
+      "audio": "/static/audio/lasloop_words/word_0488.mp3"
+    },
+    {
+      "id": "word_0489",
+      "word": "omedelbart",
+      "audio": "/static/audio/lasloop_words/word_0489.mp3"
+    },
+    {
+      "id": "word_0490",
+      "word": "utmaning",
+      "audio": "/static/audio/lasloop_words/word_0490.mp3"
+    },
+    {
+      "id": "word_0491",
+      "word": "engagemang",
+      "audio": "/static/audio/lasloop_words/word_0491.mp3"
+    },
+    {
+      "id": "word_0492",
+      "word": "jämvikt",
+      "audio": "/static/audio/lasloop_words/word_0492.mp3"
+    },
+    {
+      "id": "word_0493",
+      "word": "härkomst",
+      "audio": "/static/audio/lasloop_words/word_0493.mp3"
+    },
+    {
+      "id": "word_0494",
+      "word": "motverka",
+      "audio": "/static/audio/lasloop_words/word_0494.mp3"
+    },
+    {
+      "id": "word_0495",
+      "word": "anpassa",
+      "audio": "/static/audio/lasloop_words/word_0495.mp3"
+    },
+    {
+      "id": "word_0496",
+      "word": "uppfattning",
+      "audio": "/static/audio/lasloop_words/word_0496.mp3"
+    },
+    {
+      "id": "word_0497",
+      "word": "framträda",
+      "audio": "/static/audio/lasloop_words/word_0497.mp3"
+    },
+    {
+      "id": "word_0498",
+      "word": "omständlig",
+      "audio": "/static/audio/lasloop_words/word_0498.mp3"
+    },
+    {
+      "id": "word_0499",
+      "word": "tillräcklig",
+      "audio": "/static/audio/lasloop_words/word_0499.mp3"
+    },
+    {
+      "id": "word_0500",
+      "word": "betrakta",
+      "audio": "/static/audio/lasloop_words/word_0500.mp3"
     }
   ]
 }

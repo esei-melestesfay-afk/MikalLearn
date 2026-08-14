@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="utf-8">
+
 <meta
     name="viewport"
     content="width=device-width, initial-scale=1">
@@ -17,18 +18,17 @@
 <style>
 
 :root {
-    --loop-bg: #f5f6fb;
-    --loop-card: #ffffff;
-    --loop-text: #181a24;
-    --loop-muted: #7d8190;
-    --loop-line: #e7e8ef;
-    --loop-purple: #5d5ee8;
-    --loop-purple-soft: #eeeeff;
-    --loop-dark: #1c1e29;
-    --loop-green: #168652;
-    --loop-green-soft: #eaf8f0;
-    --loop-orange-soft: #fff3e5;
-    --loop-orange: #a75d0c;
+    --bg: #f5f6fb;
+    --card: #ffffff;
+    --text: #191b25;
+    --muted: #858995;
+    --line: #e6e7ef;
+    --purple: #5c5de9;
+    --purple-soft: #eeeeff;
+    --dark: #1c1e29;
+    --red: #c95043;
+    --red-soft: #fff0ed;
+    --green: #168653;
 }
 
 * {
@@ -38,15 +38,15 @@
 body {
     margin: 0;
 
-    color: var(--loop-text);
+    color: var(--text);
 
     background:
         radial-gradient(
             circle at 85% 5%,
-            rgba(93,94,232,.10),
-            transparent 350px
+            rgba(92,93,233,.10),
+            transparent 340px
         ),
-        var(--loop-bg);
+        var(--bg);
 
     font-family:
         Inter,
@@ -62,59 +62,57 @@ button {
     font: inherit;
 }
 
-.loop-shell {
+.shell {
     width: min(
-        900px,
+        850px,
         calc(100% - 28px)
     );
 
     margin: 0 auto;
 
-    padding:
-        26px 0
-        70px;
+    padding: 25px 0 70px;
 }
 
-.loop-nav {
+.nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
-.loop-back {
-    color: #555966;
+.back {
+    color: #555967;
+
+    text-decoration: none;
 
     font-size: 12px;
     font-weight: 800;
-
-    text-decoration: none;
 }
 
-.loop-brand {
-    color: var(--loop-purple);
+.brand {
+    color: var(--purple);
 
     font-size: 10px;
     font-weight: 950;
 
-    letter-spacing: 1.6px;
+    letter-spacing: 1.7px;
 }
 
-.loop-head {
+.heading {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-end;
 
-    gap: 20px;
+    gap: 15px;
 
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
-.loop-label {
+.label {
     margin: 0 0 5px;
 
-    color: var(--loop-purple);
+    color: var(--purple);
 
     font-size: 10px;
     font-weight: 950;
@@ -122,60 +120,48 @@ button {
     letter-spacing: 1.3px;
 }
 
-.loop-head h1 {
+.heading h1 {
     margin: 0;
 
-    font-size:
-        clamp(
-            30px,
-            6vw,
-            46px
-        );
+    font-size: clamp(30px, 6vw, 45px);
 
-    letter-spacing: -1.6px;
+    letter-spacing: -1.5px;
 }
 
-.loop-head p {
-    max-width: 560px;
+.heading p {
+    max-width: 600px;
 
-    margin:
-        8px 0 0;
+    margin: 7px 0 0;
 
-    color: var(--loop-muted);
+    color: var(--muted);
 
-    font-size: 12px;
-    line-height: 1.6;
+    font-size: 11px;
+    line-height: 1.55;
 }
 
-.today-box {
-    min-width: 100px;
+.today {
+    min-width: 95px;
 
-    padding:
-        11px 13px;
-
-    text-align: center;
+    padding: 10px 12px;
 
     background: white;
 
-    border:
-        1px solid
-        var(--loop-line);
+    border: 1px solid var(--line);
+    border-radius: 13px;
 
-    border-radius: 14px;
+    text-align: center;
 }
 
-.today-box span {
+.today span {
     display: block;
 
-    color: var(--loop-muted);
+    color: var(--muted);
 
     font-size: 8px;
     font-weight: 900;
-
-    letter-spacing: .8px;
 }
 
-.today-box strong {
+.today strong {
     display: block;
 
     margin-top: 3px;
@@ -183,46 +169,39 @@ button {
     font-size: 21px;
 }
 
-.progress-card {
+.stats {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            3,
-            minmax(0, 1fr)
-        );
+        repeat(3, minmax(0, 1fr));
 
     gap: 8px;
 
     margin-bottom: 12px;
 }
 
-.progress-item {
-    padding:
-        12px 14px;
+.stat {
+    padding: 11px 13px;
 
     background: white;
 
-    border:
-        1px solid
-        var(--loop-line);
-
-    border-radius: 14px;
+    border: 1px solid var(--line);
+    border-radius: 13px;
 }
 
-.progress-item span {
+.stat span {
     display: block;
 
-    color: var(--loop-muted);
+    color: var(--muted);
 
     font-size: 8px;
     font-weight: 900;
 
     text-transform: uppercase;
-    letter-spacing: .7px;
+    letter-spacing: .6px;
 }
 
-.progress-item strong {
+.stat strong {
     display: block;
 
     margin-top: 4px;
@@ -230,22 +209,14 @@ button {
     font-size: 16px;
 }
 
-.loop-card {
-    position: relative;
+.card {
+    min-height: 520px;
 
-    overflow: hidden;
-
-    min-height: 500px;
-
-    padding:
-        28px;
+    padding: 25px;
 
     background: white;
 
-    border:
-        1px solid
-        var(--loop-line);
-
+    border: 1px solid var(--line);
     border-radius: 27px;
 
     box-shadow:
@@ -253,45 +224,17 @@ button {
         rgba(29,34,68,.08);
 }
 
-.loop-card::after {
-    content: "";
-
-    position: absolute;
-
-    width: 300px;
-    height: 300px;
-
-    top: -170px;
-    right: -180px;
-
-    border:
-        45px solid
-        rgba(93,94,232,.035);
-
-    border-radius: 999px;
-
-    pointer-events: none;
-}
-
-.loop-topline {
+.card-top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
-    gap: 10px;
-
-    position: relative;
-    z-index: 2;
+    align-items: center;
 }
 
-.item-type {
-    padding:
-        7px 10px;
+.badge {
+    padding: 7px 10px;
 
-    color: var(--loop-purple);
-
-    background:
-        var(--loop-purple-soft);
+    color: var(--purple);
+    background: var(--purple-soft);
 
     border-radius: 999px;
 
@@ -299,254 +242,248 @@ button {
     font-weight: 900;
 }
 
-.item-mastery {
-    color: var(--loop-muted);
+.mastery {
+    color: var(--muted);
 
-    font-size: 10px;
-    font-weight: 800;
+    font-size: 11px;
+    font-weight: 900;
 }
 
-.word-zone {
+.word-area {
     display: grid;
     place-items: center;
 
-    min-height: 290px;
+    min-height: 310px;
 
-    padding:
-        30px 10px;
-
-    text-align: center;
-}
-
-.loop-word {
-    max-width: 760px;
-
-    font-size:
-        clamp(
-            48px,
-            10vw,
-            94px
-        );
-
-    font-weight: 950;
-
-    line-height: 1.05;
-
-    letter-spacing:
-        -3px;
-
-    overflow-wrap:
-        anywhere;
-}
-
-.loop-word.phrase {
-    font-size:
-        clamp(
-            37px,
-            7vw,
-            67px
-        );
-
-    line-height: 1.15;
-}
-
-.loop-instruction {
-    margin-top: 13px;
-
-    color: var(--loop-muted);
-
-    font-size: 11px;
-    font-weight: 700;
-}
-
-.loop-response {
-    min-height: 37px;
-
-    margin-bottom: 10px;
+    padding: 30px 5px 12px;
 
     text-align: center;
-
-    font-size: 11px;
-    font-weight: 800;
 }
 
-.response-good {
-    color: var(--loop-green);
-}
+.word-button {
+    display: inline-block;
 
-.response-hard {
-    color: var(--loop-orange);
-}
+    max-width: 100%;
 
-.buttons {
-    display: grid;
+    padding: 25px 32px;
 
-    grid-template-columns:
-        1.35fr 1fr;
-
-    gap: 9px;
-}
-
-.loop-button {
-    min-height: 61px;
-
-    border-radius: 16px;
+    color: var(--text);
+    background: transparent;
 
     border: 0;
+    border-radius: 20px;
 
     cursor: pointer;
 
-    font-weight: 900;
+    font-size: clamp(50px, 11vw, 98px);
+    font-weight: 950;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
 
     transition:
-        transform .12s ease,
-        box-shadow .12s ease;
+        transform .08s ease,
+        background .08s ease;
 }
 
-.loop-button:hover {
-    transform:
-        translateY(-1px);
+.word-button:hover {
+    background: #f8f8fc;
+
+    transform: scale(1.015);
 }
 
-.direct-button {
-    color: white;
+.word-button:active {
+    transform: scale(.97);
+}
+
+.instruction {
+    margin-top: 10px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+    font-weight: 750;
+}
+
+.timer {
+    max-width: 620px;
+
+    margin: 0 auto;
+}
+
+.timer-head {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+}
+
+.timer-head span {
+    color: var(--muted);
+
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.timer-number {
+    color: var(--purple) !important;
+
+    font-size: 15px !important;
+
+    font-variant-numeric:
+        tabular-nums;
+}
+
+.track {
+    overflow: hidden;
+
+    height: 11px;
+
+    background: #eeeeF4;
+
+    border-radius: 999px;
+}
+
+.fill {
+    width: 0%;
+    height: 100%;
 
     background:
         linear-gradient(
-            135deg,
-            #5758e8,
-            #6c6df2
+            90deg,
+            #6263ec,
+            #8b8cff
         );
 
-    box-shadow:
-        0 12px 25px
-        rgba(93,94,232,.19);
+    border-radius: inherit;
 }
 
-.hard-button {
-    color: #454957;
+.message {
+    min-height: 64px;
 
-    background: #f7f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    border:
-        1px solid
-        var(--loop-line);
+    margin-top: 13px;
+
+    text-align: center;
 }
 
-.loop-button:disabled {
-    opacity: .4;
+.good {
+    color: var(--green);
 
-    cursor: not-allowed;
-
-    transform: none;
+    font-size: 12px;
+    font-weight: 900;
 }
 
-.bottom-note {
-    margin-top: 15px;
+.timeout {
+    width: 100%;
+
+    padding: 14px;
+
+    color: #843f36;
+
+    background: var(--red-soft);
+
+    border: 1px solid #f0cbc5;
+    border-radius: 15px;
+}
+
+.timeout strong {
+    display: block;
+
+    font-size: 12px;
+}
+
+.timeout p {
+    margin: 4px 0 0;
+
+    font-size: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 11px;
+}
+
+.actions button {
+    min-height: 42px;
+
+    padding: 0 14px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.hear {
+    color: #444854;
+
+    background: white;
+
+    border: 1px solid var(--line);
+}
+
+.continue {
+    color: white;
+
+    background: var(--dark);
+
+    border: 1px solid var(--dark);
+}
+
+.note {
+    margin-top: 16px;
 
     color: #999daa;
 
     text-align: center;
 
     font-size: 9px;
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
-.unlock-toast {
-    position: fixed;
+@media (max-width: 650px) {
 
-    left: 50%;
-    bottom: 25px;
+    .shell {
+        width: calc(100% - 18px);
 
-    z-index: 50;
-
-    transform:
-        translateX(-50%)
-        translateY(120px);
-
-    padding:
-        13px 17px;
-
-    color: white;
-
-    background:
-        #1c1e29;
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 15px 40px
-        rgba(0,0,0,.18);
-
-    font-size: 11px;
-    font-weight: 800;
-
-    opacity: 0;
-
-    transition:
-        .3s ease;
-}
-
-.unlock-toast.show {
-    opacity: 1;
-
-    transform:
-        translateX(-50%)
-        translateY(0);
-}
-
-@media (
-    max-width: 650px
-) {
-
-    .loop-shell {
-        width:
-            min(
-                100% - 18px,
-                900px
-            );
-
-        padding-top: 16px;
+        padding-top: 15px;
     }
 
-    .loop-head {
+    .heading {
+        align-items: stretch;
+
         flex-direction: column;
     }
 
-    .today-box {
+    .today {
         width: 100%;
     }
 
-    .progress-card {
-        grid-template-columns:
-            1fr 1fr;
+    .stats {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .progress-item:last-child {
-        grid-column:
-            1 / -1;
+    .stat:last-child {
+        grid-column: 1 / -1;
     }
 
-    .loop-card {
-        min-height: 470px;
-
-        padding:
-            20px 15px;
+    .card {
+        padding: 19px 14px;
 
         border-radius: 21px;
     }
 
-    .word-zone {
-        min-height: 275px;
-    }
-
-    .buttons {
-        grid-template-columns: 1fr;
-    }
-
-    .loop-button {
-        min-height: 58px;
-    }
 }
 
 </style>
@@ -556,202 +493,194 @@ button {
 
 <body>
 
-<div class="loop-shell">
+<div class="shell">
 
-    <nav class="loop-nav">
+<nav class="nav">
 
-        <a
-            class="loop-back"
-            href="/lasa">
-            ← Tillbaka till Läsa
-        </a>
+<a
+    href="/lasa"
+    class="back">
+    ← Tillbaka till Läsa
+</a>
 
-        <span class="loop-brand">
-            MIKALLEARN
-        </span>
+<span class="brand">
+    MIKALLEARN
+</span>
 
-    </nav>
+</nav>
 
 
-    <header class="loop-head">
+<header class="heading">
 
-        <div>
+<div>
 
-            <p class="loop-label">
-                ⚡ LÄSLOOP
-            </p>
+<p class="label">
+    ⚡ LÄSLOOP · 500 ORD
+</p>
 
-            <h1>
-                Läs. Klicka. Nästa.
-            </h1>
+<h1>
+    Läs innan tiden tar slut.
+</h1>
 
-            <p>
-                Målet är att vanliga ord ska kännas igen
-                direkt utan att läsa bokstav för bokstav.
-                Läs högt och välj hur det kändes.
-            </p>
-
-        </div>
-
-
-        <div class="today-box">
-
-            <span>
-                LÄSTA IDAG
-            </span>
-
-            <strong id="todayCount">
-                0
-            </strong>
-
-        </div>
-
-    </header>
-
-
-    <section class="progress-card">
-
-        <div class="progress-item">
-
-            <span>
-                Automatiska ord
-            </span>
-
-            <strong id="masteredWords">
-                0
-            </strong>
-
-        </div>
-
-
-        <div class="progress-item">
-
-            <span>
-                Tränas igen
-            </span>
-
-            <strong id="reviewCount">
-                0
-            </strong>
-
-        </div>
-
-
-        <div class="progress-item">
-
-            <span>
-                Nuvarande nivå
-            </span>
-
-            <strong id="currentLevel">
-                Ord
-            </strong>
-
-        </div>
-
-    </section>
-
-
-    <main class="loop-card">
-
-        <div class="loop-topline">
-
-            <span
-                class="item-type"
-                id="itemType">
-                ORD
-            </span>
-
-
-            <span
-                class="item-mastery"
-                id="itemMastery">
-                0 / 4
-            </span>
-
-        </div>
-
-
-        <div class="word-zone">
-
-            <div>
-
-                <div
-                    class="loop-word"
-                    id="loopWord">
-                    ...
-                </div>
-
-
-                <div
-                    class="loop-instruction"
-                    id="loopInstruction">
-                    Läs ordet högt direkt.
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div
-            class="loop-response"
-            id="loopResponse">
-        </div>
-
-
-        <div class="buttons">
-
-            <button
-                id="directButton"
-                class="
-                    loop-button
-                    direct-button
-                "
-                type="button">
-
-                ✅ Direkt
-
-            </button>
-
-
-            <button
-                id="hardButton"
-                class="
-                    loop-button
-                    hard-button
-                "
-                type="button">
-
-                🧠 Svårt
-
-            </button>
-
-        </div>
-
-
-        <div class="bottom-note">
-
-            “Direkt” = du kunde läsa utan att
-            behöva gå igenom bokstäverna en efter en.
-            <br>
-            “Svårt” = ordet kommer tillbaka snart.
-
-        </div>
-
-    </main>
+<p>
+    Du har 10 sekunder.
+    Läs ordet högt och tryck på själva ordet
+    så fort du har läst det.
+</p>
 
 </div>
 
 
+<div class="today">
+
+<span>
+    KLARA IDAG
+</span>
+
+<strong id="todayCount">
+    0
+</strong>
+
+</div>
+
+</header>
+
+
+<section class="stats">
+
+<div class="stat">
+
+<span>
+    AUTOMATISKA ORD
+</span>
+
+<strong id="masteredCount">
+    0 / 500
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<span>
+    TRÄNAS IGEN
+</span>
+
+<strong id="reviewCount">
+    0
+</strong>
+
+</div>
+
+
+<div class="stat">
+
+<span>
+    TID PER ORD
+</span>
+
+<strong>
+    10 sek
+</strong>
+
+</div>
+
+</section>
+
+
+<main class="card">
+
+<div class="card-top">
+
+<span class="badge">
+    LÄS ORDET
+</span>
+
+<span
+    class="mastery"
+    id="mastery">
+    0 / 10
+</span>
+
+</div>
+
+
+<div class="word-area">
+
+<div>
+
+<button
+    id="wordButton"
+    class="word-button"
+    type="button">
+    ...
+</button>
+
 <div
-    class="unlock-toast"
-    id="unlockToast">
+    class="instruction"
+    id="instruction">
+
+    Läs högt → tryck på ordet
+
+</div>
+
+</div>
+
+</div>
+
+
+<section class="timer">
+
+<div class="timer-head">
+
+<span>
+    10 SEKUNDER
+</span>
+
+<span
+    class="timer-number"
+    id="timerNumber">
+    10.0
+</span>
+
+</div>
+
+
+<div class="track">
+
+<div
+    class="fill"
+    id="timerFill">
+</div>
+
+</div>
+
+</section>
+
+
+<div
+    class="message"
+    id="message">
+</div>
+
+
+<div class="note">
+
+Ett ord blir automatiskt först efter
+<strong>10 lyckade läsningar på olika tillfällen.</strong>
+Om tiden tar slut går ordet tillbaka till 0/10
+och kommer tillbaka senare.
+
+</div>
+
+</main>
+
 </div>
 
 
 <script
-    src="/static/lasloop.js?v=1"
+    src="/static/lasloop.js?v=10"
     defer>
 </script>
 

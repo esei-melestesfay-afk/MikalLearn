@@ -3,25 +3,29 @@ document.addEventListener(
     "DOMContentLoaded",
     async () => {
 
-        const REQUIRED_WORD =
-            4;
+        const TIME_LIMIT = 10;
 
-        const REQUIRED_PHRASE =
-            3;
+        const REQUIRED = 10;
 
+        const MIN_CLICK_TIME = 0.40;
 
         const STORAGE_KEY =
-            "mikal_lasloop_v1";
+            "mikal_lasloop_500_v10";
 
 
         let words = [];
-        let phrases = [];
-        let allItems = [];
+
         let byId = {};
 
         let current = null;
-        let shownAt = 0;
-        let busy = false;
+
+        let running = false;
+
+        let startedAt = 0;
+
+        let animation = null;
+
+        let currentAudio = null;
 
 
         const $ = id =>
@@ -29,7 +33,7 @@ document.addEventListener(
 
 
 
-        function todayString() {
+        function today() {
 
             const d =
                 new Date();
@@ -55,11 +59,11 @@ document.addEventListener(
 
 
 
-        function newState() {
+        function freshState() {
 
             return {
-                day:
-                    todayString(),
+                date:
+                    today(),
 
                 todayCount:
                     0,
@@ -71,10 +75,7 @@ document.addEventListener(
                     {},
 
                 queue:
-                    [],
-
-                phraseUnlocked:
-                    false
+                    []
             };
 
         }
@@ -103,13 +104,12 @@ document.addEventListener(
                 ) {
 
                     if (
-                        saved.day
-                        !==
-                        todayString()
+                        saved.date
+                        !== today()
                     ) {
 
-                        saved.day =
-                            todayString();
+                        saved.date =
+                            today();
 
                         saved.todayCount =
                             0;
@@ -121,12 +121,16 @@ document.addEventListener(
                         saved.stats
                         || {};
 
+
                     saved.queue =
                         Array.isArray(
                             saved.queue
                         )
-                            ? saved.queue
-                            : [];
+                        ?
+                        saved.queue
+                        :
+                        [];
+
 
                     return saved;
 
@@ -138,7 +142,7 @@ document.addEventListener(
             }
 
 
-            return newState();
+            return freshState();
 
         }
 
@@ -171,9 +175,8 @@ document.addEventListener(
                 state.stats[id] = {
                     streak: 0,
                     seen: 0,
-                    direct: 0,
-                    hard: 0,
-                    totalTime: 0
+                    success: 0,
+                    timeout: 0
                 };
 
             }
@@ -185,83 +188,24 @@ document.addEventListener(
 
 
 
-        function required(item) {
-
-            return item.type
-                === "word"
-                    ? REQUIRED_WORD
-                    : REQUIRED_PHRASE;
-
-        }
-
-
-
         function mastered(item) {
 
             return (
                 statFor(
                     item.id
                 ).streak
-                >=
-                required(item)
+                >= REQUIRED
             );
 
         }
 
 
 
-        function masteredWordSet() {
+        function masteredCount() {
 
-            const result =
-                new Set();
-
-
-            words.forEach(
-                item => {
-
-                    if (
-                        mastered(item)
-                    ) {
-
-                        result.add(
-                            item.text
-                                .toLowerCase()
-                        );
-
-                    }
-
-                }
-            );
-
-
-            return result;
-
-        }
-
-
-
-        function masteredWordCount() {
-
-            let count =
-                0;
-
-
-            words.forEach(
-                item => {
-
-                    if (
-                        mastered(item)
-                    ) {
-
-                        count++;
-
-                    }
-
-                }
-            );
-
-
-            return count;
+            return words.filter(
+                mastered
+            ).length;
 
         }
 
@@ -305,119 +249,7 @@ document.addEventListener(
 
 
 
-        function phraseAllowed(
-            item
-        ) {
-
-            if (
-                item.type
-                !== "phrase"
-            ) {
-
-                return true;
-
-            }
-
-
-            const masteredWords =
-                masteredWordSet();
-
-
-            if (
-                masteredWords.size
-                < 12
-            ) {
-
-                return false;
-
-            }
-
-
-            /*
-                2 ord låses upp först.
-                3 ord senare.
-                4+ ord ännu senare.
-            */
-
-            if (
-                item.word_count === 2
-                &&
-                masteredWords.size < 12
-            ) {
-
-                return false;
-
-            }
-
-
-            if (
-                item.word_count === 3
-                &&
-                masteredWords.size < 22
-            ) {
-
-                return false;
-
-            }
-
-
-            if (
-                item.word_count >= 4
-                &&
-                masteredWords.size < 38
-            ) {
-
-                return false;
-
-            }
-
-
-            if (
-                !item.requires
-                ||
-                !item.requires.length
-            ) {
-
-                return true;
-
-            }
-
-
-            let known =
-                0;
-
-
-            item.requires.forEach(
-                word => {
-
-                    if (
-                        masteredWords.has(
-                            word
-                                .toLowerCase()
-                        )
-                    ) {
-
-                        known++;
-
-                    }
-
-                }
-            );
-
-
-            const ratio =
-                known
-                /
-                item.requires.length;
-
-
-            return ratio >= 0.60;
-
-        }
-
-
-
-        function dueItems() {
+        function dueWords() {
 
             return state.queue
                 .filter(
@@ -436,6 +268,10 @@ document.addEventListener(
                     item =>
                         item
                         &&
+                        !mastered(
+                            item
+                        )
+                        &&
                         (
                             !current
                             ||
@@ -443,24 +279,16 @@ document.addEventListener(
                             !==
                             current.id
                         )
-                        &&
-                        phraseAllowed(
-                            item
-                        )
                 );
 
         }
 
 
 
-        function randomFrom(array) {
+        function random(array) {
 
-            if (
-                !array.length
-            ) {
-
+            if (!array.length) {
                 return null;
-
             }
 
 
@@ -476,201 +304,35 @@ document.addEventListener(
 
 
 
-        function chooseWord() {
-
-            const available =
-                words.filter(
-                    item =>
-                        (
-                            !current
-                            ||
-                            item.id
-                            !==
-                            current.id
-                        )
-                        &&
-                        !mastered(item)
-                );
-
-
-            if (
-                !available.length
-            ) {
-
-                return randomFrom(
-                    words.filter(
-                        item =>
-                            !current
-                            ||
-                            item.id
-                            !==
-                            current.id
-                    )
-                );
-
-            }
-
+        function nextDelay(streak) {
 
             /*
-                Först helt nya ord.
+                Ju fler gånger hon klarar ordet,
+                desto längre väntar systemet
+                innan samma ord testas igen.
+
+                Det betyder att 10/10 inte kan
+                fås genom att klicka samma ord
+                tio gånger direkt.
             */
 
-            const unseen =
-                available.filter(
-                    item =>
-                        statFor(
-                            item.id
-                        ).seen === 0
-                );
+            const delays = {
+                1: 3,
+                2: 5,
+                3: 8,
+                4: 12,
+                5: 18,
+                6: 25,
+                7: 35,
+                8: 50,
+                9: 70
+            };
 
 
-            if (
-                unseen.length
-            ) {
-
-                return randomFrom(
-                    unseen.slice(
-                        0,
-                        Math.min(
-                            25,
-                            unseen.length
-                        )
-                    )
-                );
-
-            }
-
-
-            /*
-                Sedan de med lägst streak.
-            */
-
-            const sorted =
-                [...available]
-                    .sort(
-                        (a, b) => {
-
-                            const sa =
-                                statFor(
-                                    a.id
-                                );
-
-
-                            const sb =
-                                statFor(
-                                    b.id
-                                );
-
-
-                            if (
-                                sa.streak
-                                !==
-                                sb.streak
-                            ) {
-
-                                return (
-                                    sa.streak
-                                    -
-                                    sb.streak
-                                );
-
-                            }
-
-
-                            return (
-                                sb.hard
-                                -
-                                sa.hard
-                            );
-
-                        }
-                    );
-
-
-            return randomFrom(
-                sorted.slice(
-                    0,
-                    Math.min(
-                        18,
-                        sorted.length
-                    )
-                )
-            );
-
-        }
-
-
-
-        function choosePhrase() {
-
-            const allowed =
-                phrases.filter(
-                    item =>
-                        phraseAllowed(item)
-                        &&
-                        (
-                            !current
-                            ||
-                            item.id
-                            !==
-                            current.id
-                        )
-                        &&
-                        !mastered(item)
-                );
-
-
-            if (
-                !allowed.length
-            ) {
-
-                return null;
-
-            }
-
-
-            const unseen =
-                allowed.filter(
-                    item =>
-                        statFor(
-                            item.id
-                        ).seen === 0
-                );
-
-
-            if (
-                unseen.length
-            ) {
-
-                return randomFrom(
-                    unseen
-                );
-
-            }
-
-
-            const sorted =
-                [...allowed]
-                    .sort(
-                        (a, b) =>
-                            statFor(
-                                a.id
-                            ).streak
-                            -
-                            statFor(
-                                b.id
-                            ).streak
-                    );
-
-
-            return randomFrom(
-                sorted.slice(
-                    0,
-                    Math.min(
-                        12,
-                        sorted.length
-                    )
-                )
+            return (
+                delays[streak]
+                ||
+                70
             );
 
         }
@@ -680,38 +342,52 @@ document.addEventListener(
         function chooseNext() {
 
             const due =
-                dueItems();
+                dueWords();
 
 
             if (
                 due.length
             ) {
 
-                /*
-                    Svåra / schemalagda ord
-                    prioriteras när deras tur
-                    har kommit.
-                */
-
                 due.sort(
                     (a, b) => {
 
-                        const sa =
+                        const A =
                             statFor(
                                 a.id
                             );
 
 
-                        const sb =
+                        const B =
                             statFor(
                                 b.id
                             );
 
 
+                        /*
+                            Ord med flest misslyckanden
+                            prioriteras.
+                        */
+
+                        if (
+                            A.timeout
+                            !==
+                            B.timeout
+                        ) {
+
+                            return (
+                                B.timeout
+                                -
+                                A.timeout
+                            );
+
+                        }
+
+
                         return (
-                            sb.hard
+                            A.streak
                             -
-                            sa.hard
+                            B.streak
                         );
 
                     }
@@ -723,74 +399,174 @@ document.addEventListener(
             }
 
 
-            const masteredWords =
-                masteredWordCount();
+
+            /*
+                Vi kastar inte in alla 500 direkt.
+
+                Först jobbar hon med de vanligaste
+                orden.
+
+                När fler blir automatiska öppnas
+                fler ord automatiskt.
+            */
+
+            const done =
+                masteredCount();
 
 
-            let phraseChance =
-                0;
+            const windowSize =
+                Math.min(
+                    500,
+                    Math.max(
+                        100,
+                        done + 140
+                    )
+                );
+
+
+            const pool =
+                words.slice(
+                    0,
+                    windowSize
+                );
+
+
+
+            /*
+                Prioritera nya ord.
+            */
+
+            const unseen =
+                pool.filter(
+                    item =>
+                        statFor(
+                            item.id
+                        ).seen === 0
+                        &&
+                        (
+                            !current
+                            ||
+                            item.id
+                            !==
+                            current.id
+                        )
+                );
 
 
             if (
-                masteredWords >= 12
-                &&
-                masteredWords < 22
+                unseen.length
             ) {
 
-                phraseChance =
-                    0.18;
+                return random(
+                    unseen.slice(
+                        0,
+                        35
+                    )
+                );
 
             }
 
-            else if (
-                masteredWords >= 22
-                &&
-                masteredWords < 38
-            ) {
 
-                phraseChance =
-                    0.30;
 
-            }
+            /*
+                Sedan ord hon ännu inte kan.
+            */
 
-            else if (
-                masteredWords >= 38
-            ) {
+            const learning =
+                pool
+                    .filter(
+                        item =>
+                            !mastered(
+                                item
+                            )
+                            &&
+                            (
+                                !current
+                                ||
+                                item.id
+                                !==
+                                current.id
+                            )
+                    )
+                    .sort(
+                        (a, b) => {
 
-                phraseChance =
-                    0.42;
+                            const A =
+                                statFor(
+                                    a.id
+                                );
 
-            }
+
+                            const B =
+                                statFor(
+                                    b.id
+                                );
+
+
+                            if (
+                                A.streak
+                                !==
+                                B.streak
+                            ) {
+
+                                return (
+                                    A.streak
+                                    -
+                                    B.streak
+                                );
+
+                            }
+
+
+                            return (
+                                B.timeout
+                                -
+                                A.timeout
+                            );
+
+                        }
+                    );
 
 
             if (
-                phraseChance > 0
-                &&
-                Math.random()
-                <
-                phraseChance
+                learning.length
             ) {
 
-                const phrase =
-                    choosePhrase();
-
-
-                if (phrase) {
-
-                    return phrase;
-
-                }
+                return random(
+                    learning.slice(
+                        0,
+                        35
+                    )
+                );
 
             }
+
+
+
+            const remaining =
+                words.filter(
+                    item =>
+                        !mastered(
+                            item
+                        )
+                        &&
+                        (
+                            !current
+                            ||
+                            item.id
+                            !==
+                            current.id
+                        )
+                );
 
 
             return (
-                chooseWord()
+                random(
+                    remaining
+                )
                 ||
-                choosePhrase()
-                ||
-                randomFrom(
-                    allItems
+                random(
+                    words
                 )
             );
 
@@ -798,77 +574,34 @@ document.addEventListener(
 
 
 
-        function currentLevelText() {
-
-            const masteredWords =
-                masteredWordCount();
-
-
-            if (
-                masteredWords < 12
-            ) {
-
-                return "Ord";
-
-            }
-
-
-            if (
-                masteredWords < 22
-            ) {
-
-                return "Ord + 2 ord";
-
-            }
-
-
-            if (
-                masteredWords < 38
-            ) {
-
-                return "Korta fraser";
-
-            }
-
-
-            return "Flytande fraser";
-
-        }
-
-
-
         function reviewCount() {
 
-            const ids =
-                new Set();
+            return new Set(
+                state.queue
+                    .filter(
+                        entry => {
+
+                            const item =
+                                byId[
+                                    entry.id
+                                ];
 
 
-            state.queue.forEach(
-                entry => {
+                            return (
+                                item
+                                &&
+                                !mastered(
+                                    item
+                                )
+                            );
 
-                    const item =
-                        byId[
+                        }
+                    )
+                    .map(
+                        entry =>
                             entry.id
-                        ];
-
-
-                    if (
-                        item
-                        &&
-                        !mastered(item)
-                    ) {
-
-                        ids.add(
-                            item.id
-                        );
-
-                    }
-
-                }
-            );
-
-
-            return ids.size;
+                    )
+            ).size;
 
         }
 
@@ -881,9 +614,9 @@ document.addEventListener(
                 state.todayCount;
 
 
-            $("masteredWords")
+            $("masteredCount")
                 .textContent =
-                masteredWordCount()
+                masteredCount()
                 +
                 " / "
                 +
@@ -894,106 +627,149 @@ document.addEventListener(
                 .textContent =
                 reviewCount();
 
-
-            $("currentLevel")
-                .textContent =
-                currentLevelText();
-
         }
 
 
 
-        function showToast(text) {
+        function stopTimer() {
 
-            const toast =
-                $("unlockToast");
-
-
-            toast.textContent =
-                text;
-
-
-            toast.classList.add(
-                "show"
-            );
-
-
-            setTimeout(
-                () => {
-
-                    toast.classList
-                        .remove(
-                            "show"
-                        );
-
-                },
-                2600
-            );
-
-        }
-
-
-
-        function checkUnlock() {
-
-            const count =
-                masteredWordCount();
+            running =
+                false;
 
 
             if (
-                count >= 12
-                &&
-                !state.phraseUnlocked
+                animation
             ) {
 
-                state.phraseUnlocked =
-                    true;
-
-
-                save();
-
-
-                showToast(
-                    "🔥 Ny nivå: två ord tillsammans är upplåsta!"
+                cancelAnimationFrame(
+                    animation
                 );
 
             }
 
+
+            animation =
+                null;
+
         }
 
 
 
-        function renderCurrent() {
+        function startTimer() {
 
-            busy =
-                false;
-
-
-            $("directButton")
-                .disabled =
-                false;
+            stopTimer();
 
 
-            $("hardButton")
-                .disabled =
-                false;
+            running =
+                true;
 
 
-            $("loopResponse")
-                .textContent =
+            startedAt =
+                performance.now();
+
+
+            function frame() {
+
+                if (!running) {
+                    return;
+                }
+
+
+                const elapsed =
+                    (
+                        performance.now()
+                        -
+                        startedAt
+                    )
+                    /
+                    500;
+
+
+                const left =
+                    Math.max(
+                        0,
+                        TIME_LIMIT
+                        -
+                        elapsed
+                    );
+
+
+                $("timerNumber")
+                    .textContent =
+                    left.toFixed(1);
+
+
+                /*
+                    Stapeln FYLLS åt höger
+                    ju mer tid som går.
+                */
+
+                const used =
+                    Math.min(
+                        100,
+                        elapsed
+                        /
+                        TIME_LIMIT
+                        *
+                        100
+                    );
+
+
+                $("timerFill")
+                    .style
+                    .width =
+                    used
+                    +
+                    "%";
+
+
+                if (
+                    elapsed
+                    >=
+                    TIME_LIMIT
+                ) {
+
+                    handleTimeout();
+
+                    return;
+
+                }
+
+
+                animation =
+                    requestAnimationFrame(
+                        frame
+                    );
+
+            }
+
+
+            frame();
+
+        }
+
+
+
+        function renderWord() {
+
+            $("message")
+                .innerHTML =
                 "";
 
 
-            if (!current) {
-
-                $("loopWord")
-                    .textContent =
-                    "Klart!";
+            $("wordButton")
+                .disabled =
+                false;
 
 
-                return;
+            $("wordButton")
+                .textContent =
+                current.word;
 
-            }
+
+            $("instruction")
+                .textContent =
+                "Läs högt → tryck på ordet";
 
 
             const stat =
@@ -1002,158 +778,85 @@ document.addEventListener(
                 );
 
 
-            $("loopWord")
-                .textContent =
-                current.text;
-
-
-            $("loopWord")
-                .classList.toggle(
-                    "phrase",
-                    current.type
-                    === "phrase"
-                );
-
-
-            $("itemType")
-                .textContent =
-                current.type
-                === "word"
-                    ? "ORD"
-                    : (
-                        current.word_count
-                        +
-                        " ORD TILLSAMMANS"
-                    );
-
-
-            $("itemMastery")
+            $("mastery")
                 .textContent =
                 stat.streak
                 +
-                " / "
-                +
-                required(
-                    current
-                );
+                " / 10";
 
 
-            $("loopInstruction")
+            $("timerNumber")
                 .textContent =
-                current.type
-                === "word"
-                    ? "Läs ordet högt direkt."
-                    : "Försök läsa hela frasen tillsammans.";
+                "10.0";
 
 
-            shownAt =
-                performance.now();
+            $("timerFill")
+                .style
+                .width =
+                "0%";
 
 
             updateStats();
+
+            startTimer();
 
         }
 
 
 
-        function next() {
+        function stopAudio() {
+
+            if (
+                currentAudio
+            ) {
+
+                currentAudio.pause();
+
+                currentAudio.currentTime =
+                    0;
+
+            }
+
+
+            currentAudio =
+                null;
+
+        }
+
+
+
+        function nextWord() {
+
+            stopTimer();
+
+            stopAudio();
+
 
             current =
                 chooseNext();
 
 
-            renderCurrent();
+            if (!current) {
 
-        }
+                $("wordButton")
+                    .textContent =
+                    "Klart!";
 
-
-
-        function playAudio(item) {
-
-            if (
-                !item
-                ||
-                !item.audio
-            ) {
-
-                return Promise.resolve();
+                return;
 
             }
 
 
-            return new Promise(
-                resolve => {
-
-                    const audio =
-                        new Audio(
-                            item.audio
-                        );
-
-
-                    audio.volume =
-                        1;
-
-
-                    let finished =
-                        false;
-
-
-                    function done() {
-
-                        if (finished) {
-                            return;
-                        }
-
-
-                        finished =
-                            true;
-
-
-                        resolve();
-
-                    }
-
-
-                    audio.addEventListener(
-                        "ended",
-                        done,
-                        {
-                            once: true
-                        }
-                    );
-
-
-                    audio.addEventListener(
-                        "error",
-                        done,
-                        {
-                            once: true
-                        }
-                    );
-
-
-                    audio.play()
-                        .catch(
-                            () => done()
-                        );
-
-
-                    setTimeout(
-                        done,
-                        3500
-                    );
-
-                }
-            );
+            renderWord();
 
         }
 
 
 
-        function markDirect() {
+        function success() {
 
             if (
-                busy
+                !running
                 ||
                 !current
             ) {
@@ -1163,31 +866,39 @@ document.addEventListener(
             }
 
 
-            busy =
-                true;
-
-
-            $("directButton")
-                .disabled =
-                true;
-
-
-            $("hardButton")
-                .disabled =
-                true;
-
-
             const elapsed =
-                Math.max(
-                    0.1,
-                    (
-                        performance.now()
-                        -
-                        shownAt
-                    )
-                    /
-                    1000
-                );
+                (
+                    performance.now()
+                    -
+                    startedAt
+                )
+                /
+                500;
+
+
+            /*
+                Skydd mot dubbelklick från förra
+                ordet. Klick under 0.4 sekunder
+                räknas inte.
+            */
+
+            if (
+                elapsed
+                <
+                MIN_CLICK_TIME
+            ) {
+
+                return;
+
+            }
+
+
+            stopTimer();
+
+
+            $("wordButton")
+                .disabled =
+                true;
 
 
             const stat =
@@ -1198,17 +909,11 @@ document.addEventListener(
 
             stat.seen++;
 
-            stat.direct++;
-
-            stat.totalTime +=
-                elapsed;
-
+            stat.success++;
 
             stat.streak =
                 Math.min(
-                    required(
-                        current
-                    ),
+                    REQUIRED,
                     stat.streak + 1
                 );
 
@@ -1229,52 +934,21 @@ document.addEventListener(
                 )
             ) {
 
-                let delay;
-
-
-                if (
-                    stat.streak === 1
-                ) {
-
-                    delay =
-                        4;
-
-                }
-
-                else if (
-                    stat.streak === 2
-                ) {
-
-                    delay =
-                        8;
-
-                }
-
-                else {
-
-                    delay =
-                        15;
-
-                }
-
-
                 schedule(
                     current.id,
-                    delay
+                    nextDelay(
+                        stat.streak
+                    )
                 );
 
             }
 
 
-            $("itemMastery")
+            $("mastery")
                 .textContent =
                 stat.streak
                 +
-                " / "
-                +
-                required(
-                    current
-                );
+                " / 10";
 
 
             if (
@@ -1283,37 +957,32 @@ document.addEventListener(
                 )
             ) {
 
-                $("loopResponse")
+                $("message")
                     .innerHTML =
-                    "<span class='response-good'>" +
-                    "⚡ Automatiskt! "
+                    "<span class='good'>" +
+                    "🏆 AUTOMATISKT · 10/10 · "
                     +
                     elapsed.toFixed(1)
                     +
-                    " s" +
+                    " sek" +
                     "</span>";
 
             }
 
             else {
 
-                $("loopResponse")
+                $("message")
                     .innerHTML =
-                    "<span class='response-good'>" +
-                    "✓ Direkt · "
-                    +
-                    elapsed.toFixed(1)
-                    +
-                    " s · "
+                    "<span class='good'>" +
+                    "✅ "
                     +
                     stat.streak
                     +
-                    "/"
+                    "/10 · "
                     +
-                    required(
-                        current
-                    )
+                    elapsed.toFixed(1)
                     +
+                    " sek" +
                     "</span>";
 
             }
@@ -1321,24 +990,60 @@ document.addEventListener(
 
             save();
 
-            checkUnlock();
-
             updateStats();
 
 
             setTimeout(
-                next,
-                430
+                nextWord,
+                280
             );
 
         }
 
 
 
-        async function markHard() {
+        function playAudio() {
 
             if (
-                busy
+                !current
+                ||
+                !current.audio
+            ) {
+
+                return;
+
+            }
+
+
+            stopAudio();
+
+
+            currentAudio =
+                new Audio(
+                    current.audio
+                );
+
+
+            currentAudio.volume =
+                1;
+
+
+            currentAudio.play()
+                .catch(
+                    error =>
+                        console.error(
+                            error
+                        )
+                );
+
+        }
+
+
+
+        function handleTimeout() {
+
+            if (
+                !running
                 ||
                 !current
             ) {
@@ -1348,16 +1053,10 @@ document.addEventListener(
             }
 
 
-            busy =
-                true;
+            stopTimer();
 
 
-            $("directButton")
-                .disabled =
-                true;
-
-
-            $("hardButton")
+            $("wordButton")
                 .disabled =
                 true;
 
@@ -1370,12 +1069,12 @@ document.addEventListener(
 
             stat.seen++;
 
-            stat.hard++;
+            stat.timeout++;
+
 
             /*
-                Svårt = tillbaka till 0.
-                Hon måste sedan bygga upp
-                4 separata Direkt igen.
+                Misslyckas hon efter exempelvis
+                8/10 måste ordet byggas upp igen.
             */
 
             stat.streak =
@@ -1393,21 +1092,67 @@ document.addEventListener(
             );
 
 
-            $("itemMastery")
+            $("mastery")
                 .textContent =
-                "0 / "
-                +
-                required(
-                    current
-                );
+                "0 / 10";
 
 
-            $("loopResponse")
-                .innerHTML =
-                "<span class='response-hard'>" +
-                "🔊 Lyssna och säg efter. " +
-                "Den kommer tillbaka snart." +
-                "</span>";
+            $("timerNumber")
+                .textContent =
+                "0.0";
+
+
+            $("timerFill")
+                .style
+                .width =
+                "100%";
+
+
+            $("instruction")
+                .textContent =
+                "Lyssna och säg ordet efter rösten.";
+
+
+            $("message")
+                .innerHTML = `
+
+                    <div class="timeout">
+
+                        <strong>
+                            ⏰ Tiden tog slut · 0/10
+                        </strong>
+
+                        <p>
+                            Lyssna på ordet.
+                            Det kommer tillbaka efter några andra ord.
+                        </p>
+
+                        <div class="actions">
+
+                            <button
+                                id="hearAgain"
+                                class="hear"
+                                type="button">
+
+                                🔊 Hör igen
+
+                            </button>
+
+
+                            <button
+                                id="continueButton"
+                                class="continue"
+                                type="button">
+
+                                Kör vidare →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                `;
 
 
             save();
@@ -1415,93 +1160,46 @@ document.addEventListener(
             updateStats();
 
 
-            await playAudio(
-                current
-            );
+            playAudio();
 
 
-            setTimeout(
-                next,
-                300
-            );
+            $("hearAgain")
+                .addEventListener(
+                    "click",
+                    playAudio
+                );
+
+
+            $("continueButton")
+                .addEventListener(
+                    "click",
+                    nextWord
+                );
 
         }
 
 
 
-        $("directButton")
+        $("wordButton")
             .addEventListener(
                 "click",
-                markDirect
+                success
             );
 
-
-        $("hardButton")
-            .addEventListener(
-                "click",
-                markHard
-            );
-
-
-        /*
-            Tangentbord:
-            Enter = Direkt
-            S = Svårt
-        */
-
-        document.addEventListener(
-            "keydown",
-            event => {
-
-                if (
-                    event.repeat
-                ) {
-
-                    return;
-
-                }
-
-
-                if (
-                    event.key
-                    === "Enter"
-                ) {
-
-                    event.preventDefault();
-
-                    markDirect();
-
-                }
-
-
-                if (
-                    event.key
-                        .toLowerCase()
-                    === "s"
-                ) {
-
-                    event.preventDefault();
-
-                    markHard();
-
-                }
-
-            }
-        );
 
 
         try {
 
             const response =
                 await fetch(
-                    "/static/lasloop-data.json?v=1"
+                    "/static/lasloop-data.json?v=10"
                 );
 
 
             if (!response.ok) {
 
                 throw new Error(
-                    "LäsLoop-data kunde inte laddas."
+                    "Kunde inte ladda 500 ord."
                 );
 
             }
@@ -1516,34 +1214,16 @@ document.addEventListener(
                 || [];
 
 
-            phrases =
-                data.phrases
-                || [];
-
-
-            allItems =
-                [
-                    ...words,
-                    ...phrases
-                ];
-
-
             byId =
                 Object.fromEntries(
-                    allItems.map(
-                        item =>
-                            [
-                                item.id,
-                                item
-                            ]
+                    words.map(
+                        item => [
+                            item.id,
+                            item
+                        ]
                     )
                 );
 
-
-            /*
-                Ta bort köposter för
-                gamla / saknade objekt.
-            */
 
             state.queue =
                 state.queue.filter(
@@ -1556,7 +1236,9 @@ document.addEventListener(
 
             save();
 
-            next();
+            updateStats();
+
+            nextWord();
 
         }
 
@@ -1567,24 +1249,17 @@ document.addEventListener(
             );
 
 
-            $("loopWord")
+            stopTimer();
+
+
+            $("wordButton")
                 .textContent =
-                "Kunde inte ladda";
+                "Fel";
 
 
-            $("loopInstruction")
+            $("instruction")
                 .textContent =
                 error.message;
-
-
-            $("directButton")
-                .disabled =
-                true;
-
-
-            $("hardButton")
-                .disabled =
-                true;
 
         }
 

@@ -33,7 +33,6 @@ document.addEventListener(
         style.textContent = `
 
             .lasloop-entry {
-                position: relative;
 
                 display: grid;
 
@@ -42,13 +41,10 @@ document.addEventListener(
 
                 align-items: center;
 
-                gap: 20px;
-
-                overflow: hidden;
+                gap: 18px;
 
                 margin:
-                    18px 0
-                    23px;
+                    18px 0 23px;
 
                 padding:
                     21px 23px;
@@ -58,7 +54,7 @@ document.addEventListener(
                 background:
                     radial-gradient(
                         circle at 86% 12%,
-                        rgba(105,107,255,.76),
+                        rgba(105,107,255,.75),
                         transparent 170px
                     ),
                     linear-gradient(
@@ -76,6 +72,7 @@ document.addEventListener(
 
 
             .lasloop-entry-label {
+
                 margin:
                     0 0 4px;
 
@@ -86,24 +83,22 @@ document.addEventListener(
 
                 font-weight: 950;
 
-                letter-spacing:
-                    1.4px;
+                letter-spacing: 1.4px;
             }
 
 
             .lasloop-entry h3 {
+
                 margin: 0;
 
                 color: white;
 
                 font-size: 21px;
-
-                letter-spacing:
-                    -.5px;
             }
 
 
             .lasloop-entry p {
+
                 max-width: 570px;
 
                 margin:
@@ -119,9 +114,6 @@ document.addEventListener(
 
 
             .lasloop-entry a {
-                position: relative;
-
-                z-index: 2;
 
                 display: inline-flex;
 
@@ -147,11 +139,9 @@ document.addEventListener(
                 white-space:
                     nowrap;
 
-                font-size:
-                    10px;
+                font-size: 10px;
 
-                font-weight:
-                    900;
+                font-weight: 900;
             }
 
 
@@ -160,14 +150,10 @@ document.addEventListener(
             ) {
 
                 .lasloop-entry {
+
                     grid-template-columns:
                         1fr;
-                }
 
-
-                .lasloop-entry a {
-                    width:
-                        fit-content;
                 }
 
             }
@@ -199,7 +185,7 @@ document.addEventListener(
             <div>
 
                 <p class="lasloop-entry-label">
-                    ⚡ SNABBLÄSNING
+                    ⚡ 500 VANLIGA ORD
                 </p>
 
                 <h3>
@@ -207,15 +193,18 @@ document.addEventListener(
                 </h3>
 
                 <p>
-                    Läs ett ord, klicka och få nästa direkt.
-                    Svåra ord kommer tillbaka tills de känns automatiska.
+                    10 sekunder per ord.
+                    Ett ord måste klaras 10 gånger
+                    innan det räknas som automatiskt.
                 </p>
 
             </div>
 
 
             <a href="/lasloop">
+
                 Starta LäsLoop →
+
             </a>
 
         `;
@@ -226,26 +215,22 @@ document.addEventListener(
                 "main"
             )
             ||
-            document.querySelector(
-                ".page-shell"
-            )
-            ||
             document.body;
 
 
-        const heading =
+        const h1 =
             main.querySelector(
                 "h1"
             );
 
 
         if (
-            heading
+            h1
             &&
-            heading.parentElement
+            h1.parentElement
         ) {
 
-            heading.parentElement
+            h1.parentElement
                 .insertAdjacentElement(
                     "afterend",
                     card
