@@ -819,6 +819,14 @@ const MikalLearn = (() => {
 
     function showFinished(skill) {
 
+    // MIKAL_KEEP_EXERCISE_AFTER_30
+    //
+    // 30 minuter är bara träningsmålet.
+    // Dölj INTE uppgiften och ersätt INTE sidan.
+    // Eleven får göra klart det hon håller på med.
+    return;
+
+
         if (
             document.getElementById(
                 "skillFinished"
