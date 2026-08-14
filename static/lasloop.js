@@ -9,8 +9,7 @@ document.addEventListener(
 
         const MIN_CLICK_TIME = 0.40;
 
-        const STORAGE_KEY =
-            "mikal_lasloop_500_v10";
+        const STORAGE_KEY = "mikal_lasloop_common500_v2";
 
 
         let words = [];
@@ -415,8 +414,7 @@ document.addEventListener(
 
 
             const windowSize =
-                Math.min(
-                    500,
+                Math.min(words.length,
                     Math.max(
                         100,
                         done + 140
@@ -1192,7 +1190,7 @@ document.addEventListener(
 
             const response =
                 await fetch(
-                    "/static/lasloop-data.json?v=10"
+                    "/static/lasloop-data.json?v=502"
                 );
 
 
