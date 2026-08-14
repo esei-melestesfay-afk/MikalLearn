@@ -589,6 +589,246 @@ button {
 </section>
 
 
+
+<!-- LASLOOP TIMER START -->
+
+<style>
+
+.lasloop-session-timer {
+    margin-bottom: 12px;
+
+    padding: 16px 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e6e7ef;
+    border-radius: 17px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(29,34,68,.04);
+}
+
+.lasloop-timer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+.lasloop-timer-title {
+    margin: 0;
+
+    color: #858995;
+
+    font-size: 9px;
+    font-weight: 950;
+
+    letter-spacing: .8px;
+
+    text-transform: uppercase;
+}
+
+.lasloop-timer-time {
+    margin-top: 3px;
+
+    color: #191b25;
+
+    font-size: 29px;
+    font-weight: 950;
+
+    letter-spacing: -1px;
+
+    font-variant-numeric:
+        tabular-nums;
+}
+
+.lasloop-timer-status {
+    margin-top: 3px;
+
+    color: #858995;
+
+    font-size: 9px;
+    font-weight: 750;
+}
+
+.lasloop-timer-status.goal-complete {
+    color: #168653;
+
+    font-weight: 900;
+}
+
+.lasloop-timer-buttons {
+    display: flex;
+
+    gap: 6px;
+
+    flex-wrap: wrap;
+}
+
+.lasloop-timer-buttons button {
+    min-height: 38px;
+
+    padding: 0 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.lasloop-timer-start {
+    color: white;
+
+    background: #1c1e29;
+
+    border: 1px solid #1c1e29;
+}
+
+.lasloop-timer-pause,
+.lasloop-timer-reset {
+    color: #4d5060;
+
+    background: #f7f7fb;
+
+    border: 1px solid #e6e7ef;
+}
+
+.lasloop-timer-buttons button:disabled {
+    cursor: default;
+
+    opacity: .45;
+}
+
+.lasloop-timer-track {
+    overflow: hidden;
+
+    height: 5px;
+
+    margin-top: 13px;
+
+    background: #eeeeF4;
+
+    border-radius: 999px;
+}
+
+.lasloop-timer-progress {
+    width: 0%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6263ec,
+            #898aff
+        );
+
+    border-radius: inherit;
+
+    transition:
+        width .3s linear;
+}
+
+
+@media (max-width: 600px) {
+
+    .lasloop-timer-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .lasloop-timer-buttons {
+        width: 100%;
+    }
+
+}
+
+</style>
+
+
+<section class="lasloop-session-timer">
+
+    <div class="lasloop-timer-top">
+
+        <div>
+
+            <p class="lasloop-timer-title">
+                ⏱️ DAGENS LÄSTRÄNING
+            </p>
+
+            <div
+                class="lasloop-timer-time"
+                id="lasloopTimerDisplay">
+
+                00:00
+
+            </div>
+
+            <div
+                class="lasloop-timer-status"
+                id="lasloopTimerStatus">
+
+                30 minuters träningsmål
+
+            </div>
+
+        </div>
+
+
+        <div class="lasloop-timer-buttons">
+
+            <button
+                type="button"
+                class="lasloop-timer-start"
+                id="lasloopTimerStart">
+
+                ▶ Start
+
+            </button>
+
+
+            <button
+                type="button"
+                class="lasloop-timer-pause"
+                id="lasloopTimerPause">
+
+                ⏸ Paus
+
+            </button>
+
+
+            <button
+                type="button"
+                class="lasloop-timer-reset"
+                id="lasloopTimerReset">
+
+                ↻ Restart
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="lasloop-timer-track">
+
+        <div
+            class="lasloop-timer-progress"
+            id="lasloopTimerProgress">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LASLOOP TIMER END -->
+
+
 <main class="card">
 
 <div class="card-top">
@@ -684,6 +924,7 @@ och kommer tillbaka senare.
     defer>
 </script>
 
+    <script src="/static/lasloop-timer.js?v=1" defer></script>
 </body>
 
 </html>
