@@ -1516,6 +1516,17 @@ Index ska börja på 0.
 
 
 # ===== END MIKALLEARN READING LEVEL V3 =====
+
+
+# ============================================================
+# LÄSLOOP
+# ============================================================
+
+@app.route("/lasloop")
+def lasloop():
+    return render_template("lasloop.html")
+
+
 if __name__ == "__main__":
 
     app.run(
