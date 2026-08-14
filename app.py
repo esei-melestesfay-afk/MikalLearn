@@ -1516,19 +1516,6 @@ Index ska börja på 0.
 
 
 # ===== END MIKALLEARN READING LEVEL V3 =====
-
-
-
-
-# ============================================================
-# TURBOLÄSNING
-# ============================================================
-
-@app.route("/turbolasa")
-def turbolasa():
-    return render_template("turbolasa.html")
-
-
 if __name__ == "__main__":
 
     app.run(
