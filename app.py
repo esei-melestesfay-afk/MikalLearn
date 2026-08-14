@@ -1007,46 +1007,160 @@ def fallback_grade(
 
 # ===== MIKALLEARN READING LEVEL V3 =====
 
+
 READING_V3_CONFIG = {
+
     "easy": {
-        "name": "Lätt",
+
+        "name": "L\u00e4tt",
+
         "words": "90-130",
+
         "min_questions": 4,
+
         "max_questions": 6,
+
         "instructions": """
-Använd mycket lätt svenska.
-Använd vanliga ord och korta, tydliga meningar.
-Texten ska vara lätt att läsa men fortfarande intressant för en ungdom.
-Undvik svåra ord.
-Frågorna ska vara enkla och tydliga.
-De flesta svar ska gå att hitta direkt i texten.
+This level must be VERY EASY TO READ Swedish.
+
+The student is still developing Swedish.
+
+VOCABULARY:
+- Use very common Swedish words.
+- Prefer words used in normal everyday speech and simple texts.
+- Avoid abstract words.
+- Avoid uncommon school vocabulary.
+- Avoid difficult synonyms when a simple word exists.
+- Do not use complicated expressions.
+- Do not use metaphors or confusing figurative language.
+- If one slightly harder word is necessary, make its meaning clear from the sentence.
+
+SENTENCES:
+- Keep sentences short.
+- Usually around 6-12 words per sentence.
+- Express one clear idea at a time.
+- Prefer simple word order.
+- Avoid long sentences with many commas.
+
+TEXT:
+- Make the story or information easy to follow.
+- Use a clear beginning, middle and ending when appropriate.
+- The topic may still be interesting for a teenager.
+- Do NOT make the text childish.
+
+QUESTIONS:
+- Questions must also use very easy Swedish.
+- Keep questions short.
+- Mostly ask about information clearly stated in the text.
+- Only occasionally ask a very simple why-question.
+- The student should not need to understand difficult vocabulary just to understand the question.
+
+The purpose is:
+The student should feel that she CAN read the text,
+while still practicing Swedish.
 """
+
     },
+
 
     "medium": {
+
         "name": "Mellan",
+
         "words": "130-180",
+
         "min_questions": 5,
+
         "max_questions": 8,
+
         "instructions": """
-Använd tydlig svenska på mellannivå.
-Använd mest vanliga ord men några användbara skolord.
-Meningarna får vara lite längre.
-Blanda enkla frågor med några frågor där eleven behöver tänka och förstå samband.
+Use clear and accessible Swedish.
+
+VOCABULARY:
+- Mostly use common Swedish words.
+- Introduce a few useful new words that often appear in school or everyday texts.
+- Do not fill the text with difficult vocabulary.
+- Prefer useful words such as:
+  planera, beskriva, anledning, resultat, förändring, påverka.
+- Harder words should be understandable from context.
+
+SENTENCES:
+- Sentences may be a little longer than EASY.
+- Usually around 8-16 words.
+- Keep the structure clear.
+- Avoid unnecessarily complicated grammar.
+
+TEXT:
+- The student should need to concentrate a little more than on EASY.
+- Include more details.
+- Include simple cause and effect.
+- Include information from different parts of the text.
+
+QUESTIONS:
+- Use clear Swedish.
+- Mix direct questions with a few simple reasoning questions.
+- Ask questions such as:
+  what happened,
+  why it happened,
+  how something changed,
+  what the person learned.
+- Do not use difficult wording in the questions.
+
+The difficulty should come from understanding the text,
+not from strange words.
 """
+
     },
 
+
     "hard": {
-        "name": "Svår",
+
+        "name": "Sv\u00e5r",
+
         "words": "170-230",
+
         "min_questions": 6,
+
         "max_questions": 10,
+
         "instructions": """
-Använd mer utvecklad svenska men undvik ovanliga och onödigt svåra ord.
-Svårigheten ska främst komma från läsförståelse och resonemang.
-Blanda faktafrågor, varför-frågor, slutsatser och sammanfattning.
+Use more developed Swedish, but keep it readable.
+
+IMPORTANT:
+HARD does NOT mean filling the text with rare or advanced words.
+
+VOCABULARY:
+- Use mostly understandable Swedish.
+- Add some useful school and reading-comprehension vocabulary.
+- New words should be useful words the student may meet again.
+- Make difficult words understandable through context.
+- Avoid rare specialist vocabulary unless the topic truly requires it.
+
+SENTENCES:
+- Sentences may be longer and more varied.
+- Keep them grammatically clear.
+- Do not create extremely long or confusing sentences.
+
+TEXT:
+- Include more details and connections.
+- The reader may need to connect information from different parts.
+- Include cause and effect, opinions, changes or conclusions when natural.
+- The text should challenge comprehension more than vocabulary.
+
+QUESTIONS:
+- Include direct information questions.
+- Include why/how questions.
+- Include simple inference.
+- Include cause and effect.
+- A summary question may be used when appropriate.
+- Keep the language of the questions clear.
+
+The goal is to develop stronger reading comprehension
+without making the Swedish unnecessarily difficult.
 """
+
     }
+
 }
 
 
