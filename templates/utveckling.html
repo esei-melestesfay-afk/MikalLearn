@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Min utveckling | MikalLearn</title>
+  <script src="/static/cloud-sync.js?v=local3"></script>
+  <style>
+    :root{--bg:#f5f6fb;--card:#fff;--text:#171923;--muted:#858995;--line:#e6e7ef;--purple:#5b5de9;--dark:#1d1f2b}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+    .shell{width:min(980px,calc(100% - 28px));margin:0 auto;padding:24px 0 70px}
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+    nav a{color:#555967;text-decoration:none;font-size:11px;font-weight:850}
+    .brand{color:var(--purple);font-size:10px;font-weight:950;letter-spacing:1.7px}
+    .eyebrow{margin:0 0 5px;color:var(--purple);font-size:10px;font-weight:950;letter-spacing:1.2px}
+    h1{margin:0;font-size:clamp(34px,7vw,52px);letter-spacing:-2px}
+    .lead{max-width:650px;margin:8px 0 20px;color:var(--muted);font-size:11px;line-height:1.6}
+    .local-note{display:inline-flex;align-items:center;gap:7px;margin-bottom:18px;padding:9px 11px;border-radius:11px;background:#eef8f2;color:#16714a;font-size:9px;font-weight:900}
+    .overall{padding:24px;border-radius:22px;background:linear-gradient(135deg,#1c1e29,#34374f);color:#fff;margin-bottom:11px}
+    .overall-top{display:flex;justify-content:space-between;gap:15px;align-items:flex-end}
+    .overall-label{color:#b9bbca;font-size:9px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+    .overall-value{font-size:34px;font-weight:950;letter-spacing:-1px}
+    .track{height:8px;margin-top:16px;border-radius:999px;background:#ececf3;overflow:hidden}
+    .overall .track{background:rgba(255,255,255,.12)}
+    .fill{width:0;height:100%;border-radius:inherit;background:#6769ef;transition:width .35s ease}
+    .overall .fill{background:#9294ff}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+    .card{padding:20px;background:#fff;border:1px solid var(--line);border-radius:19px}
+    .icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#f1f1fb;font-size:18px}
+    .label{margin-top:14px;color:var(--muted);font-size:9px;font-weight:900;letter-spacing:.6px;text-transform:uppercase}
+    .value{margin-top:4px;font-size:29px;font-weight:950;letter-spacing:-1px}
+    .sub{margin-top:4px;color:var(--muted);font-size:9px;line-height:1.4}
+    .mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:11px}
+    .mini{padding:18px;background:#fff;border:1px solid var(--line);border-radius:17px}
+    .mini span{display:block;color:var(--muted);font-size:8px;font-weight:900;text-transform:uppercase}
+    .mini strong{display:block;margin-top:5px;font-size:25px}
+    .bottom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:11px}
+    .bottom .mini strong{font-size:21px}
+    .note{margin-top:18px;color:#989ba7;text-align:center;font-size:9px;line-height:1.55}
+    @media(max-width:650px){.shell{width:calc(100% - 18px);padding-top:15px}.grid,.mini-grid,.bottom{grid-template-columns:1fr}.overall-top{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <nav><a href="/">← Startsidan</a><span class="brand">MIKALLEARN</span><a href="/logout">Logga ut</a></nav>
+
+    <p class="eyebrow">📊 MIKALS PROFIL</p>
+    <h1>Min utveckling</h1>
+    <p class="lead">Här ser ni hur träningen går. LäsLoop och Viktiga ord läser av den progress som redan finns i webbläsaren, medan övriga räknare sparas från och med den här versionen.</p>
+    <div class="local-note">✅ Sparas automatiskt på den här webbläsaren</div>
+
+    <section class="overall">
+      <div class="overall-top">
+        <div>
+          <div class="overall-label">Totalt automatiserade / behärskade ord</div>
+          <div class="overall-value" id="overallValue">0 / 1000</div>
+        </div>
+        <div style="font-size:31px">🏆</div>
+      </div>
+      <div class="track"><div class="fill" id="overallBar"></div></div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="icon">⚡</div>
+        <div class="label">LäsLoop · automatiska ord</div>
+        <div class="value" id="lasloopValue">0 / 500</div>
+        <div class="sub" id="lasloopSub">Laddar progress…</div>
+        <div class="track"><div class="fill" id="lasloopBar"></div></div>
+      </article>
+
+      <article class="card">
+        <div class="icon">🔊</div>
+        <div class="label">Viktiga ord</div>
+        <div class="value" id="wordsValue">0 / 500</div>
+        <div class="sub" id="wordsSub">Laddar progress…</div>
+        <div class="track"><div class="fill" id="wordsBar"></div></div>
+      </article>
+    </section>
+
+    <section class="mini-grid">
+      <article class="mini"><span>📖 Lästa texter</span><strong id="readingValue">0</strong></article>
+      <article class="mini"><span>🎧 Rätt i Lyssna</span><strong id="listeningValue">0</strong></article>
+      <article class="mini"><span>✍️ Skrivpass</span><strong id="writingValue">0</strong></article>
+    </section>
+
+    <section class="bottom">
+      <article class="mini"><span>⏱️ Aktiv träning</span><strong id="timeValue">0 min</strong></article>
+      <article class="mini"><span>🔥 Träningsdagar</span><strong id="daysValue">0</strong></article>
+      <article class="mini"><span>⭐ Mest tränat</span><strong id="mostTrainedValue">Ingen ännu</strong></article>
+      <article class="mini"><span>👤 Profil</span><strong>Mikal</strong></article>
+    </section>
+
+    <div class="note">Ingen databas behövs. Progressen ligger kvar i samma webbläsare på den här enheten. Om webbläsardata rensas försvinner den lokala sparningen.</div>
+  </div>
+
+  <script src="/static/utveckling.js?v=local3" defer></script>
+</body>
+</html>

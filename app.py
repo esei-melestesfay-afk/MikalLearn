@@ -12,6 +12,11 @@ load_dotenv()
 
 app = Flask(__name__)
 
+
+# Mikal local profile
+from profile_local import init_profile
+init_profile(app)
+
 from tts_routes import tts_bp
 app.register_blueprint(tts_bp)
 

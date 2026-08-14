@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logga in | MikalLearn</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;background:#f5f6fb;color:#171923;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+    .shell{width:min(410px,100%)}
+    .brand{text-align:center;color:#5b5de9;font-size:11px;font-weight:950;letter-spacing:2px;margin-bottom:18px}
+    .card{background:#fff;border:1px solid #e8e9f0;border-radius:24px;padding:34px;box-shadow:0 24px 70px rgba(25,27,50,.08)}
+    .avatar{width:62px;height:62px;margin:0 auto 16px;display:grid;place-items:center;border-radius:20px;background:linear-gradient(135deg,#5b5de9,#8587ff);color:#fff;font-size:26px;font-weight:950}
+    h1{margin:0;text-align:center;font-size:30px;letter-spacing:-1px}
+    p{margin:8px 0 25px;text-align:center;color:#858995;font-size:12px;line-height:1.5}
+    label{display:block;margin-bottom:7px;color:#686c79;font-size:10px;font-weight:900;letter-spacing:.7px;text-transform:uppercase}
+    input{width:100%;height:54px;padding:0 16px;border:1px solid #e2e4ec;border-radius:14px;background:#f8f8fc;color:#171923;font-size:18px;font-weight:850;outline:none}
+    input:focus{border-color:#7375ed;box-shadow:0 0 0 4px rgba(92,93,233,.09)}
+    button{width:100%;height:52px;margin-top:12px;border:0;border-radius:14px;background:#1c1e29;color:#fff;font-size:12px;font-weight:900;cursor:pointer}
+    .error{margin-top:12px;padding:11px;border-radius:11px;background:#fff0ed;color:#9c3f34;text-align:center;font-size:11px;font-weight:800}
+    .note{margin-top:15px;text-align:center;color:#9a9daa;font-size:9px}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="brand">MIKALLEARN</div>
+    <main class="card">
+      <div class="avatar">M</div>
+      <h1>Hej Mikal 👋</h1>
+      <p>Logga in på din profil. Dina framsteg sparas på den här webbläsaren.</p>
+      <form method="post" autocomplete="off">
+        <label for="pin">Din kod</label>
+        <input id="pin" name="pin" type="password" autocomplete="off" autofocus required>
+        <button type="submit">Logga in →</button>
+      </form>
+      {% if error %}<div class="error">{{ error }}</div>{% endif %}
+      <div class="note">Profil: Mikal</div>
+    </main>
+  </div>
+</body>
+</html>
