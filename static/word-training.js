@@ -240,27 +240,6 @@ window.WordTrainer = (() => {
        SVENSK RÖST
     ===================================================== */
 
-    function getSwedishVoice() {
-
-        const voices =
-            speechSynthesis
-                .getVoices();
-
-
-        return (
-            voices.find(
-                voice =>
-                    String(voice.lang)
-                        .toLowerCase()
-                        .startsWith("sv")
-            )
-            ||
-            voices[0]
-        );
-
-    }
-
-
     function speakWord(rate = 0.82) {
 
         if (!current) {
@@ -268,40 +247,26 @@ window.WordTrainer = (() => {
         }
 
 
-        speechSynthesis.cancel();
+        const mode =
+            rate <= 0.70
+                ? "slow"
+                : "normal";
 
 
-        const speech =
-            new SpeechSynthesisUtterance(
-                current.word
+        if (
+            window.MikalTTS
+        ) {
+
+            window.MikalTTS.play(
+                current.word,
+                mode
             );
-
-
-        speech.lang =
-            "sv-SE";
-
-
-        speech.rate =
-            rate;
-
-
-        const voice =
-            getSwedishVoice();
-
-
-        if (voice) {
-
-            speech.voice =
-                voice;
 
         }
 
-
-        speechSynthesis.speak(
-            speech
-        );
-
     }
+
+
 
 
     /* =====================================================
@@ -1240,3 +1205,4 @@ document.addEventListener(
     "DOMContentLoaded",
     WordTrainer.init
 );
+

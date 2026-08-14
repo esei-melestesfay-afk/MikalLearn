@@ -12,6 +12,9 @@ load_dotenv()
 
 app = Flask(__name__)
 
+from tts_routes import tts_bp
+app.register_blueprint(tts_bp)
+
 
 # =========================================================
 # CLAUDE
@@ -1406,4 +1409,5 @@ if __name__ == "__main__":
     app.run(
         debug=True
     )
+
 
