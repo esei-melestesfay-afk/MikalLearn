@@ -4012,3 +4012,138 @@ body {
 }
 /* MIKALLEARN CALM BACKGROUND END */
 
+/* MIKALLEARN VISUAL THEME START */
+
+html, body {
+    min-height: 100%;
+}
+
+body,
+body.study-page {
+    background-image:
+        linear-gradient(rgba(248,250,252,0.78), rgba(248,250,252,0.84)),
+        url('/static/mikallearn-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    color: #111827 !important;
+}
+
+body::before,
+body::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Gör scroll snabbare / mindre lagg */
+* {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Mörkare text */
+h1, h2, h3, h4, h5, h6,
+.title, .hero-title, .section-title,
+.page-title, .card-title, .module-title {
+    color: #0f172a !important;
+    text-shadow: none !important;
+}
+
+p, span, small, label, li,
+.subtitle, .small, .muted, .description {
+    color: #374151 !important;
+}
+
+/* Länkar */
+a {
+    color: #1d4ed8 !important;
+}
+
+/* Vanliga vita kort */
+.card,
+.panel,
+.practice-panel,
+.module-card,
+.tile,
+.content-card,
+.stats-card,
+.dashboard-card,
+.exercise-card,
+.reading-card,
+.writing-card,
+.listening-panel,
+.word-card,
+.pass-card {
+    background: rgba(255,255,255,0.90) !important;
+    border: 1px solid rgba(255,255,255,0.55) !important;
+    box-shadow: 0 10px 28px rgba(15,23,42,0.10) !important;
+    color: #111827 !important;
+}
+
+/* Mörk hero-ruta */
+.hero-card,
+.top-card,
+.intro-card,
+.banner-card,
+.dashboard-hero,
+.hero-panel,
+.main-hero {
+    background: linear-gradient(135deg, rgba(15,23,42,0.96), rgba(49,46,129,0.93)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 20px 38px rgba(15,23,42,0.18) !important;
+}
+
+.hero-card h1,
+.hero-card h2,
+.hero-card h3,
+.hero-card p,
+.hero-card span,
+.hero-card small,
+.top-card h1,
+.top-card h2,
+.top-card p,
+.top-card span,
+.intro-card h1,
+.intro-card h2,
+.intro-card p,
+.banner-card h1,
+.banner-card h2,
+.banner-card p,
+.dashboard-hero h1,
+.dashboard-hero h2,
+.dashboard-hero p,
+.hero-panel h1,
+.hero-panel h2,
+.hero-panel p,
+.main-hero h1,
+.main-hero h2,
+.main-hero p {
+    color: #ffffff !important;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    background: rgba(255,255,255,0.96) !important;
+    color: #111827 !important;
+    border: 1px solid rgba(148,163,184,0.35) !important;
+    box-shadow: none !important;
+}
+
+/* Knappar */
+button,
+.btn {
+    box-shadow: none !important;
+}
+
+/* Lite snyggare sida */
+.container,
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* MIKALLEARN VISUAL THEME END */
+
