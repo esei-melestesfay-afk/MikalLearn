@@ -26,6 +26,31 @@ document.addEventListener(
 
         let currentAudio = null;
 
+        let waitingForConfirmation = false;
+
+
+        function confirmationHolding() {
+
+            try {
+
+                return Boolean(
+                    window.MikalLasLoopConfirmation
+                    &&
+                    typeof window.MikalLasLoopConfirmation.isHolding === "function"
+                    &&
+                    window.MikalLasLoopConfirmation.isHolding()
+                );
+
+            }
+
+            catch {
+
+                return false;
+
+            }
+
+        }
+
 
         const $ = id =>
             document.getElementById(id);
@@ -680,7 +705,7 @@ document.addEventListener(
                         startedAt
                     )
                     /
-                    500;
+                    1000;
 
 
                 const left =
@@ -796,7 +821,36 @@ document.addEventListener(
 
             updateStats();
 
-            startTimer();
+
+            /*
+                Om bekräftelseljudet för förra ordet
+                fortfarande spelas ligger nästa ord
+                dolt bakom LäsLoop-overlayn.
+
+                Starta därför INTE nästa 10-sekunders-
+                timer förrän ljudet är helt klart och
+                nästa ord faktiskt blir synligt.
+            */
+
+            if (
+                confirmationHolding()
+            ) {
+
+                waitingForConfirmation =
+                    true;
+
+                stopTimer();
+
+            }
+
+            else {
+
+                waitingForConfirmation =
+                    false;
+
+                startTimer();
+
+            }
 
         }
 
@@ -871,7 +925,7 @@ document.addEventListener(
                     startedAt
                 )
                 /
-                500;
+                1000;
 
 
             /*
@@ -1176,6 +1230,50 @@ document.addEventListener(
 
         }
 
+
+
+        document.addEventListener(
+            "mikal-lasloop-confirmation-finished",
+            () => {
+
+                if (
+                    !waitingForConfirmation
+                    ||
+                    running
+                    ||
+                    !current
+                ) {
+
+                    return;
+
+                }
+
+
+                waitingForConfirmation =
+                    false;
+
+
+                /*
+                    Nu är nästa ord faktiskt synligt.
+                    Det får alltid sina egna FULLA
+                    10.0 sekunder från exakt här.
+                */
+
+                $("timerNumber")
+                    .textContent =
+                    "10.0";
+
+
+                $("timerFill")
+                    .style
+                    .width =
+                    "0%";
+
+
+                startTimer();
+
+            }
+        );
 
 
         $("wordButton")

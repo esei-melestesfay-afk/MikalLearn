@@ -14,6 +14,16 @@
 
     const hiddenElements = new Map();
 
+
+    /*
+      LäsLoop-kärnan använder detta för att veta
+      om nästa ord fortfarande är dolt medan
+      bekräftelseljudet spelas.
+    */
+    window.MikalLasLoopConfirmation = {
+        isHolding: () => holdActive
+    };
+
     function normalizeWord(value) {
         return String(value || "")
             .trim()
@@ -305,6 +315,8 @@
     }
 
     function clearActive() {
+        const wasHolding = holdActive;
+
         holdActive = false;
 
         if (cleanupTimer) {
@@ -328,6 +340,14 @@
         }
 
         restoreHiddenWords();
+
+        if (wasHolding) {
+            document.dispatchEvent(
+                new CustomEvent(
+                    "mikal-lasloop-confirmation-finished"
+                )
+            );
+        }
     }
 
     function makeOverlay(info) {
