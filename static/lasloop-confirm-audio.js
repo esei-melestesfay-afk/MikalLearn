@@ -2,17 +2,6 @@
 (() => {
     "use strict";
 
-    /*
-      LäsLoop – säg ordet innan nästa ord visas.
-
-      Viktigt:
-      - Den vanliga LäsLoop-koden får fortfarande hantera klicket direkt.
-        Då räknas ordet inom 10 sekunder precis som tidigare.
-      - Vi lägger bara en kort visuell "gardin" ovanpå med det gamla ordet,
-        spelar ordets befintliga MP3 och tar sedan bort gardinen.
-      - Timeout utan klick påverkas inte alls.
-    */
-
     const DATA_URL = "/static/lasloop-data.json";
     const audioByWord = new Map();
 
@@ -20,6 +9,10 @@
     let activeOverlay = null;
     let activeAudio = null;
     let cleanupTimer = null;
+    let holdActive = false;
+    let syntheticActivation = false;
+
+    const hiddenElements = new Map();
 
     function normalizeWord(value) {
         return String(value || "")
@@ -30,7 +23,6 @@
 
     function looksLikeAudio(value) {
         if (typeof value !== "string") return false;
-
         const lower = value.toLowerCase();
 
         return (
@@ -51,37 +43,26 @@
     }
 
     function addPair(word, audio) {
-        if (typeof word !== "string" || !looksLikeAudio(audio)) {
-            return;
-        }
+        if (typeof word !== "string" || !looksLikeAudio(audio)) return;
 
         const key = normalizeWord(word);
 
-        if (!key || key.includes(" ")) {
-            return;
-        }
+        if (!key || key.includes(" ")) return;
 
         if (!audioByWord.has(key)) {
-            audioByWord.set(
-                key,
-                resolveAudioUrl(audio)
-            );
+            audioByWord.set(key, resolveAudioUrl(audio));
         }
     }
 
     function scanData(node, depth = 0) {
-        if (node == null || depth > 8) {
-            return;
-        }
+        if (node == null || depth > 8) return;
 
         if (Array.isArray(node)) {
             node.forEach(item => scanData(item, depth + 1));
             return;
         }
 
-        if (typeof node !== "object") {
-            return;
-        }
+        if (typeof node !== "object") return;
 
         const word =
             node.word
@@ -102,18 +83,8 @@
 
         addPair(word, audio);
 
-        /*
-          Stöd även format som:
-          {
-            "hej": "/static/audio/hej.mp3",
-            "jag": "/static/audio/jag.mp3"
-          }
-        */
         for (const [key, value] of Object.entries(node)) {
-            if (
-                typeof value === "string"
-                && looksLikeAudio(value)
-            ) {
+            if (typeof value === "string" && looksLikeAudio(value)) {
                 addPair(key, value);
             }
         }
@@ -127,19 +98,14 @@
         try {
             const response = await fetch(
                 DATA_URL,
-                {
-                    cache: "force-cache"
-                }
+                { cache: "force-cache" }
             );
 
             if (!response.ok) {
-                throw new Error(
-                    "Kunde inte läsa LäsLoop-data."
-                );
+                throw new Error("Kunde inte läsa LäsLoop-data.");
             }
 
             const data = await response.json();
-
             scanData(data);
 
             console.log(
@@ -156,8 +122,46 @@
     dataReady = loadData();
 
     function isSingleWord(text) {
-        return /^[A-Za-zÀ-ÖØ-öø-ÿÅÄÖåäöÉéÜü'-]+$/u
-            .test(text);
+        return /^[A-Za-zÀ-ÖØ-öø-ÿÅÄÖåäöÉéÜü'-]+$/u.test(text);
+    }
+
+    function candidateInfo(element) {
+        if (!(element instanceof Element)) return null;
+        if (element === activeOverlay) return null;
+
+        const text = String(element.textContent || "").trim();
+
+        if (!isSingleWord(text)) return null;
+
+        const style = getComputedStyle(element);
+        const fontSize = parseFloat(style.fontSize) || 0;
+        const rect = element.getBoundingClientRect();
+
+        const interactive = (
+            element.tagName === "BUTTON"
+            || element.getAttribute("role") === "button"
+            || style.cursor === "pointer"
+            || typeof element.onclick === "function"
+        );
+
+        if (
+            !interactive
+            || fontSize < 30
+            || rect.width < 35
+            || rect.height < 25
+            || rect.width > window.innerWidth * 0.95
+            || rect.bottom < 0
+            || rect.top > window.innerHeight
+        ) {
+            return null;
+        }
+
+        return {
+            element,
+            word: text,
+            rect,
+            style
+        };
     }
 
     function clickableLargeWord(start) {
@@ -171,53 +175,58 @@
         while (
             element
             && element !== document.body
-            && steps < 6
+            && steps < 7
         ) {
-            const text = String(
-                element.textContent || ""
-            ).trim();
+            const info = candidateInfo(element);
 
-            const style =
-                getComputedStyle(element);
-
-            const fontSize =
-                parseFloat(style.fontSize) || 0;
-
-            const rect =
-                element.getBoundingClientRect();
-
-            const interactive = (
-                element.tagName === "BUTTON"
-                || element.getAttribute("role") === "button"
-                || style.cursor === "pointer"
-                || Boolean(
-                    element.closest(
-                        "button,[role='button']"
-                    )
-                )
-            );
-
-            if (
-                interactive
-                && fontSize >= 30
-                && rect.width >= 35
-                && rect.height >= 25
-                && rect.width <= window.innerWidth * 0.95
-                && isSingleWord(text)
-            ) {
-                return {
-                    element,
-                    word: text,
-                    rect,
-                    style
-                };
-            }
+            if (info) return info;
 
             element = element.parentElement;
             steps += 1;
         }
 
         return null;
+    }
+
+    function findCurrentWord() {
+        const selectors = [
+            "button",
+            "[role='button']",
+            "[onclick]",
+            ".word",
+            ".big-word",
+            ".current-word",
+            ".lasloop-word",
+            ".word-button"
+        ];
+
+        const elements = [
+            ...document.querySelectorAll(
+                selectors.join(",")
+            )
+        ];
+
+        let best = null;
+
+        for (const element of elements) {
+            const info = candidateInfo(element);
+
+            if (!info) continue;
+
+            const score =
+                (parseFloat(info.style.fontSize) || 0)
+                + Math.min(info.rect.width, 500) / 25
+                + Math.min(info.rect.height, 250) / 25;
+
+            if (!best || score > best.score) {
+                best = {
+                    ...info,
+                    score
+                };
+            }
+        }
+
+        return best;
     }
 
     function findBackground(element) {
@@ -227,23 +236,12 @@
             current
             && current !== document.documentElement
         ) {
-            const style =
-                getComputedStyle(current);
+            const style = getComputedStyle(current);
+            const color = style.backgroundColor;
+            const image = style.backgroundImage;
 
-            const color =
-                style.backgroundColor;
-
-            const image =
-                style.backgroundImage;
-
-            if (
-                image
-                && image !== "none"
-            ) {
-                return {
-                    color,
-                    image
-                };
+            if (image && image !== "none") {
+                return { color, image };
             }
 
             if (
@@ -251,10 +249,7 @@
                 && color !== "transparent"
                 && color !== "rgba(0, 0, 0, 0)"
             ) {
-                return {
-                    color,
-                    image: "none"
-                };
+                return { color, image: "none" };
             }
 
             current = current.parentElement;
@@ -266,7 +261,52 @@
         };
     }
 
+    function hideElement(element) {
+        if (
+            !(element instanceof Element)
+            || element === activeOverlay
+            || hiddenElements.has(element)
+        ) {
+            return;
+        }
+
+        hiddenElements.set(
+            element,
+            element.style.visibility
+        );
+
+        element.style.visibility = "hidden";
+    }
+
+    function hideLiveWord() {
+        if (!holdActive) return;
+
+        const current = findCurrentWord();
+
+        if (current) {
+            hideElement(current.element);
+        }
+    }
+
+    const holdObserver = new MutationObserver(() => {
+        if (holdActive) {
+            hideLiveWord();
+        }
+    });
+
+    function restoreHiddenWords() {
+        for (const [element, oldVisibility] of hiddenElements.entries()) {
+            if (element.isConnected) {
+                element.style.visibility = oldVisibility;
+            }
+        }
+
+        hiddenElements.clear();
+    }
+
     function clearActive() {
+        holdActive = false;
+
         if (cleanupTimer) {
             clearTimeout(cleanupTimer);
             cleanupTimer = null;
@@ -286,6 +326,8 @@
             activeOverlay.remove();
             activeOverlay = null;
         }
+
+        restoreHiddenWords();
     }
 
     function makeOverlay(info) {
@@ -298,11 +340,9 @@
             style
         } = info;
 
-        const background =
-            findBackground(element);
+        const background = findBackground(element);
 
-        const overlay =
-            document.createElement("div");
+        const overlay = document.createElement("div");
 
         overlay.setAttribute(
             "aria-hidden",
@@ -327,34 +367,20 @@
                 boxSizing: "border-box",
 
                 color: style.color,
-                backgroundColor:
-                    background.color,
-                backgroundImage:
-                    background.image,
+                backgroundColor: background.color,
+                backgroundImage: background.image,
 
-                fontFamily:
-                    style.fontFamily,
-                fontSize:
-                    style.fontSize,
-                fontWeight:
-                    style.fontWeight,
-                fontStyle:
-                    style.fontStyle,
-                letterSpacing:
-                    style.letterSpacing,
-                lineHeight:
-                    style.lineHeight,
-                textAlign:
-                    "center",
+                fontFamily: style.fontFamily,
+                fontSize: style.fontSize,
+                fontWeight: style.fontWeight,
+                fontStyle: style.fontStyle,
+                letterSpacing: style.letterSpacing,
+                lineHeight: style.lineHeight,
+                textAlign: "center",
 
-                borderRadius:
-                    style.borderRadius,
-
-                border:
-                    style.border,
-
-                boxShadow:
-                    style.boxShadow,
+                borderRadius: style.borderRadius,
+                border: style.border,
+                boxShadow: style.boxShadow,
 
                 opacity: "1",
                 transform: "none",
@@ -362,35 +388,32 @@
             }
         );
 
-        document.body.appendChild(
-            overlay
-        );
+        document.body.appendChild(overlay);
 
         activeOverlay = overlay;
+        holdActive = true;
+
+        /*
+          Dölj den riktiga ord-knappen direkt.
+          Overlayn visar fortfarande det gamla ordet.
+          När LäsLoop byter till nästa ord är det
+          ordet också dolt tills ljudet är klart.
+        */
+        hideElement(element);
+        hideLiveWord();
 
         return overlay;
     }
 
-    async function sayThenReveal(
-        word,
-        overlay
-    ) {
-        /*
-          Om JSON inte hunnit ladda klart
-          väntar vi kort på den.
-        */
+    async function sayThenReveal(word, overlay) {
         await Promise.race([
             dataReady,
             new Promise(resolve =>
-                setTimeout(resolve, 350)
+                setTimeout(resolve, 300)
             )
         ]);
 
-        if (
-            overlay !== activeOverlay
-        ) {
-            return;
-        }
+        if (overlay !== activeOverlay) return;
 
         const src =
             audioByWord.get(
@@ -398,24 +421,18 @@
             );
 
         if (!src) {
-            /*
-              Om något ord saknar ljud ska
-              LäsLoop aldrig fastna.
-            */
             cleanupTimer =
                 setTimeout(
                     clearActive,
-                    120
+                    40
                 );
 
             return;
         }
 
-        const audio =
-            new Audio(src);
+        const audio = new Audio(src);
 
         activeAudio = audio;
-
         audio.preload = "auto";
         audio.playbackRate = 1.18;
 
@@ -427,28 +444,26 @@
             finished = true;
 
             cleanupTimer =
-                setTimeout(clearActive, 10);
+                setTimeout(
+                    clearActive,
+                    10
+                );
         };
 
         audio.addEventListener(
             "ended",
             finish,
-            {
-                once: true
-            }
+            { once: true }
         );
 
         audio.addEventListener(
             "error",
             finish,
-            {
-                once: true
-            }
+            { once: true }
         );
 
         try {
-            const promise =
-                audio.play();
+            const promise = audio.play();
 
             if (
                 promise
@@ -460,29 +475,38 @@
             finish();
         }
 
-        /*
-          Säkerhetsgräns:
-          ett trasigt MP3 får aldrig hålla
-          kvar ordet på skärmen.
-        */
         cleanupTimer =
-            setTimeout(finish, 1800);
+            setTimeout(
+                finish,
+                1800
+            );
+    }
+
+    function startConfirmation(info) {
+        if (!info || holdActive) return;
+
+        const overlay = makeOverlay(info);
+
+        queueMicrotask(() => {
+            hideLiveWord();
+
+            sayThenReveal(
+                info.word,
+                overlay
+            );
+        });
     }
 
     /*
-      Capture=true gör att vi hinner läsa
-      det gamla ordet INNAN vanliga LäsLoop
-      byter till nästa.
-
-      Vi stoppar INTE klicket.
-      Därför räknas svaret direkt och
-      10-sekunderstimern fungerar som vanligt.
+      MUS / TOUCH:
+      Vanliga klicket får fortsätta till LäsLoop
+      så att svaret räknas direkt precis som innan.
     */
     document.addEventListener(
         "click",
         event => {
             if (
-                !event.isTrusted
+                (!event.isTrusted && !syntheticActivation)
                 || event.button > 0
             ) {
                 return;
@@ -493,29 +517,72 @@
                     event.target
                 );
 
-            if (!info) {
+            if (!info) return;
+
+            startConfirmation(info);
+        },
+        true
+    );
+
+    /*
+      SPACE:
+      Mellanslag gör exakt samma sak som att
+      klicka på det stora ordet med musen.
+      Vi stoppar också webbläsarens vanliga
+      scroll med Space.
+    */
+    document.addEventListener(
+        "keydown",
+        event => {
+            if (
+                event.code !== "Space"
+                || event.repeat
+                || holdActive
+            ) {
                 return;
             }
 
-            const overlay =
-                makeOverlay(info);
+            const target = event.target;
 
-            /*
-              Kör ljudet efter att klicket fått
-              fortsätta till den vanliga LäsLoop-
-              koden. Nästa ord ligger då redo
-              bakom overlayn.
-            */
-            queueMicrotask(
-                () => {
-                    sayThenReveal(
-                        info.word,
-                        overlay
-                    );
-                }
-            );
+            if (
+                target instanceof HTMLInputElement
+                || target instanceof HTMLTextAreaElement
+                || target instanceof HTMLSelectElement
+                || target?.isContentEditable
+            ) {
+                return;
+            }
+
+            const info = findCurrentWord();
+
+            if (!info) return;
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            syntheticActivation = true;
+
+            try {
+                info.element.click();
+            } finally {
+                syntheticActivation = false;
+            }
         },
         true
+    );
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+            holdObserver.observe(
+                document.body,
+                {
+                    childList: true,
+                    subtree: true,
+                    characterData: true
+                }
+            );
+        }
     );
 
 })();
