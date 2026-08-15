@@ -417,7 +417,7 @@
         activeAudio = audio;
 
         audio.preload = "auto";
-        audio.playbackRate = 1.0;
+        audio.playbackRate = 1.18;
 
         let finished = false;
 
@@ -427,10 +427,7 @@
             finished = true;
 
             cleanupTimer =
-                setTimeout(
-                    clearActive,
-                    90
-                );
+                setTimeout(clearActive, 10);
         };
 
         audio.addEventListener(
@@ -469,10 +466,7 @@
           kvar ordet på skärmen.
         */
         cleanupTimer =
-            setTimeout(
-                finish,
-                2600
-            );
+            setTimeout(finish, 1800);
     }
 
     /*
