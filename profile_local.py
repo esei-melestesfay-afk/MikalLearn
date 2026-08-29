@@ -1,6 +1,4 @@
 from flask import Blueprint, make_response, redirect, render_template, request
-import httpx
-import re
 
 PIN = "mikal13"
 COOKIE = "mikal_profile"
@@ -57,81 +55,6 @@ def prov():
     if not logged_in():
         return redirect("/login")
     return render_template("prov.html")
-
-
-@bp.route("/api/prov/check", methods=["POST"])
-def prov_check():
-    if not logged_in():
-        return {"ok": False, "error": "Inte inloggad"}, 401
-
-    data = request.get_json(silent=True) or {}
-    text = str(data.get("text", ""))
-
-    if len(text.strip()) < 20:
-        return {"ok": False, "error": "Texten är för kort."}, 400
-
-    if len(text) > 12000:
-        return {"ok": False, "error": "Texten är för lång."}, 400
-
-    try:
-        response = httpx.post(
-            "https://api.languagetool.org/v2/check",
-            data={
-                "text": text,
-                "language": "sv-SE",
-                "enabledOnly": "false",
-            },
-            headers={"User-Agent": "MikalLearn/1.0"},
-            timeout=15.0,
-        )
-        response.raise_for_status()
-        payload = response.json()
-    except Exception:
-        return {"ok": False, "error": "Stavningskontrollen är tillfälligt otillgänglig."}, 502
-
-    errors = []
-    used_ranges = set()
-
-    for match in payload.get("matches", []):
-        rule = match.get("rule") or {}
-        issue_type = str(rule.get("issueType", "")).lower()
-        category = rule.get("category") or {}
-        category_id = str(category.get("id", "")).upper()
-
-        if issue_type not in {"misspelling", "typographical"} and category_id != "TYPOS":
-            continue
-
-        offset = int(match.get("offset", -1))
-        length = int(match.get("length", 0))
-        if offset < 0 or length <= 0 or offset + length > len(text):
-            continue
-
-        original = text[offset:offset + length]
-        if not re.search(r"[A-Za-zÅÄÖåäö]", original):
-            continue
-
-        range_key = (offset, length)
-        if range_key in used_ranges:
-            continue
-        used_ranges.add(range_key)
-
-        suggestions = []
-        for item in match.get("replacements", [])[:8]:
-            value = str(item.get("value", "")).strip()
-            if value and value.lower() != original.lower() and value not in suggestions:
-                suggestions.append(value)
-            if len(suggestions) >= 5:
-                break
-
-        errors.append({
-            "offset": offset,
-            "length": length,
-            "word": original,
-            "suggestions": suggestions,
-        })
-
-    errors.sort(key=lambda item: item["offset"])
-    return {"ok": True, "errors": errors}
 
 
 def init_profile(app):

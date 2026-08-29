@@ -1,0 +1,27 @@
+:root{--a-bg:#f1f1ee;--a-paper:#fbfbf8;--a-text:#111217;--a-muted:#6e727b;--a-line:#bfc2c9;--a-purple:#625cf5;--a-mint:#39b9a4;--a-dark:#15161c}
+body.study-page{background-color:var(--a-bg)!important;background-image:linear-gradient(rgba(17,18,23,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(17,18,23,.025) 1px,transparent 1px)!important;background-size:32px 32px!important;color:var(--a-text)!important}
+body.study-page .container{width:min(980px,calc(100% - 30px));padding-top:38px}
+body.study-page .back{border-radius:2px!important;border:1px solid var(--a-line)!important;background:var(--a-paper)!important;box-shadow:4px 4px 0 rgba(21,22,28,.08)!important;padding:9px 12px!important;text-transform:uppercase;letter-spacing:.06em;font-size:11px!important}
+body.study-page .small{font-size:10px!important;letter-spacing:.18em!important;font-weight:950!important;color:var(--a-purple)!important}
+body.study-page h1{font-size:clamp(40px,6vw,62px)!important;letter-spacing:-.055em!important;line-height:.98!important}
+body.study-page .subtitle{font-size:14px!important;max-width:700px!important;color:var(--a-muted)!important}
+body.study-page .practice-panel{position:relative;border-radius:3px!important;border:1px solid var(--a-line)!important;background:var(--a-paper)!important;box-shadow:9px 9px 0 rgba(21,22,28,.10)!important;backdrop-filter:none!important;overflow:hidden}
+body.study-page .practice-panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--a-purple)}
+body.study-page .listening-panel::before{background:var(--a-mint)}
+body.study-page .practice-panel h2{font-size:26px!important;letter-spacing:-.035em!important}
+body.study-page .practice-label{font-size:9px!important;letter-spacing:.16em!important;font-weight:950!important}
+body.study-page .help-text{font-size:13px!important;color:var(--a-muted)!important}
+body.study-page .original-text{border-radius:2px!important;border:1px solid #c9cbd2!important;background:#fff!important;box-shadow:5px 5px 0 rgba(21,22,28,.06)!important;padding:25px!important}
+body.study-page textarea{border-radius:2px!important;border:1px solid #c9cbd2!important;background:#fff!important;box-shadow:5px 5px 0 rgba(21,22,28,.06)!important;font-size:16px!important}
+body.study-page textarea:focus{border-color:var(--a-purple)!important;box-shadow:6px 6px 0 rgba(98,92,245,.16)!important}
+body.study-page button{border-radius:2px!important}
+body.study-page .check-button{background:var(--a-dark)!important;box-shadow:5px 5px 0 rgba(98,92,245,.25)!important;text-transform:uppercase;letter-spacing:.05em;font-size:11px!important}
+body.study-page .write-layout{gap:18px!important}
+body.study-page .write-sidebar{border-radius:3px!important;border:1px solid var(--a-line)!important;background:var(--a-dark)!important;box-shadow:7px 7px 0 rgba(98,92,245,.18)!important}
+body.study-page .side-mode{border-radius:2px!important}
+body.study-page .skill-timer-card{border-radius:3px!important;border:1px solid #aeb1b8!important;background:var(--a-dark)!important;box-shadow:8px 8px 0 rgba(98,92,245,.20)!important;overflow:hidden!important}
+body.study-page .skill-timer-card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--a-purple)}
+body.study-page .skill-timer-icon,body.study-page .audio-circle,body.study-page .listening-progress,body.study-page .listen-correct,body.study-page .listen-wrong,body.study-page .listen-warning,body.study-page .correct-sentence,body.study-page .result{border-radius:2px!important}
+body.study-page .listen-buttons-v2 button,body.study-page .listen-secondary{border-radius:2px!important;border:1px solid #bfc2c9!important;box-shadow:4px 4px 0 rgba(21,22,28,.08)!important}
+body.study-page .listen-next{border-radius:2px!important;box-shadow:4px 4px 0 rgba(98,92,245,.20)!important}
+@media(max-width:720px){body.study-page .container{padding-top:24px}body.study-page .practice-panel{padding:24px 20px!important;box-shadow:5px 5px 0 rgba(21,22,28,.10)!important}body.study-page .skill-timer-card{box-shadow:5px 5px 0 rgba(98,92,245,.20)!important}}
