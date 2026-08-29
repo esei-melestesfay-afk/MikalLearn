@@ -1,0 +1,23 @@
+:root{--hv3-bg:#f5f6fa;--hv3-card:#fff;--hv3-text:#14151b;--hv3-muted:#727784;--hv3-line:#e5e7ee;--hv3-purple:#625cf5;--hv3-dark:#171820}
+body.home-v3{margin:0;background:radial-gradient(circle at 20% 0%,#eeedff 0,transparent 32%),linear-gradient(180deg,#fbfbfd 0,#f3f5f8 100%);color:var(--hv3-text);min-height:100vh}
+.home-shell{width:min(920px,calc(100% - 32px));margin:0 auto;padding:58px 0 72px}
+.home-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
+.home-kicker{margin:0 0 8px;color:var(--hv3-purple);font-size:11px;font-weight:900;letter-spacing:.16em}
+.home-hero h1{margin:0;font-size:clamp(42px,7vw,68px);line-height:.98;letter-spacing:-.055em}.home-hero h1 span{font-size:.62em}
+.home-intro{margin:13px 0 0;color:var(--hv3-muted);font-size:15px;line-height:1.55}
+.home-plan-pill{flex:0 0 auto;padding:10px 14px;border-radius:999px;background:var(--hv3-dark);color:#fff;font-size:12px;font-weight:850}
+.home-stack{display:grid;gap:16px}
+.home-module{position:relative;display:grid;grid-template-columns:54px 72px 1fr;gap:20px;align-items:center;min-height:190px;padding:24px 28px;border:1px solid var(--hv3-line);border-radius:25px;background:rgba(255,255,255,.94);box-shadow:0 18px 60px rgba(24,27,39,.07);text-decoration:none;color:inherit;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.home-module:hover{transform:translateY(-3px);box-shadow:0 24px 70px rgba(24,27,39,.11);border-color:#d8d5ff}
+.home-module-number{align-self:flex-start;color:#a5a9b3;font-size:11px;font-weight:900;letter-spacing:.12em;padding-top:5px}
+.home-module-icon{width:68px;height:68px;border-radius:21px;display:grid;place-items:center;font-size:29px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.home-module-write .home-module-icon{background:linear-gradient(145deg,#eceaff,#d9d5ff)}
+.home-module-listen .home-module-icon{background:linear-gradient(145deg,#e8f7f5,#cdeee9)}
+.home-module-label{display:block;color:var(--hv3-purple);font-size:10px;font-weight:900;letter-spacing:.12em;margin-bottom:5px}
+.home-module-copy h2{margin:0;font-size:27px;letter-spacing:-.035em}.home-module-copy p{margin:8px 0 17px;color:var(--hv3-muted);font-size:13px;line-height:1.55;max-width:620px}
+.home-module-progress-row{display:flex;justify-content:space-between;gap:18px;align-items:center;font-size:11px}.home-module-progress-row strong{color:#4d5260}.home-module-progress-row span{color:#555a67;font-weight:800}.home-module-progress-row b{font-size:16px;margin-left:4px}
+.home-module-track{height:5px;margin-top:9px;border-radius:999px;background:#edeff3;overflow:hidden}.home-module-fill{width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--hv3-purple),#8a82ff);transition:width .25s ease}
+.saturday-section{margin-top:34px}.saturday-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:0 3px 12px}.saturday-heading h2{margin:0;font-size:22px;letter-spacing:-.03em}.saturday-status{font-size:10px;font-weight:900;letter-spacing:.08em;color:#747987;background:#fff;border:1px solid var(--hv3-line);border-radius:999px;padding:7px 10px}
+.saturday-card{display:grid;grid-template-columns:50px 1fr 36px;gap:16px;align-items:center;padding:20px 22px;border-radius:21px;background:var(--hv3-dark);color:#fff;text-decoration:none;box-shadow:0 18px 48px rgba(18,20,29,.15);transition:transform .2s ease}.saturday-card:hover{transform:translateY(-2px)}.saturday-card.is-today{box-shadow:0 0 0 3px rgba(98,92,245,.22),0 20px 54px rgba(18,20,29,.18)}
+.saturday-icon{width:48px;height:48px;border-radius:15px;background:#292b36;display:grid;place-items:center;font-size:22px}.saturday-copy{display:flex;flex-direction:column;gap:4px}.saturday-copy strong{font-size:16px}.saturday-copy span{color:#bfc2cc;font-size:12px;line-height:1.5}.saturday-arrow{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#fff;color:#191a22;font-size:18px}
+@media(max-width:700px){.home-shell{padding-top:34px}.home-hero{align-items:flex-start;flex-direction:column}.home-module{grid-template-columns:44px 1fr;padding:20px;gap:14px}.home-module-icon{grid-column:1;width:44px;height:44px;border-radius:14px;font-size:21px}.home-module-number{display:none}.home-module-copy{grid-column:2}.home-module-copy h2{font-size:23px}.home-module-progress-row{align-items:flex-start;flex-direction:column;gap:4px}.saturday-card{grid-template-columns:44px 1fr}.saturday-arrow{display:none}.saturday-heading{align-items:flex-start;flex-direction:column;gap:8px}}
