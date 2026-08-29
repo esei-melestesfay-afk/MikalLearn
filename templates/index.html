@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MikalLearn</title>
   <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/home-v3.css?v=1">
+  <link rel="stylesheet" href="/static/home-v4.css?v=1">
   <script src="/static/cloud-sync.js?v=local3"></script>
 </head>
 <body class="home-v3">
@@ -16,7 +16,7 @@
         <h1>Hej Mikal <span>👋</span></h1>
         <p class="home-intro">Två tydliga pass. Lite varje dag, lugnt och fokuserat.</p>
       </div>
-      <div class="home-plan-pill">2 delar</div>
+      <div class="home-plan-pill">2 DELAR</div>
     </header>
 
     <section class="home-stack" aria-label="Dagens träning">
@@ -57,14 +57,14 @@
           <p class="home-kicker">VARJE LÖRDAG</p>
           <h2>Lördagsprov</h2>
         </div>
-        <span class="saturday-status" id="saturdayStatus">100–150 ord</span>
+        <span class="saturday-status" id="saturdayStatus">MINST 300 ORD</span>
       </div>
 
       <a href="/prov" class="saturday-card" id="saturdayCard">
         <div class="saturday-icon">📝</div>
         <div class="saturday-copy">
           <strong>Skriv en egen text</strong>
-          <span>Du får ett lätt ämne, skriver minst 100 ord och kontrollerar stavningen när du är klar.</span>
+          <span>Du får ett lätt ämne, skriver minst 300 ord och kontrollerar stavningen när du är klar.</span>
         </div>
         <div class="saturday-arrow">→</div>
       </a>
@@ -79,7 +79,7 @@
       const status = document.getElementById('saturdayStatus');
       if (isSaturday) {
         card.classList.add('is-today');
-        status.textContent = 'IDAG • 100–150 ord';
+        status.textContent = 'IDAG • MINST 300 ORD';
       }
     })();
   </script>
