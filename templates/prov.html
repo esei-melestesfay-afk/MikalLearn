@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lördagsprov | MikalLearn</title>
   <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/prov.css?v=1">
+  <link rel="stylesheet" href="/static/prov.css?v=2">
   <script src="/static/cloud-sync.js?v=local3"></script>
-  <script src="/static/prov.js?v=1" defer></script>
+  <script src="/static/prov.js?v=2" defer></script>
 </head>
 <body class="prov-page">
   <main class="prov-shell">
@@ -17,7 +17,7 @@
       <div>
         <p class="prov-kicker">LÖRDAGSPROV • SVENSKA</p>
         <h1>Skriv en egen text</h1>
-        <p>Skriv med egna ord. Minst 100 ord. Sikta gärna på 150.</p>
+        <p>Skriv med egna ord. Minst 300 ord.</p>
       </div>
       <div class="prov-badge">📝 PROV</div>
     </header>
@@ -34,12 +34,14 @@
       <div class="document-paper">
         <div class="document-topline">
           <span>MIKALLEARN</span>
-          <span>100–150 ORD</span>
+          <span>MINST 300 ORD</span>
         </div>
         <div class="document-title" id="documentTopic">Ämne</div>
 
-        <textarea id="essayInput" class="essay-input" spellcheck="true" lang="sv" placeholder="Börja skriva här..."></textarea>
-        <div id="reviewSurface" class="review-surface" hidden></div>
+        <div class="writing-stage">
+          <textarea id="essayInput" class="essay-input" spellcheck="true" lang="sv" placeholder="Börja skriva här..."></textarea>
+          <div id="reviewSurface" class="review-surface" hidden></div>
+        </div>
 
         <div id="checkMessage" class="check-message" aria-live="polite"></div>
 
@@ -47,20 +49,20 @@
           <div class="word-progress-wrap">
             <div class="word-count-row">
               <strong id="wordCount">0 ord</strong>
-              <span>Minst 100 • mål 150</span>
+              <span>Minst 300 ord</span>
             </div>
             <div class="word-track"><div class="word-fill" id="wordFill"></div></div>
           </div>
 
           <div class="document-actions">
             <button type="button" id="editBtn" class="edit-btn" hidden>✎ Redigera igen</button>
-            <button type="button" id="finishBtn" class="finish-btn" disabled>Skriv 100 ord till</button>
+            <button type="button" id="finishBtn" class="finish-btn" disabled>Skriv 300 ord till</button>
           </div>
         </div>
       </div>
     </section>
 
-    <p class="prov-help">När du trycker <b>Klar</b> markeras ord som verkar felstavade med rött. Tryck på ett rött ord för att se förslag.</p>
+    <p class="prov-help">När du trycker <b>Klar</b> visas stavfel direkt med rött i texten du skrev. Tryck på ett rött ord för att välja rätt stavning.</p>
   </main>
 
   <div class="suggest-popover" id="suggestPopover" hidden></div>
